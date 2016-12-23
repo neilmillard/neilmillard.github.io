@@ -1,2 +1,4 @@
 # neilmillard.github.io
-blog.mitese.co.uk
+* check http://jekyllrb.com/
+* https://help.github.com/articles/about-supported-custom-domains/
+* import wordpress http://import.jekyllrb.com/docs/wordpress/
