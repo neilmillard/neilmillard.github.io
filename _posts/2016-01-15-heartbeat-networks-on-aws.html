@@ -26,9 +26,9 @@ comments: []
 <p>The second network card in this configuration is on its own private non-routable network, and with AWS there is no way to remove the default gateway for this network. The best I could find was an article stating you could use ACL (access control list) to restrict the network to that subnet. This is of little use if your default gateway has been set to a router that blocks all traffic.</p>
 <p>There is an answer however. The DHCP client looks for config files, and if they are not found, uses defaults.</p>
 <p>The fix for my private non-routable network, create a file that looks like this:</p>
-<pre><code>&#47;etc&#47;dhcp&#47;dhclient-eth1.conf<br />
-<&#47;code><&#47;pre></p>
+<pre><code>/etc/dhcp/dhclient-eth1.conf<br />
+</code></pre></p>
 <pre>request subnet-mask, broadcast-address, time-offset,<br />
-interface-mtu;<&#47;pre><br />
+interface-mtu;</pre><br />
 This little file means only request the basic info from the DHCP Server. If we don't ask for the router, then we aren't going to get it.</p>
 <p>&nbsp;</p>

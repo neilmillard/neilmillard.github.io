@@ -25,10 +25,10 @@ comments: []
 <p>Working with Linux servers and automating tasks requires the use of bash programming. This is quite an old language if you compare it to 'modern' languages such as ruby.</p>
 <p>As such it has some very unfriendly ways. One of which bit me today.<br />
 One of the scripts purges old snapshot on AWS.</p>
-<p>Bash tries to be helpful by <a href="http:&#47;&#47;mywiki.wooledge.org&#47;glob">file globbing<&#47;a> and <a href="http:&#47;&#47;mywiki.wooledge.org&#47;WordSplitting">word splitting<&#47;a>. This caused some undesired effects.</p>
-<p>Fortunately, thanks to <a href="http:&#47;&#47;mywiki.wooledge.org&#47;BashPitfalls#echo_.24foo">Greg's Wiki<&#47;a>&nbsp;the fix is quite easy. use quotes.</p>
-<pre>snap_data=$(&#47;home&#47;ec2&#47;bin&#47;ec2-describe-snapshots $snapshot_id_evaluated --region $AWS_REGION)<br />
+<p>Bash tries to be helpful by <a href="http://mywiki.wooledge.org/glob">file globbing</a> and <a href="http://mywiki.wooledge.org/WordSplitting">word splitting</a>. This caused some undesired effects.</p>
+<p>Fortunately, thanks to <a href="http://mywiki.wooledge.org/BashPitfalls#echo_.24foo">Greg's Wiki</a>&nbsp;the fix is quite easy. use quotes.</p>
+<pre>snap_data=$(/home/ec2/bin/ec2-describe-snapshots $snapshot_id_evaluated --region $AWS_REGION)<br />
 snap_description=$(echo "$snap_data" | grep complete | awk '{print $9}')<br />
 snap_creation_date=$(echo "$snap_data" | grep complete | awk '{print $5}')<br />
-purge_after_fe=$(echo "$snap_data" | grep ^TAG.*PurgeAfterFE | cut -f 5)<&#47;pre><br />
+purge_after_fe=$(echo "$snap_data" | grep ^TAG.*PurgeAfterFE | cut -f 5)</pre><br />
 Thanks</p>

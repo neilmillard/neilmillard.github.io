@@ -22,15 +22,15 @@ comments: []
 ---
 <p>Quick post about docker.<br />
 What is docker?<br />
-Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries &ndash; anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment. (<a href="https:&#47;&#47;www.docker.com&#47;what-docker">https:&#47;&#47;www.docker.com&#47;what-docker<&#47;a>)</p>
+Docker containers wrap a piece of software in a complete filesystem that contains everything needed to run: code, runtime, system tools, system libraries &ndash; anything that can be installed on a server. This guarantees that the software will always run the same, regardless of its environment. (<a href="https://www.docker.com/what-docker">https://www.docker.com/what-docker</a>)</p>
 <p>Docker is gaining popularity and some clients are using it in production. As a method to package and deploy self-sufficient applications in primarily stateless Linux containers it allows a consistent platform that in itself is quite simple for Ops to look after, and we don't need to know the inner workings of the application we are deploying.</p>
 <p>However when writing and building Docker images, my virtual machine (local Docker host) starts looking a bit littered with docker containers and images. So here are a few commands to tidy up.</p>
 <p>Kill running containers:</p>
 <pre><code>docker kill $(docker ps -qa)<br />
-<&#47;code><&#47;pre><br />
+</code></pre><br />
 Delete all containers (and their associated volumes):</p>
 <pre><code>docker rm -v $(docker ps -qa)<br />
-<&#47;code><&#47;pre><br />
+</code></pre><br />
 Remove all images:</p>
-<pre><code>docker rmi $(docker images -q)<&#47;code><&#47;pre><br />
-(Thanks to <a href="http:&#47;&#47;stackoverflow.com&#47;users&#47;256618&#47;mark-oconnor">Mike O'Conner<&#47;a>)</p>
+<pre><code>docker rmi $(docker images -q)</code></pre><br />
+(Thanks to <a href="http://stackoverflow.com/users/256618/mark-oconnor">Mike O'Conner</a>)</p>

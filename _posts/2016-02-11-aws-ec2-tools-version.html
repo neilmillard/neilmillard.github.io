@@ -22,13 +22,13 @@ tags:
 - command line
 comments: []
 ---
-<p>I've been coding a puppet module to install&#47;update the aws EC2 tools on centos.</p>
+<p>I've been coding a puppet module to install/update the aws EC2 tools on centos.</p>
 <p>These are already installed on Amazon Linux servers, and as it happens, on the core AMI used by the business.</p>
 <p>The trouble I had was determining the version of the tools that was installed if any. This led to some frustration as the newer features such as<br />
-<em>ec2-copy-snapshot --encrypted<&#47;em><br />
+<em>ec2-copy-snapshot --encrypted</em><br />
 are not present in the previous versions of the tools.</p>
 <p>well I was very pleased with myself when i found a command to run that told me the version.</p>
-<pre>ec2-cmd ShowVersion<&#47;pre><br />
+<pre>ec2-cmd ShowVersion</pre><br />
 Certainly not following the standard of --version or similar, but there is it.</p>
 <p>The version (as of Feb 2016) is 1.7.5.1 and latest is available here.</p>
-<p><a href="http:&#47;&#47;s3.amazonaws.com&#47;ec2-downloads&#47;ec2-api-tools.zip">EC2 Command Line Tools<&#47;a></p>
+<p><a href="http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip">EC2 Command Line Tools</a></p>
