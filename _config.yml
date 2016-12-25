@@ -29,4 +29,14 @@ timezone: Etc/UTC
 theme: minima
 gems:
   - jekyll-feed
+
+
+navigation:
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+  - title: Mitese Group
+    url: http://www.mitese.co.uk
+
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]

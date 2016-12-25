@@ -1,4 +1,8 @@
-.logo {
-    max-width: 32px;
+.nav>li>a>img.logo {
+    max-width: 128px;
     display: inline-block!important;
+}
+
+body {
+    padding-top: 60px;
 }
