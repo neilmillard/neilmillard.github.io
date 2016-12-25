@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: Vagrant 1.8.6 ?
+author:
+  display_name: neil
+  login: neil
+  email: neil@neilmillard.com
+  url: ''
+author_login: neil
+author_email: neil@neilmillard.com
+wordpress_id: 94
+wordpress_url: http://www.millardtechnicalservices.co.uk/?p=94
+date: '2016-08-31 16:35:51 +0000'
+date_gmt: '2016-08-31 15:35:51 +0000'
+categories:
+- Development
+tags:
+- vagrant
+comments: []
+---
+<p>Like most of my team, I use vagrant to run local boxes for development of puppet builds, ruby apis and such like.</p>
+<p>I recently upgraded my Windows workstation to vagrant 1.8.5 and immediately ran into an issue.</p>
+<pre><code>default: Inserting generated public key within guest...<br />
+default: Removing insecure key from the guest if it's present...<br />
+default: Key inserted! Disconnecting and reconnecting using new SSH key...<br />
+default: Warning: Authentication failure. Retrying...<br />
+default: Warning: Authentication failure. Retrying...<&#47;code><&#47;pre><br />
+This monkey of an issue had me stumped for a while, as on another project, I was working with securing ssh logins to hosts on AWS, which made me suspect my id_rsa key setup under the git BASH.</p>
+<p>My sanity has been saved by the admission of a bug on the vagrant issues list&nbsp;<a href="https:&#47;&#47;github.com&#47;mitchellh&#47;vagrant&#47;issues&#47;7610">https:&#47;&#47;github.com&#47;mitchellh&#47;vagrant&#47;issues&#47;7610<&#47;a></p>
+<p>A swift edit of the&nbsp;C:\HashiCorp\vagrant\embedded\gems\gems\vagrant-1.8.5\plugins\guests\linux\cap\public_key.rb file (line 58) and all is good again.</p>
+<pre><code>@@ -54,6 +54,7 @@<br />
+             if test -f ~&#47;.ssh&#47;authorized_keys; then<br />
+               grep -v -x -f '#{remote_path}' ~&#47;.ssh&#47;authorized_keys > ~&#47;.ssh&#47;authorized_keys.tmp<br />
+               mv ~&#47;.ssh&#47;authorized_keys.tmp ~&#47;.ssh&#47;authorized_keys<br />
++              chmod 0600 ~&#47;.ssh&#47;authorized_keys<br />
+             fi</p>
+<p>             rm -f '#{remote_path}'<&#47;code><&#47;pre><br />
+The easier fix is to head over to <a href="https:&#47;&#47;www.vagrantup.com&#47;downloads.html">downloads<&#47;a> where it is hoped that 1.8.6 will be released on 1st September 2016.</p>
+<p>&nbsp;</p>

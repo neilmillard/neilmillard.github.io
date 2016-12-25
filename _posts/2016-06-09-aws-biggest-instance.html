@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: AWS biggest instance
+author:
+  display_name: neil
+  login: neil
+  email: neil@neilmillard.com
+  url: ''
+author_login: neil
+author_email: neil@neilmillard.com
+wordpress_id: 74
+wordpress_url: http://www.millardtechnicalservices.co.uk/?p=74
+date: '2016-06-09 11:48:30 +0000'
+date_gmt: '2016-06-09 10:48:30 +0000'
+categories:
+- Infrastructure
+tags: []
+comments: []
+---
+<p>Wow, today I noticed that AWS now provides a truly massive instance. By request at the moment.</p>
+<table class="tan-table">
+<thead>
+<tr>
+<th><&#47;th></p>
+<th class="rate">vCPU<&#47;th></p>
+<th class="rate">ECU<&#47;th></p>
+<th class="rate">Memory (GiB)<&#47;th></p>
+<th class="rate">Instance Storage (GB)<&#47;th></p>
+<th class="rate">Linux&#47;UNIX Usage<&#47;th><br />
+<&#47;tr><br />
+<&#47;thead></p>
+<tbody class="body">
+<tr class="sizes">
+<td class="size">x1.32xlarge<&#47;td></p>
+<td class="vCPU">128<&#47;td></p>
+<td class="ECU">349<&#47;td></p>
+<td class="memory">1952<&#47;td></p>
+<td class="storage">2 x 1920 SSD<&#47;td></p>
+<td class="rate linux">$16.006 per Hour<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table><br />
+Above is the EU-WEST-1 (Ireland) pricing for an on demand instance. That equates to $384 per day.</p>
+<p>I'm not sure we've seen a workload that could justify this monster. When configuring a cluster we would usually use smaller and many instances to match the load more closely.<br />
+In a monolithic environment this could be used as a single SAP HANA node or similar?</p>
+<p>Of course we will update you when we find one in production.</p>

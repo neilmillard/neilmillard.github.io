@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: Puppet Camp Fall (Autumn) London 2016
+author:
+  display_name: neil
+  login: neil
+  email: neil@neilmillard.com
+  url: ''
+author_login: neil
+author_email: neil@neilmillard.com
+wordpress_id: 169
+wordpress_url: http://blog.mitese.co.uk/?p=169
+date: '2016-11-09 09:16:45 +0000'
+date_gmt: '2016-11-09 09:16:45 +0000'
+categories:
+- Infrastructure
+tags:
+- puppet
+- docker
+- london
+- btsync
+comments: []
+---
+<p>A great day in London yesterday at <a href="https:&#47;&#47;puppet.com&#47;community&#47;events&#47;camp&#47;puppet-camp-london-fall-2016">Puppet Camp London 2016<&#47;a>&nbsp;held at the very beautiful Kings Place. The venue was a wonderful setting with its open gallery floors and 'scary' high escalator that spanned 2 floors.</p>
+<p>150 or so expectant techies with about half the room as puppet beginners attended at my biggest speaking event so far.</p>
+<p>My talk, Can puppet help you run docker on a t2.micro? appeared to be received well by those I had the good fortune to talk to after the event. We also shared a discussion about Docker Persistent Storage for which there is no clear solution yet. Persistent storage is useful for data that changes during the containers life time but not something you would want to 'bake' into an image or layer.</p>
+<p>I've been playing with hosting a Wordpress site on Docker, and one solution I've arrived at is using a sync product like <a href="https:&#47;&#47;www.resilio.com&#47;">BTsync<&#47;a> to form a mini network to synchronise data across a number of docker hosts. Another route being investigated for one of our customers is utilising a <a href="https:&#47;&#47;www.gluster.org&#47;">GlusterFS<&#47;a> cluster with NFS client. Storing the data locally to each docker host.</p>
+<p>I hope to be invited to speak at another Puppet event soon.</p>
+<p><a href="https:&#47;&#47;github.com&#47;neilmillard&#47;docker-btsync">Dockerfile for BTSync<&#47;a></p>
+<p><a href="http:&#47;&#47;www.slideshare.net&#47;neilmillard&#47;can-puppet-help-you-run-docker-on-a-t2micro">Link to slides<&#47;a></p>

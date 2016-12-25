@@ -1,0 +1,34 @@
+---
+layout: post
+status: publish
+published: true
+title: Heartbeat networks on AWS
+author:
+  display_name: neil
+  login: neil
+  email: neil@neilmillard.com
+  url: ''
+author_login: neil
+author_email: neil@neilmillard.com
+wordpress_id: 46
+wordpress_url: http://www.millardtechnicalservices.co.uk/?p=46
+date: '2016-01-15 16:04:02 +0000'
+date_gmt: '2016-01-15 16:04:02 +0000'
+categories:
+- Uncategorised
+tags:
+- aws
+- private subnet
+comments: []
+---
+<p>What happens when you want a private non-routable network such that you would use for a cluster heartbeat or in this case, a vertica spread network, on AWS?</p>
+<p>If like me, you use DHCP when attaching an ENI to your EC2 instance, then you will find that when your linux (centos or redhat distro) executes&nbsp;ifup-eth1, the default dhcp options will mean the default route will be set to this network.</p>
+<p>The second network card in this configuration is on its own private non-routable network, and with AWS there is no way to remove the default gateway for this network. The best I could find was an article stating you could use ACL (access control list) to restrict the network to that subnet. This is of little use if your default gateway has been set to a router that blocks all traffic.</p>
+<p>There is an answer however. The DHCP client looks for config files, and if they are not found, uses defaults.</p>
+<p>The fix for my private non-routable network, create a file that looks like this:</p>
+<pre><code>&#47;etc&#47;dhcp&#47;dhclient-eth1.conf<br />
+<&#47;code><&#47;pre></p>
+<pre>request subnet-mask, broadcast-address, time-offset,<br />
+interface-mtu;<&#47;pre><br />
+This little file means only request the basic info from the DHCP Server. If we don't ask for the router, then we aren't going to get it.</p>
+<p>&nbsp;</p>
