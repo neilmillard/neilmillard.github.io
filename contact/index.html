@@ -18,13 +18,29 @@ categories: []
 tags: []
 comments: []
 ---
-<div class="grid col-460 fit">[contact-form-7 id="11" title="Contact form 1"]</div></p>
-<div class="grid col-460 fit">Phone: 01902 213060</div></p>
-<div class="grid col-460 fit">Millard Technical Services Limited<br />
-Mitese Group<br />
-Watling Chambers<br />
-West Suite<br />
-214 Watling Street<br />
-Cannock<br />
-Staffordshire<br />
-WS11 0BD</div></p>
+<div class="row">
+  <div class="col-md-6">
+    <form action="https://formspree.io/{{site.email}}" method="post">
+      <input type="hidden" name="_next" value="//blog.mitese.co.uk/thanks.html" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <p>Your Name (required)<br />
+        <input type="text" size="40" aria-required="true" name="name"></p>
+      <p>Your Email (required)<br />
+        <input type="email" size="40" aria-required="true" name="_replyto"></p>
+      <p>Your Message<br />
+        <textarea cols="40" rows="10" name="message"></textarea></p>
+      <p><input type="submit" value="Send"></p>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <p>Phone: 01902 213060</p>
+    <p>Millard Technical Services Limited<br />
+      Mitese Group<br />
+      Watling Chambers<br />
+      West Suite<br />
+      214 Watling Street<br />
+      Cannock<br />
+      Staffordshire<br />
+      WS11 0BD</p>
+  </div>
+</div>

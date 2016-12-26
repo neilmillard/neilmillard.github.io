@@ -14,9 +14,13 @@
                 {% for link in site.navigation %}
                 {% assign current = nil %}
                 {% if page.url contains link.url %}
-                {% assign current = 'current' %}
+                {% assign current = 'active' %}
                 {% endif %}
+                {% if link.external_url %}
+                <li><a href="{{ link.external_url }}" target="_blank">{{ link.title }}</a> </li>
+                {% else %}
                 <li class="{{ current }}"><a href="{{site.url}}{{site.baseurl}}{{ link.url }}" data-proofer-ignore>{{ link.title }}</a></li>
+                {% endif %}
                 {% endfor %}
             </ul>
             <ul class="nav navbar-nav navbar-right">

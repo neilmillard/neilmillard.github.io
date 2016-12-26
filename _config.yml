@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Neil Millard and Mitese Blog
-email: neil@mitese.co.uk
+email: team@mitese.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   Mitese is a Devops, puppet and AWS specialist that can help you migrate and
    manage your application in the cloud.
@@ -37,6 +37,6 @@ navigation:
   - title: Contact
     url: /contact/
   - title: Mitese Group
-    url: http://www.mitese.co.uk
+    external_url: http://www.mitese.co.uk
 
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]
