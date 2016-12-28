@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Mitese is a Devops, puppet and AWS specialist that can help you migrate and
    manage your application in the cloud.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.mitese.co.uk.s3-website-eu-west-1.amazonaws.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://blog.mitese.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: neil_millard
 github_username:  neilmillard
 
