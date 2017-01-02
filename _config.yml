@@ -1,42 +1,41 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Dependencies
+markdown:            kramdown
+#highlighter:         pygments
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Neil Millard and Mitese Blog
-email: team@mitese.co.uk
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           :year/:month/:day/:title/
+
+# Setup
+title:  Neil Millard and Mitese Blog
+tagline: Devops and cloud, simplified
 description: > # this means to ignore newlines until "baseurl:"
   Mitese is a Devops, puppet and AWS specialist that can help you migrate and
    manage your application in the cloud.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.mitese.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: neil_millard
-github_username:  neilmillard
+baseurl:  "" # the subpath of your site, e.g. /blog
+url:      "http://blog.mitese.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+paginate: 10
+
+#About/contact
+author:
+  name:   Neil Millard
+  email:  team@mitese.co.uk
+  twitter: neil_millard
+  github:  neilmillard
 
 # Build settings
 markdown: kramdown
 timezone: Etc/UTC
-theme: minima
-gems:
-  - jekyll-feed
-
-
-navigation:
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
-  - title: Mitese Group
-    external_url: http://www.mitese.co.uk
 
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]
+
+# Custom vars
+version:  1.0.0
+
+# Gems
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
