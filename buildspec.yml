@@ -3,7 +3,7 @@ version: 0.1
 environment_variables:
   plaintext:
     CNAME: "blog.mitese.co.uk"
-
+    LC_ALL: "en_US.UTF-8"
 phases:
   install:
     commands:
