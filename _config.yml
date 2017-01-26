@@ -27,8 +27,6 @@ author:
 # Build settings
 markdown: kramdown
 timezone: Etc/UTC
-# set the encoding to utf-8
-encoding: utf-8
 
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]
 
