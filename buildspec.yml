@@ -1,0 +1,25 @@
+version: 0.1
+
+environment_variables:
+  plaintext:
+    CNAME: "blog.mitese.co.uk"
+
+phases:
+  install:
+    commands:
+      - bundle install
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - jekyll build
+  post_build:
+    commands:
+      - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - _site/*
+  discard-paths: yes
