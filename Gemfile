@@ -11,6 +11,9 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem "jekyll", "3.3.1"
 
+# Install testing gem
+gem 'html-proofer'
+
 # Install the importer, this we allow import from other blogging platforms
 # gem "jekyll-import"
 
