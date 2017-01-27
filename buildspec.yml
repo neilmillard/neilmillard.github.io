@@ -19,7 +19,7 @@ phases:
       - jekyll build
   post_build:
     commands:
-      - bundle exec htmlproofer ./_site --allow-hash-href --check-favicon --check-html --disable-external
+      - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
       - echo Build completed on `date`
 artifacts:
   files:

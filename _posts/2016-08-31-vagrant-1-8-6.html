@@ -27,7 +27,7 @@ default: Removing insecure key from the guest if it's present...<br />
 default: Key inserted! Disconnecting and reconnecting using new SSH key...<br />
 default: Warning: Authentication failure. Retrying...<br />
 default: Warning: Authentication failure. Retrying...</code></pre><br />
-This monkey of an issue had me stumped for a while, as on another project, I was working with securing ssh logins to hosts on AWS, which made me suspect my id_rsa key setup under the git BASH.</p>
+<p>This monkey of an issue had me stumped for a while, as on another project, I was working with securing ssh logins to hosts on AWS, which made me suspect my id_rsa key setup under the git BASH.</p>
 <p>My sanity has been saved by the admission of a bug on the vagrant issues list&nbsp;<a href="https://github.com/mitchellh/vagrant/issues/7610">https://github.com/mitchellh/vagrant/issues/7610</a></p>
 <p>A swift edit of the&nbsp;C:\HashiCorp\vagrant\embedded\gems\gems\vagrant-1.8.5\plugins\guests\linux\cap\public_key.rb file (line 58) and all is good again.</p>
 <pre><code>@@ -54,6 +54,7 @@<br />
@@ -35,7 +35,7 @@ This monkey of an issue had me stumped for a while, as on another project, I was
                grep -v -x -f '#{remote_path}' ~/.ssh/authorized_keys > ~/.ssh/authorized_keys.tmp<br />
                mv ~/.ssh/authorized_keys.tmp ~/.ssh/authorized_keys<br />
 +              chmod 0600 ~/.ssh/authorized_keys<br />
-             fi</p>
-<p>             rm -f '#{remote_path}'</code></pre><br />
-The easier fix is to head over to <a href="https://www.vagrantup.com/downloads.html">downloads</a> where it is hoped that 1.8.6 will be released on 1st September 2016.</p>
+             fi
+             rm -f '#{remote_path}'</code></pre><br />
+<p>The easier fix is to head over to <a href="https://www.vagrantup.com/downloads.html">downloads</a> where it is hoped that 1.8.6 will be released on 1st September 2016.</p>
 <p>&nbsp;</p>
