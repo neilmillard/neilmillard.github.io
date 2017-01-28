@@ -6,6 +6,7 @@ environment_variables:
     LC_ALL: C.UTF-8
     ENV LANG: en_US.UTF-8
     ENV LANGUAGE: en_US.UTF-8
+    BUCKET: "logs.mitese.elb"
 phases:
   install:
     commands:
@@ -15,13 +16,12 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
       - jekyll build
   post_build:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
-      - echo Build completed on `date`
+      - s3cmd sync --dry-run --delete-removed ./_site/ s3://${BUCKET}/
 artifacts:
   files:
-    - _site/*
+    - _site/
   discard-paths: yes
