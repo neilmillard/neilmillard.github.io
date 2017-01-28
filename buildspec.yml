@@ -11,6 +11,7 @@ phases:
   install:
     commands:
       - bundle install
+      - sudo apt-get install s3cmd
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
@@ -20,8 +21,8 @@ phases:
   post_build:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
-      - s3cmd sync --delete-removed ./_site/ s3://${BUCKET}/
+      - s3cmd sync --dry-run --delete-removed ./_site/ s3://${BUCKET}/
 artifacts:
   files:
-    - _site/index.html
+    - _site/*
   discard-paths: yes

@@ -31,6 +31,3 @@ group :jekyll_plugins do
    gem "jekyll-sitemap", "~> 0.12"
    gem "jekyll-paginate", "~> 1.1"
 end
-
-#s3cmd to copy code to bucket
-gem 's3cmd', '~> 1.1'
