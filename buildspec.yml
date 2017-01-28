@@ -20,7 +20,7 @@ phases:
   post_build:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
-      - s3cmd sync --dry-run --delete-removed ./_site/ s3://${BUCKET}/
+      - s3cmd sync --delete-removed ./_site/ s3://${BUCKET}/
 artifacts:
   files:
     - _site/
