@@ -23,5 +23,5 @@ phases:
       - s3cmd sync --delete-removed ./_site/ s3://${BUCKET}/
 artifacts:
   files:
-    - _site/
+    - _site/index.html
   discard-paths: yes
