@@ -22,7 +22,7 @@ phases:
   post_build:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
-      - ./stout deploy --env live --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region EU-WEST-1 --root ./_site
+      - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region EU-WEST-1 --root ./_site
 artifacts:
   files:
     - _site/*
