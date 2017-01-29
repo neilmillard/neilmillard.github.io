@@ -6,7 +6,7 @@ environment_variables:
     LC_ALL: C.UTF-8
     ENV LANG: en_US.UTF-8
     ENV LANGUAGE: en_US.UTF-8
-    BUCKET: "logs.mitese.elb"
+    BUCKET: "blog.mitese.co.uk"
 phases:
   install:
     commands:
