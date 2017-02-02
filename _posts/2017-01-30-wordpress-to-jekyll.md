@@ -49,5 +49,6 @@ AWS CodeBuild says it will upload the compiled artifacts to S3. 'Great this shou
 Again open source community to the rescue, with [Stout](http://stout.is/) a tool to deploy static websites to S3.
 
 After a few more minor changes, like choosing a theme and adding font-awesome, I'm happy with how it turned out.
-Just need to get some webhooks to automatically start the build on commit.
 
+
+Adding a job to AWS CodePipeline, by pointing the source step at the Github repo (after giving permission) I have a two step Pipeline to fetch code, then build it. with the deploy step already in the build step.
