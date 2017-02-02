@@ -29,8 +29,11 @@ This worked quite well, but I did have to tweak some of the html for paragraph t
 
 Automating the build
 ----
-Now I wouldn't be an awesome DevOps dude if I didn't want to automate the build and upload to S3. AWS have been adding services throughout last year and one of these tools is [AWS CodeBuild](http://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html).
-The building of the site was the easy bit, with the exception of adding [HTML Proofer](https://github.com/gjtorikian/html-proofer#using-with-jekyll), which didn't want to run due to a UTF-8 arguement with US-ASCII.
+Now I would not be an awesome DevOps dude if I didn't want to automate the build and upload to S3. AWS have been adding services throughout last year and one of these tools is [AWS CodeBuild](http://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html).
+```
+Error: invalid byte sequence in US-ASCII
+```
+The building of the site was the easy bit, with the exception of adding [HTML Proofer](https://github.com/gjtorikian/html-proofer#using-with-jekyll), which didn't want to run due to a UTF-8 argument with US-ASCII.
 It appears that the default Ruby Docker container is configured with US-ASCII, which really breaks some stuff.
 With AWS CodeBuild you specify a build file *buildspec.yml* with which you can configure certain settings, including environment variables.
 ```yaml
