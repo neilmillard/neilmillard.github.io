@@ -13,7 +13,7 @@ author_email: neil@neilmillard.com
 categories:
 - Infrastructure
 tags: [backups,DR]
-comments: []
+comments: true
 ---
 <p>Another incidence of a tired admin fixing an outage to cause a bigger outage isn't news as such, however I have to hand it to <a href="https://about.gitlab.com">gitlab</a> with their open honesty about this weeks incident.</p>
 <p>After a spam storm created serious (4GB) replication lag on the firms postgresql database cluster, to fix the replication a very very tired on-call team-member then deleted the data folder on the active rather than the replicating server.</p>
@@ -22,5 +22,5 @@ comments: []
 Matthew describes the difference between closed cultures where mistakes are hidden vs an open hostest culture where mistakes are open and much learning and prevention occurs as a result.</p>
 <p>As shown by the support on <a href="https://twitter.com/gitlabstatus">Twitter</a> the DevOps and cloud reliability engineers agree.</p>
 <p>Lessons so far? Test your backups, you never know when you will really need them.</p>
-<p>With my ethos about servers being disposible, I love destroying and rebuilding servers, to prove in any Disaster Recovery situation, the service can be restored. 
+<p>With my ethos about servers being disposible, I love destroying and rebuilding servers, to prove in any Disaster Recovery situation, the service can be restored.
 This relies on well designed recovery processes and code, keeping the focus away from avoiding failure, to focus on embracing failure and reducing the mean time to recovery.</p>
