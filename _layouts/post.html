@@ -20,6 +20,9 @@ comments: true
   {% endif %}
 
   <span class="post-sharing">{% include share-page.html %}</span>
+
+  {% include disqus.html %}
+
   <div class="related">
     <h2>Recent Posts</h2>
     <ul class="related-posts">
@@ -35,7 +38,5 @@ comments: true
       {% endfor %}
     </ul>
   </div>
-  {% include disqus.html %}
-
 </div>
 
