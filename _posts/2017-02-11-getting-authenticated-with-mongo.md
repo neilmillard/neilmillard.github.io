@@ -16,7 +16,7 @@ tags: [mongodb,x509,ca,authentication]
 comments: true
 ---
 The challenge this week was to find out why the authentication appeared to be broken on the automated mongodb build.
-Several weeks ago I had written a [puppet](www.puppet.com) module to build a mongodb cluster using a number of arguments,
+Several weeks ago I had written a [puppet](http://www.puppet.com) module to build a mongodb cluster using a number of arguments,
 like number of nodes, nodenames, certificates, etc.
 Despite having certificates generated from a CA (Certificate Authority), and the certificate with the client to log on,
 this user could do anything. and ```.auth()``` was not needed.
