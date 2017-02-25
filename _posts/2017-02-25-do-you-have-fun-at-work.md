@@ -7,6 +7,7 @@ author_login: neil
 author_email: neil@neilmillard.com
 categories:
 - Development
+description: How computers will steal your job, so you can have more fun.
 tags: [make-work-fun]
 comments: true
 ---
