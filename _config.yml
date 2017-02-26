@@ -8,11 +8,11 @@ markdown:            kramdown
 permalink:           :year/:month/:day/:title/
 
 # Setup
-title:  Neil Millard and Mitese Blog
-tagline: Devops and cloud, simplified
+title:  Neil Millard Blog
+tagline: Make life and work, FUN
 description: > # this means to ignore newlines until "baseurl:"
-  Mitese is a Devops, puppet and AWS specialist that can help you migrate and
-   manage your application in the cloud.
+  Neil Millard, speaker, business owner and DevOps specialist.
+   Make work fun. Make life fun.
 baseurl:  "" # the subpath of your site, e.g. /blog
 url:      "http://blog.mitese.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 10
@@ -20,7 +20,7 @@ paginate: 10
 #About/contact
 author:
   name:   Neil Millard
-  email:  team@mitese.co.uk
+  email:  neil@neilmillard.com
   twitter: neil_millard
   github:  neilmillard
 
