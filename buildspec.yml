@@ -23,6 +23,7 @@ phases:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
       - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
+      - ./stout deploy --bucket www.neilmillard.com --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
 artifacts:
   files:
     - _site/*
