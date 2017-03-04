@@ -7,7 +7,7 @@ author_login: neil
 author_email: neil@neilmillard.com
 categories:
 - Events
-description: 
+description: Work from home, is it working? Open plan offices, virtual meetings. What are the effects on human interaction?
 tags: [environment, social, office life, collaboration]
 comments: true
 ---
