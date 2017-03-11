@@ -5,12 +5,12 @@ published: true
 title: software design principles according to Neil Millard and John Romero
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Development, Infrastructure]
+categories: [Development]
 description: John Romero talks at GDC Europe about id software and is design and programming principles and Neil shares two of his own about Infrastructure as Code
 tags: [software development, principles, agile]
 comments: true
 ---
-This week ' I've been mainly checking ' infrastructure code (Infrastructure As Code(https://en.wikipedia.org/wiki/Infrastructure_as_Code), IAC) for a new mongodb cluster. One of my design and implementation principles states:
+This week ' I've been mainly checking ' [Infrastructure As Code](https://en.wikipedia.org/wiki/Infrastructure_as_Code), IAC for a new mongodb cluster. One of my design and implementation principles states:
 * only pay for the server, when your team needs it
 
 This means building the server via an automated job (Jenkins) to build the cluster from the IAC in the morning and destroy it (after a suitable data recovery is in place) in the evening.
@@ -32,10 +32,10 @@ Even though these principles are specific to game development, a lot of these pr
 * Use a superior system to development system than your target.
 * Write your code for this game only - not for a future game. You're going to be writing new code later because you'll be smarter.
 * Encapsulate functionality to ensure design consistency. This minimises mistakes and saves design time.
-![Scrum Team Standup](https://upload.wikimedia.org/wikipedia/commons/4/4a/Daily_sprint_meeting.jpg)
-* Try to code transparently. Tell your lead and peers exactly how you are going to solve your current task and get feedback and advice. Do not treat game programming like each coder is a black box. The project could go off the rails and cause delays.
+* ![Scrum Team Standup](https://upload.wikimedia.org/wikipedia/commons/4/4a/Daily_sprint_meeting.jpg)
+Try to code transparently. Tell your lead and peers exactly how you are going to solve your current task and get feedback and advice. Do not treat game programming like each coder is a black box. The project could go off the rails and cause delays.
 * Programming is a creative art form based on logic. Every programmer is different and will code differently. It's the output that matters.
 
-These principles are very similar to the agile principles and it is important not to overlook culture and values, as these give the team the reason why, that internal motivation.
+These principles are very similar to the [agile principles](http://agilemanifesto.org/principles.html) and it is important not to overlook culture and values, as these give the team the reason why, that internal motivation.
 
 What rules/principles does you or your team find invaluable?
