@@ -30,4 +30,5 @@ group :jekyll_plugins do
    gem "jekyll-redirect-from", "~> 0.11.0"
    gem "jekyll-sitemap", "~> 0.12"
    gem "jekyll-paginate", "~> 1.1"
+   gem "jekyll-crosspost-to-medium"
 end
