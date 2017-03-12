@@ -27,11 +27,6 @@ phases:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
       - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
       - ./stout deploy --bucket www.neilmillard.com --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
-      - git add ./${MEDIUM_CACHE}/*
-      - git config user.email "${GIT_EMAIL}"
-      - git config user.name "${GIT_NAME}"
-      - git commit -m 'build update medium posts'
-      - git push origin master
 artifacts:
   files:
     - _site/*
