@@ -2,14 +2,11 @@ version: 0.1
 
 environment_variables:
   plaintext:
-    CNAME: "blog.mitese.co.uk"
+    CNAME: "www.neilmillard.com"
     LC_ALL: C.UTF-8
     ENV LANG: en_US.UTF-8
     ENV LANGUAGE: en_US.UTF-8
-    BUCKET: "blog.mitese.co.uk"
-    MEDIUM_CACHE: ".jekyll-crosspost_to_medium"
-    GIT_USER: "Neil Millard"
-    GIT_EMAIL: "neil@neilmillard.com"
+    BUCKET: "www.neilmillard.com"
 phases:
   install:
     commands:
@@ -26,7 +23,7 @@ phases:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
       - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
-      - ./stout deploy --bucket www.neilmillard.com --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
+      - ./stout deploy --bucket blog.mitese.co.uk --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
 artifacts:
   files:
     - _site/*

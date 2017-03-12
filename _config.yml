@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Neil Millard, speaker, business owner and DevOps specialist.
    Make work fun. Make life fun.
 baseurl:  "" # the subpath of your site, e.g. /blog
-url:      "http://blog.mitese.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+url:      "http://www.neilmillard.com" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 10
 
 #About/contact
