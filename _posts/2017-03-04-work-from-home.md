@@ -10,6 +10,7 @@ categories:
 description: Work from home, is it working? Open plan offices, virtual meetings. What are the effects on human interaction?
 tags: [environment, social, office life, collaboration]
 comments: true
+crosspost_to_medium: true
 ---
 The theme of the week has been geography. Listening to [Startup CEO](http://www.audible.co.uk/pd/Business/Startup-CEO-Audiobook/B00G4IMCSK), in which Matt Blumberg states strongly, that having a central office for as long as you can is important for that human connection, serendipitous conversations and culture. This is in contrast to virtual or home working. How connected are we to physical geography and at the same time, connected to a virtual world?
 
