@@ -7,6 +7,7 @@ environment_variables:
     ENV LANG: en_US.UTF-8
     ENV LANGUAGE: en_US.UTF-8
     BUCKET: "blog.mitese.co.uk"
+    MEDIUM_CACHE: ".jekyll-crosspost_to_medium"
 phases:
   install:
     commands:
@@ -24,6 +25,9 @@ phases:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
       - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
       - ./stout deploy --bucket www.neilmillard.com --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
+      - git add ./${MEDIUM_CACHE}/*
+      - git commit -m 'build update medium posts'
+      - git push origin master
 artifacts:
   files:
     - _site/*
