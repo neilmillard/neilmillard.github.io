@@ -1,12 +1,11 @@
 ---
-layout: page
+layout: post
 status: publish
 published: true
 title: 6 steps to becoming a cloud expert
 author_login: neil
 author_email: neil@neilmillard.com
 categories: []
-tags: []
 description: 6 steps to help you become a cloud expert
 tags: [cloud computing, cloud expert, virtualisation]
 comments: true
