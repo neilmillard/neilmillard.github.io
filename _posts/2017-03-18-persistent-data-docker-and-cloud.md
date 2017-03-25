@@ -9,7 +9,7 @@ categories: [infrastructure]
 description: Data, non-persistent vs persistent and how to make data available in temporary environments
 tags: [cloud computing, data, docker, immutable, docker persistent data]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 There are two types of data when we talk about computing, non-persistent or temporary data, and persistent data.  
 ## Non-persistent
