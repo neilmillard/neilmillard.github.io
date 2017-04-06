@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: no title
+title: Docker Swarm
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [infrastructure]
@@ -61,7 +61,11 @@ docker swarm --force-new-cluster --advertise-addr eth0
 
 The worker token can be confirmed by running 
 ```
-[root@localhost ~]# dokcer swarm join-token worker --quiet
+[root@localhost ~]# docker swarm join-token worker --quiet
 SWMTKN-1-49notae85i8c5rea5alx8abc2toke546ny9x8qy7r2f398dwkt-cryin443sc2xpocqb24niawk9
 ```
+
+And there you have it, a reproducable docker swarm. Ready to run Services and such like.
+
+Next Week, looking at another Docker cluster - [Nomad](https://www.nomadproject.io/).
 
