@@ -1,0 +1,16 @@
+---
+---
+
+@import "variables";
+
+.image-wrapper {
+  text-align: center;
+
+  img {
+    margin: 0;
+  }
+  .image-caption {
+    color: $grey-color;
+    margin-top: $spacing-unit / 3;
+  }
+}

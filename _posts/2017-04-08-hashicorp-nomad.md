@@ -9,7 +9,7 @@ categories: [infrastructure]
 description: 
 tags: [cloud computing, data, docker, immutable, docker, nomad, hashicorp]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 Running docker containers on a cluster has several solutions available today:
 * ECS, Amazons Elastic Container Service
@@ -18,7 +18,11 @@ Running docker containers on a cluster has several solutions available today:
 * Hashicorp's Nomad - A task scheduler for clusters that supports Docker
 
 I have been working with Nomad this week with the resulting 3 server cluster available here to play with. [Github Repo](https://github.com/neilmillard/vagrant-nomad).
-
+{% include image.html
+      img="https://www.nomadproject.io/assets/images/nomad-architecture-region-a5b20915.png"
+      title="nomad Architecture"
+      caption="Nomad Architecture" %}
+      
 Similar to the docker swarm tutorial, this code creates a cluster of 3 nodes, one server and two clients, to participate in a Nomad cluster.
 
 After the relative ease of setting up the cluster, I found the settings needed a bit of tweeking as I had two network cards (so I could have static IP, if anyone knows how Vagrant can do this with one NIC, let me know).
@@ -32,6 +36,10 @@ to run 3 instances of Redis on our cluster. As the server is not setup as a clie
 This raises an issue, how do you know which port to connect to. The service is configured so that you can connect to a port on the server and Docker Proxy silently forwards your request to the correct client.  
 Without a service discovery service, it is a bit of a egg hunt to find which port you should use.
 
+{% include image.html
+    img="/public/img/hashi-ui.jpg"
+    title="Hashi-ui screenshot"
+    caption="Hashi-ui Screenshot" %}
 With the second example application, a UI for Nomad, can be launched as
 ```bash
 nomad run /vagrant/hashi-ui/hashi-ui-docker.nomad
@@ -39,6 +47,10 @@ nomad run /vagrant/hashi-ui/hashi-ui-docker.nomad
 This uses the remaining capacity of the client nodes to run a web application container. This too doesn't give much clue as to where it is running.
 In addition, in my code, due to the two interfaces on the master, it appears to docker-proxy to the wrong IP and doesn't forward the traffic correctly.
 
+{% include image.html
+    img="/public/img/consul.jpg"
+    title="Hashicorp Consul"
+    caption="Hashicorp Consul" %}
 To address the issue of service discovery, I installed another Hashicorp product, [Consul](https://www.consul.io/).
 This is configured in almost (but not quite) the same way as Nomad, and you will see from the config it is very similar. With this, the services can advertise where they are installed making it easy to find via DNS or API calls.
 
