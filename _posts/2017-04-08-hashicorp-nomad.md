@@ -9,7 +9,7 @@ categories: [infrastructure]
 description: 
 tags: [cloud computing, data, docker, immutable, docker, nomad, hashicorp]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 Running docker containers on a cluster has several solutions available today:
 * ECS, Amazons Elastic Container Service

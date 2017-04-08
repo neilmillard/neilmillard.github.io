@@ -9,7 +9,7 @@ categories: [infrastructure]
 description: 
 tags: [cloud computing, data, docker, immutable, docker swarm]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 This weeks challenge. Automate the creation of a docker swarm.
 
