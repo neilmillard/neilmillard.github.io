@@ -9,7 +9,7 @@ categories: [Development]
 description: 
 tags: [immutable, servers, software updates]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 I cannot stress enough how important it is to keep updated with the latest software versions. This does give us two problems however.
 
