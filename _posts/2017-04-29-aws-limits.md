@@ -9,7 +9,7 @@ categories: [Infrastructure]
 description: 
 tags: [aws limits, servers, api limits]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 With the flexiblity of Amazon Web Services (AWS) you can create many servers in minutes. This is great from a scaling up point of view.
 Your PR department have just informed you that a segment about your product is about to appear on national TV. You expect a spike in traffic, but its okay because of the preperation work and auto-scaling.
