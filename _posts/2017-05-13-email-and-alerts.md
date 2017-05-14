@@ -9,7 +9,7 @@ categories: [Infrastructure]
 description: 
 tags: [monitoring, alerts, email]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 Following on from [last weeks post](/2017/05/07/monitoring/) about monitoring, the next logical step is having the system create alerts when a threshold is breached.
 
