@@ -5,7 +5,7 @@ published: true
 title: Docker Swarm
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [infrastructure]
+categories: [Infrastructure]
 description: 
 tags: [cloud computing, data, docker, immutable, docker swarm]
 comments: true

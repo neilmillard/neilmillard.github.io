@@ -5,7 +5,7 @@ published: true
 title: persistent data for docker and the cloud
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [infrastructure]
+categories: [Infrastructure]
 description: Data, non-persistent vs persistent and how to make data available in temporary environments
 tags: [cloud computing, data, docker, immutable, docker persistent data]
 comments: true

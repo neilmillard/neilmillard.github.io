@@ -5,7 +5,7 @@ published: true
 title: Docker on Nomad
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [infrastructure]
+categories: [Infrastructure]
 description: 
 tags: [cloud computing, data, docker, immutable, docker, nomad, hashicorp]
 comments: true
