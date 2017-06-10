@@ -27,7 +27,10 @@
     {% endfor %}
     <a class="sidebar-nav-item" href="http://www.millowgroup.co.uk">Mitese Group</a>
     <a class="sidebar-nav-item" href="http://devops.neilmillard.com">DevOps Training</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    {% assign list_list = site.pages | where:"layout","list" | sort:"url" %}
+    {% for node in list_list %}
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+    {% endfor %}
   </nav>
 
   <div class="sidebar-item">
