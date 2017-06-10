@@ -9,7 +9,7 @@ categories: [Development, Infrastructure]
 description: I spoke at puppetcamp london. Masterless Puppet
 tags: [puppet, masterless, immutable]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 {% include image.html
       img="/public/img/puppetcamplondon2017.jpg"
