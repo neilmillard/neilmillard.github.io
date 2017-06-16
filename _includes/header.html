@@ -1,0 +1,33 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="avatar">
+      <a href='http://www.neilmillard.com/'>
+        <img src="{{ site.url }}/public/img/neil_millard.jpg" width="128" height="128" alt="Neil Millard Icon" />
+      </a>
+    </div>
+
+    <h1 class="site-title">
+        <a href="{{ site.url }}/" title="Home">{{ site.title }}</a>
+        <small>{{ site.tagline }}</small>
+    </h1>
+
+    <nav role="navigation">
+      <div class="menu-main-nav-container">
+        <ul id="menu-main-nav" class="menu">
+          {% assign pages_list = site.pages | sort:"url" %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          <li><a class="sidebar-nav-item" href="http://www.millowgroup.co.uk">Mitese Group</a></li>
+          <li><a class="sidebar-nav-item" href="http://devops.neilmillard.com">DevOps Training</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="clear"></div>
+  </div><!--/container -->
+</header>
