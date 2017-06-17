@@ -11,13 +11,12 @@ tags: [python, puppet, tarball]
 comments: true
 crosspost_to_medium: true
 ---
-Software versions are released constantly, but not all versions play nice. 
-Bundles of compatible software versions will create stability.
-
 {% include image.html
       img="http://www.neilmillard.com/public/img/server_error_640.jpg"
       title="Bad server build"
       caption="When a server doesn't build" %}
+Software versions are released constantly, but not all versions play nice. 
+Bundles of compatible software versions will create stability.
       
 This is especially true when working with [R](https://en.wikipedia.org/wiki/R_(programming_language)) or [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) modules.
 I use puppet and the default state to install [package](https://docs.puppet.com/puppet/latest/types/package.html#package-attribute-ensure) is ```installed```. When using providers using [yum](https://fedoraproject.org/wiki/Yum) or [apt](https://wiki.debian.org/Apt), ```installed``` means ```latest``` if the package is not installed already.
