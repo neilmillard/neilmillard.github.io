@@ -9,7 +9,7 @@ categories: [Infrastructure]
 description: A short article helping keep Amazon Web Services bill under control.
 tags: [aws, cost control, ec2]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 {% include image.html
       img="http://www.neilmillard.com/public/img/burn-money_480.jpg"
