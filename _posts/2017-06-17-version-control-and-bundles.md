@@ -9,7 +9,7 @@ categories: [Infrastructure]
 description: Software versions are released constantly, but not all versions play nice. Bundles of compatible software versions will create stability.
 tags: [python, puppet, tarball]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 {% include image.html
       img="http://www.neilmillard.com/public/img/server_error_640.jpg"
