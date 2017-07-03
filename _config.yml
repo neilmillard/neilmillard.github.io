@@ -27,6 +27,7 @@ author:
 # Build settings
 markdown: kramdown
 timezone: Etc/UTC
+future: false
 
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]
 
