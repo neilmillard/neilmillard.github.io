@@ -9,7 +9,7 @@ categories: [Infrastructure]
 description: The morning in the life of a DevOps engineer.
 tags: [automation, dependencies]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 On a daily basis, my code runs to build multiple environments for the database warehouse project.
 The dev side of DevOps is about the role of creating and testing the automation processes.  
