@@ -9,7 +9,7 @@ categories: [Infrastructure, Development]
 description: What does it mean to be a DevOps engineer.
 tags: [automation, product, devops, job, dev, ops]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 {% include image.html
       img="http://www.neilmillard.com/public/img/devopsvenn.jpg"
