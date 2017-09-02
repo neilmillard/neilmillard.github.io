@@ -9,15 +9,13 @@ categories: [Infrastructure, Development]
 description: Datacenters have been used since the 50s with the large mainframes. In this article I will share my approach to building servers for the cloud instead of for the datacenter.
 tags: [automation, devops, immutable, dev, ops]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 {% include image.html
       img="https://upload.wikimedia.org/wikipedia/commons/d/d3/BRL61-IBM_305_RAMAC.jpeg"
       title="IBM_305_RAMAC"
       caption="Datacenters of the 50s" %}
       
-You are paying too much for your cloud servers
-------------------------------
 Datacenters have been with us for a very long time. Since the 50s with the [large mainframes](https://en.wikipedia.org/wiki/IBM_305_RAMAC). Now the datacenters have moved and we can rent servers. In this article I will share my approach to building servers for the cloud instead of for the datacenter.
 
 Cloud?
@@ -51,11 +49,21 @@ Immutable servers
 -----------------
 Things change, software changes and [dependencies change](http://www.neilmillard.com/2017/07/12/devops-automating-servers-while-you-sleep/). Being able to create servers and environments on demand, makes it easy to build a new server. This gives the option of building fresh new servers to fresh the software rather than having to run deployment scripts or worse, someone logging into the server and changing/upgrading manually.
 
+{% include image.html
+      img="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Genie_Lamps_007.JPG/640px-Genie_Lamps_007.JPG"
+      title="Magic Genie lamp"
+      caption="Ordering servers from a genie?" %}
+
 Building on demand
 ------------------
 Once you have the tools and code (infrastructure as code) in place to self heal your production servers, why not provide temporary environments. These look almost identical to production that your developers can use.
 This is where DevOps comes into the equation. Enabling developers to create their own production like system is ideal for developing and testing their code.
 In the database world, providing a full database environment could be too expensive. With self healing, infrastructure as code, and order on demand environments in place, you can provide full development and testing environments on a temporary or transient basis. Shutting them down and destroying the environments when the developers go home or clock off, means you no longer have to pay for something that is not being used.
+
+{% include image.html
+      img="http://neilmillard.com/public/img/wackamole.jpg"
+      title="Whack a mole"
+      caption="Make sure the data comes back" %}
 
 Persisting data
 ---------------
