@@ -9,7 +9,7 @@ categories: [Infrastructure, Development]
 description: Datacenters have been used since the 50s with the large mainframes. In this article I will share my approach to building servers for the cloud instead of for the datacenter.
 tags: [automation, devops, immutable, dev, ops]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 {% include image.html
       img="https://upload.wikimedia.org/wikipedia/commons/d/d3/BRL61-IBM_305_RAMAC.jpeg"
