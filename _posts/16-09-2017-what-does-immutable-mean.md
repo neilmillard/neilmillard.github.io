@@ -9,18 +9,17 @@ categories: [Infrastructure]
 description: Unchanging over time or unable to be changed.
 tags: [automation, devops, immutable, ops]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
-Immutable
--
-Unchanging over time or unable to be changed.
-
 {% include image.html
       img="http://neilmillard.com/public/img/stonehenge-under-the-sunset-skies.jpg"
       title="stonehenge"
       caption="stonehenge; unchanging"
       url = "https://www.goodfreephotos.com/england/other-england/stonehenge-under-the-sunset-skies.jpg.php" %}
       
+Immutable
+-
+Unchanging over time or unable to be changed.
 
 This is one of the rules I use for cloud servers. This gives two advantages:-
 1. If you build servers using an automated, repeatable method, it is easy to build new ones.
