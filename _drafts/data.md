@@ -2,11 +2,11 @@
 layout: post
 status: publish
 published: true
-title: Four steps to Infrastructure Delivery - Design
+title: Four steps to Infrastructure Delivery - 
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [Infrastructure, Development]
-description: Design your application with the cloud in mind
+description: 
 tags: [automation, application, infrastructure, product, devops, dev, ops]
 comments: true
 crosspost_to_medium: false
