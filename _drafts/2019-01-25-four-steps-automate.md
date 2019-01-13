@@ -5,7 +5,7 @@ published: false
 title: My Four Steps for a successful cloud deployment - Automate
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories: [Infrastructure, Development, Book]
 description: Automate repetitive tasks
 tags: [automation, application, infrastructure, book, devops, dev, ops]
 comments: true

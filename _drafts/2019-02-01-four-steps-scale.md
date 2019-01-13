@@ -5,7 +5,7 @@ published: false
 title: My Four Steps for a successful cloud deployment - Scale
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories: [Infrastructure, Development, Book]
 description: Scaling up is harder than it seems, strong foundations make it easier
 tags: [automation, application, infrastructure, book, devops, dev, ops]
 comments: true

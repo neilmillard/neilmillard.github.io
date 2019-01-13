@@ -5,7 +5,7 @@ published: false
 title: My Four Steps for a successful cloud deployment - Data
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories: [Infrastructure, Development, Book]
 description: Keep the data safe
 tags: [automation, application, infrastructure, product, devops, dev, ops]
 comments: true
