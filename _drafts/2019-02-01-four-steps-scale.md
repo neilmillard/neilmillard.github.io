@@ -7,7 +7,7 @@ author_login: neil
 author_email: neil@neilmillard.com
 categories: [Infrastructure, Development]
 description: Scaling up is harder than it seems, strong foundations make it easier
-tags: [automation, application, infrastructure, product, devops, dev, ops]
+tags: [automation, application, infrastructure, book, devops, dev, ops]
 comments: true
 crosspost_to_medium: false
 ---
