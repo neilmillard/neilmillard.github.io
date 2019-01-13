@@ -68,4 +68,5 @@ and cheaper than traditional tape and shipping solutions. Tapes are not reliable
 comes to restores, and the process by which the tapes are recovered before restoring can be 
 lengthy, making the Cloud an attractive option.
 
-Next: [read the book](http://www.neilmillard.com/book/)
+Excerpt from my new book - 
+{% include book_info.html %}

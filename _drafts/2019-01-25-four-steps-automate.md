@@ -68,3 +68,6 @@ its path through testing. Be wary of local data in the Docker container though, 
 any Cloud application, local data is discouraged.
 
 Next: Scale
+
+Excerpt from my new book - 
+{% include book_info.html %}

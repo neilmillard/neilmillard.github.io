@@ -55,3 +55,6 @@ immutable way, allowing the servers to build themselves and enabling fast scalin
 recovery from failure.
 
 Next: Automation
+
+Excerpt from my new book - 
+{% include book_info.html %}

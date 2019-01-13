@@ -58,3 +58,6 @@ down. The application may also need modification to allow this, ensuring that a 
 connection doesn’t need to stay connected to any server specifically due to local data.
 
 Next: Data
+
+Excerpt from my new book - 
+{% include book_info.html %}
