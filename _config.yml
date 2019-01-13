@@ -45,4 +45,4 @@ gems:
 
 # this will disable for local testing
 jekyll-crosspost_to_medium:
-  enabled: true
+  enabled: false
