@@ -37,3 +37,5 @@ Read this book in order to:
 
 If you want to unlock the power of the cloud to build agile, stable, infrastructure that
  delights your customers 24/7 and enables you to stay competitive, you need to read this book.
+
+{% include book_info.html %}
