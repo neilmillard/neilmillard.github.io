@@ -9,7 +9,7 @@ categories: [Infrastructure, Development, Book]
 description: Design your application with the cloud in mind
 tags: [automation, application, infrastructure, book, devops, dev, ops]
 comments: true
-crosspost_to_medium: false
+crosspost_to_medium: true
 ---
 {% include image.html
       img="http://www.neilmillard.com/public/img/cupcake_vending.jpg"

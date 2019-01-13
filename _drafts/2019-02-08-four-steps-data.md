@@ -9,7 +9,7 @@ categories: [Infrastructure, Development, Book]
 description: Keep the data safe
 tags: [automation, application, infrastructure, product, devops, dev, ops]
 comments: true
-crosspost_to_medium: true
+crosspost_to_medium: false
 ---
 Keeping the data safe
 ------------
