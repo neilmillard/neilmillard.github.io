@@ -28,7 +28,7 @@ you to put the Culture series of books by Iain M Banks on your reading list.
 
 I have four steps to help us deliver this value. Design, automation, scaling and data.
 
-**Design** is sometimes called a minimum viable product, and isn’t the long and time-consuming
+<a href="{{ site.url }}/2019/01/18/four-steps-design/">**Design**</a> is sometimes called a minimum viable product, and isn’t the long and time-consuming
 step that it once was. Agile says we need to do just enough design to start delivering value.
 
 **Automation** is where we build what we have designed, and perhaps revisit the design and build to improve

@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: My Four Steps for a successful cloud deployment - Design
 author_login: neil
 author_email: neil@neilmillard.com
@@ -13,7 +13,11 @@ crosspost_to_medium: false
 ---
 Application designed for Cloud
 ------------
-As the Cloud is a pay as you go service, the application should be too. 
+As the Cloud is a pay as you go service, the application should be too.
+{% include image.html
+      img="http://www.neilmillard.com/public/img/purple_clouds.jpg"
+      title="Purple Clouds" %}
+       
 AWS’s CTO Werner Vogels speaking at Amazon re: invent said  
 ‘While an Amazon EC2 instance might look like a server to you, it is not a server. 
 It is something you can switch off, it is a software component’.
@@ -25,6 +29,10 @@ Many applications designed to run on Cloud can recover from infrastructure failu
 building themselves quickly, avoiding stateful and important data stored on the servers 
 wherever possible, replicating data to preserve it, and doing all this with as little human 
 interaction as possible.
+
+{% include image.html
+      img="http://www.neilmillard.com/public/img/computer_trash.jpg"
+      title="Disposed servers" %}
 
 For the infrastructure do this, DevOps borrowed from developers and created automated 
 programs to do the heavy lifting involved in building server environments and recovering.
@@ -43,6 +51,10 @@ tested and running in a near duplicate.
 This infrastructure code is designed with Cloud failures in mind to enable fast recovery. 
 As it is code, it can be tested.
 
+{% include image.html
+      img="http://www.neilmillard.com/public/img/www.maxpixel.net-Stopwatch-Speed-Chronometer-Interval-Timer-706064.jpg"
+      title="Timing servers recover and build" %}
+
 A tool for defining and running code to create infrastructure is called Terraform by 
 Hashicorp. This is an open source tool owned by the community. With a collaboration mindset, 
 this project is alive with updates. This tool enables instructions to be written, accessing 
@@ -56,5 +68,4 @@ recovery from failure.
 
 Next: Automation
 
-Excerpt from my new book - 
 {% include book_info.html %}
