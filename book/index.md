@@ -25,7 +25,8 @@ service running and minimising downtime.
 
 {% include image.html
       img="http://www.neilmillard.com/public/img/wmms_cover3d.jpg"
-      title="Who Moved My Servers book cover" 
+      title="Who Moved My Servers book cover"
+      caption="Available now on amazon" 
       url="https://amzn.to/2AUJcUp" %}
 
 Read this book in order to:
