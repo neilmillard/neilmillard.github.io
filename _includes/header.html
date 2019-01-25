@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
   <div class="container">
-    <div class="avatar">
+    <div class="avatar" style="padding-top:25px">
       <a href='http://www.neilmillard.com/blog/'>
         <img src="{{ site.url }}/public/img/neil_millard.jpg" width="128" height="128" alt="Neil Millard Icon" />
       </a>
@@ -14,6 +14,7 @@
     <nav role="navigation">
       <div class="menu-main-nav-container">
         <ul id="menu-main-nav" class="menu">
+          <li><a class="sidebar-nav-item{% if page.url == "/blog/" %} active{% endif %}" href="/blog/">Blog</a></li>
           {% assign pages_list = site.pages | sort:"url" %}
           {% for node in pages_list %}
             {% if node.title != null %}

@@ -9,9 +9,9 @@ permalink:           :year/:month/:day/:title/
 
 # Setup
 title:  Neil Millard Blog
-tagline: Make life and work, FUN
+tagline: DevOps author and speaker.
 description: > # this means to ignore newlines until "baseurl:"
-  Neil Millard, speaker, business owner and DevOps specialist.
+  Neil Millard, speaker, business owner, author and DevOps specialist.
    Make work fun. Make life fun.
 baseurl:  "" # the subpath of your site, e.g. /blog
 url:      "http://www.neilmillard.com" # the base hostname & protocol for your site, e.g. http://example.com

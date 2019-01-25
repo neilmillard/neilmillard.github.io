@@ -1,4 +1,4 @@
 <div>
-  <p>I've written a new book - <a href="http://www.neilmillard.com/book">Who moved my servers</a>.</p>
+  <p>{% if page.url != "book" %}<a href="http://www.neilmillard.com/book">Who moved my servers</a>{% else %}Who moved my servers{% endif %}.</p>
   <p>Available from Amazon.co.uk in <a href="https://amzn.to/2HxjFXf">Paperback</a> and <a href="https://amzn.to/2RbKKig">Kindle</a> now.</p>
 </div>
