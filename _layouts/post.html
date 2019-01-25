@@ -6,11 +6,6 @@ comments: true
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date: "%-d %B %Y" }} &middot; Filed in {% for category in page.categories %} <a href="{{ site.url }}/categories/#{{ category }}">{{ category }}</a>{% endfor %}</span>
   {{ content }}
-  <!-- {% include advert.html %} -->
-  <span class="post-date">Tags:
-    {% assign page_tags = page.tags | sort %}
-    {% include page_tags_list %}
-  </span>
   {% if page.previous %}
   <span class="post-date">
     <i class="fa fa-arrow-circle-left"></i> Previous Post: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a></span>
@@ -21,7 +16,11 @@ comments: true
   {% endif %}
 
   <span class="post-sharing">{% include share-page.html %}</span>
-
+  <!-- {% include advert.html %} -->
+  <span class="post-date">Tags:
+    {% assign page_tags = page.tags | sort %}
+    {% include page_tags_list %}
+  </span>
   {% include disqus.html %}
 
   <div class="related">

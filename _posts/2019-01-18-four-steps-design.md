@@ -66,6 +66,4 @@ The three leading tools for this are Puppet, Chef and Ansible. All three can be 
 immutable way, allowing the servers to build themselves and enabling fast scaling and 
 recovery from failure.
 
-Next: Automation
-
 {% include book_info.html %}

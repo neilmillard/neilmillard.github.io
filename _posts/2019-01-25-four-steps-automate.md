@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: My Four Steps for a successful cloud deployment - Automate
 author_login: neil
 author_email: neil@neilmillard.com
@@ -14,9 +14,14 @@ crosspost_to_medium: false
 Automated infrastructure for your build, test, deployment and operation
 ----------------
 
+{% include image.html
+      img="/public/img/Automated_pipetting_system_using_manual_pipettes.jpg"
+      title="Automated Testing" %}
 With the infrastructure definitions available as code, the process to deploy the 
 infrastructure can use the same methodology as the developers, to build, test and deploy 
-using pipelines. This does mean the tests have to be written with the infrastructure code, 
+using pipelines. 
+
+This does mean the tests have to be written with the infrastructure code, 
 but once this is done it gives a massive safety net for the team: great tests mean more 
 reliable code and more reliable operations.  
 
@@ -30,6 +35,11 @@ Nothing tests code like deployments, so once the infrastructure tests have been 
 successfully a deployment as often as you can should occur. In one team I with, the four 
 development environments (including the DevOps environment) included the same code (with 
 different versions) which rippled through each morning.
+
+{% include image.html
+      img="/public/img/sunrise-2253692_640.jpg"
+      title="Regular/Daily deployments" %}
+
 
 Every day the environments would be built by a continuous deployment pipeline in Jenkins 
 with the infrastructure and developer code. This enabled massive confidence in the code by 
@@ -47,6 +57,10 @@ thing for the work area – and for everyone to see and keep an eye on. Anything
 dashboard will get attention by the team long before any symptoms show in the application 
 itself. This is partly due to the fault tolerance built into the servers and the 
 application, and partly for the users to notice.
+
+{% include image.html
+      img="/public/img/cpu-mixedmode-flamegraph-java-800.png"
+      title="Monitoring" %}
 
 As an aid to diagnosing performance issues, save application log information to a file or 
 output stream. This valuable information needs to be stored safely, and since we’re 
@@ -68,6 +82,5 @@ its path through testing. Be wary of local data in the Docker container though, 
 any Cloud application, local data is discouraged.
 
 Next: Scale
-
-Excerpt from my new book - 
+ 
 {% include book_info.html %}
