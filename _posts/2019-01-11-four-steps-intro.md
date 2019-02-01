@@ -31,10 +31,10 @@ I have four steps to help us deliver this value. Design, automation, scaling and
 <a href="{{ site.url }}/2019/01/18/four-steps-design/">**Design**</a> is sometimes called a minimum viable product, and isn’t the long and time-consuming
 step that it once was. Agile says we need to do just enough design to start delivering value.
 
-**Automation** is where we build what we have designed, and perhaps revisit the design and build to improve
+<a href="{{ site.url }}/2019/01/25/four-steps-automate/">**Automation**</a> is where we build what we have designed, and perhaps revisit the design and build to improve
 the automation in an iterative way.
 
-**Scaling** is where the biggest excitement and the biggest headaches of a product or start-up
+<a href="{{ site.url }}/2019/02/01/four-steps-scale/">**Scaling**</a> is where the biggest excitement and the biggest headaches of a product or start-up
 lay. Having a small perfectly formed pizza is good to start with, but not quite going to cut it if you want to feed an army of
 conference delegates in one sitting.
 
