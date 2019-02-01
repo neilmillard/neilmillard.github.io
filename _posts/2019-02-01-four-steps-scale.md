@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: My Four Steps for a successful cloud deployment - Scale
 author_login: neil
 author_email: neil@neilmillard.com
@@ -13,9 +13,14 @@ crosspost_to_medium: false
 ---
 Scaling for flexible workloads
 -------------
-
+Another excerpt from my book, Who moved my Servers?
+{% include image.html
+     img="/public/img/512px-Wild_Rabbits_at_Edinburgh_Zoo.jpg"
+     title="More erm rabbits" %}
 One of the most attractive features of moving to the Cloud is the ability to scale 
-applications quickly based on workload. This burst feature enables the systems to call 
+applications quickly based on workload. 
+
+This burst feature enables the systems to call 
 on extra resources when needed, and possibly more importantly, release them once the 
 demand drops so you’re not paying for servers to sit idle.
 
@@ -28,7 +33,9 @@ Access points or load balancers provide a clear point of entry to the applicatio
 webserver, this is what sits behind the website address, but in front of the webservers 
 producing the web pages. Having a known entry point means the application can divert the 
 request to wherever is best to deal with that action at that time.
-
+{% include image.html
+     img="/public/img/loadbalancing.png"
+     title="load balancing" %}
 As mentioned in the Axa web app scaling and load balancing case study, the application may 
 need some awareness of the load balancer – so they work together. This may require some 
 design and development time to ensure the APIs and microservices can reconnect (in the 
@@ -43,6 +50,10 @@ resources are added and taken away for consistent response times.
 Scaling out and in relies on a rule. This rule is based on a metric, CPU usage, user 
 requests, or memory usage. This metric must be chosen carefully for its ability to measure 
 the load on the servers if it’s to increase service capacity when required.
+
+{% include image.html
+     img="/public/img/sport-alley-recreation-equipment-action-lane-749599-pxhere.com.jpg"
+     title="knocking down skittles" %}
 
 Scaling out is easy – scaling in, however, is a little trickier. Servers and applications 
 create data, either just logs and activity or new inputs such as photos or status updates. 
@@ -59,5 +70,4 @@ connection doesn’t need to stay connected to any server specifically due to lo
 
 Next: Data
 
-Excerpt from my new book - 
 {% include book_info.html %}

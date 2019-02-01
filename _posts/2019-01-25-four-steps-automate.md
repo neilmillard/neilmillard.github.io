@@ -81,6 +81,4 @@ enables the deployment to be as easy for production as it is for any other envir
 its path through testing. Be wary of local data in the Docker container though, and as for 
 any Cloud application, local data is discouraged.
 
-Next: Scale
- 
 {% include book_info.html %}
