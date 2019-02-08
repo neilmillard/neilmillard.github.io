@@ -64,7 +64,7 @@ location. Having the infrastructure code ready to execute this alternative regio
 worthy exercise should the cost of total loss of service justify it.
 {% include image.html
   img="/public/img/disk_backup_270515.jpeg"
-  tilte="keeping backups on disks" %}
+  title="keeping backups on disks" %}
 Regular backup of the data is important for micro restores. This is where only part of the 
 data, otherwise known as a granular restore, will provide a point in time restoration 
 following corruption or malicious data loss. The shorter backup interval reduces the actual 
