@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: My Four Steps for a successful cloud deployment - Data
 author_login: neil
 author_email: neil@neilmillard.com
@@ -13,7 +13,10 @@ crosspost_to_medium: false
 ---
 Keeping the data safe
 ------------
-[Twelve factor applications](https://12factor.net/) discourage any form of local data. 
+Twelve factor applications (https://12factor.net/) discourage any form of local data.
+{% include image.html
+     img="/public/img/burning_tent.jpg"
+     title="local fire destroys tent" %} 
 Keeping data local to a server may be easier and quicker, but it restricts the options 
 for scaling and providing redundancy for the information.
 
@@ -37,7 +40,9 @@ should be extended to all logging on the server, including system logs and appli
 logs. Not only does this keep the data safe (assuming the logging service is itself a 
 cluster), it also enables easy searching and aggregation of the data for analysis and 
 reporting.
-
+{% include image.html
+     img="/public/img/storage_replication.png"
+     title="local fire destroys tent" %} 
 Sometimes overlooked are temporary files used by the server and application. This may be 
 related to a user’s session, but it restricts the user to that one server, making it 
 difficult to scale in.
@@ -57,7 +62,9 @@ of data to a different site should the very worse happen. For this reason, Cloud
 have multiple sites or regions, and data can be copied or backed up to another physical 
 location. Having the infrastructure code ready to execute this alternative region is a 
 worthy exercise should the cost of total loss of service justify it.
-
+{% include image.html
+  img="/public/img/disk_backup_270515.jpeg"
+  tilte="keeping backups on disks" %}
 Regular backup of the data is important for micro restores. This is where only part of the 
 data, otherwise known as a granular restore, will provide a point in time restoration 
 following corruption or malicious data loss. The shorter backup interval reduces the actual 
