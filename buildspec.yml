@@ -18,7 +18,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - jekyll build
+      - bundle exec jekyll build
   post_build:
     commands:
       - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external
