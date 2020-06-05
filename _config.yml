@@ -26,7 +26,6 @@ author:
   github:  neilmillard
 
 # Build settings
-markdown: kramdown
 timezone: Etc/UTC
 future: false
 
