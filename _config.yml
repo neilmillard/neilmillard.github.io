@@ -32,16 +32,11 @@ future: false
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "README.md", "vendor"]
 
 # Custom vars
-version:  1.0.0
+version:  1.1.0
 
-# Gems
-gems:
+# plugins (old Gems)
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-crosspost-to-medium
-
-# this will disable for local testing
-jekyll-crosspost_to_medium:
-  enabled: false

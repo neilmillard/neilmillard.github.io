@@ -29,9 +29,8 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
-   gem "jekyll-redirect-from", "~> 0.11.0"
-   gem "jekyll-sitemap", "~> 0.12"
-   gem "jekyll-paginate", "~> 1.1"
-   gem "jekyll-crosspost-to-medium"
+   gem "jekyll-feed"
+   gem "jekyll-redirect-from"
+   gem "jekyll-sitemap"
+   gem "jekyll-paginate"
 end
