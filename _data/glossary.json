@@ -1,0 +1,12 @@
+{
+  "DevOps": "A term used in Agile.<br />1. A role that uses a mix of Infrastructure and Development Skills, often creating automated workflows and IaC.<br />2. A term that describes a way of teams working together",
+  "IaC": "Infrastructure as Code. <br />Where code is written that can create or destroy infrastructure and computer environments.",
+  "Infrastructure": "Refers to Servers, Routers, Network Switches, Firewall and other foundational components of a software system",
+  "Servers": "Compute power of a Software System. Where computers and CPUs are employed to carry out the work.",
+  "Network": "The connections between servers. This enables communication between software system components as well as the internet",
+  "Network Switch": "A physical device (is virtual in Cloud Environments), to marshall network traffic and communications between software system components.",
+  "Router": "A network device that links networks together",
+  "Firewall": "A network device that controls access between network components",
+  "Software System": "A collection of software, hardware and virtual hardware that makes up a system for running software",
+  "Platform": "Managed IaC to simplify the deployment of Software Systems."
+}

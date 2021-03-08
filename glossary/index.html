@@ -1,0 +1,18 @@
+---
+layout: page
+status: publish
+published: true
+title: Glossary
+categories: []
+tags: []
+comments: []
+---
+<table>
+  <thead><tr><th>Term</th><th>Description</th></tr></thead>
+  <tbody>
+  {% assign gs = site.data.glossary | sort %}
+  {% for kv in gs %}
+  <tr> <td>{{ kv[0] }} </td><td> {{ kv[1] }} </td></tr>
+  {% endfor %}
+  </tbody>
+</table>
