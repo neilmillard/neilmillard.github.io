@@ -11,7 +11,7 @@ tags: [monitoring, alerts, email]
 comments: true
 crosspost_to_medium: false
 ---
-Following on from [last weeks post](/2017/05/07/monitoring/index.html) about monitoring, the next logical step is having the system create alerts when a threshold is breached.
+Following on from [last weeks post](/2017/05/07/monitoring.html) about monitoring, the next logical step is having the system create alerts when a threshold is breached.
 
 ## Types of alert
 Alerts comes a few shapes, most are expressed as a threshold of some metric that once breached, either too many or too little, sends an alert notification. There are a number of ways this can be achieved, email, sms, slack/irc or some status flashing on a wall board. There are pros and cons of each.

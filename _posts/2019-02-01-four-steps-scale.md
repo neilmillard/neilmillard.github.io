@@ -68,6 +68,6 @@ needed – this is called draining connections. Once this is complete, the serve
 down. The application may also need modification to allow this, ensuring that a user
 connection doesn’t need to stay connected to any server specifically due to local data.
 
-Next: [Data](/2019/02/08/four-steps-data/index.html)
+Next: [Data](/2019/02/08/four-steps-data.html)
 
 {% include book_info.html %}

@@ -15,7 +15,7 @@ crosspost_to_medium: false
       img="/public/img/puppetcamplondon2017.jpg"
       title="Puppetcamp London"
       caption="Puppetcamp, London" %}
-This week I attended and spoke [again](/2016/11/09/puppet-camp-fall-autumn-london-2016/index.html), at [PuppetCamp London 2017](https://puppet.com/community/events/camp/two-part-puppet-camp-london).
+This week I attended and spoke [again](/2016/11/09/puppet-camp-fall-autumn-london-2016.html), at [PuppetCamp London 2017](https://puppet.com/community/events/camp/two-part-puppet-camp-london).
 We enjoyed some interesting talks off the back of the [State of Devops report](https://puppet.com/resources/whitepaper/state-of-devops-report), and the [DevOps Enterprise Summit](https://events.itrevolution.com/eur/).
 
 Whilst enjoying the views of london, I listened to several people from [Puppet](https://puppet.com/) in the morning.

@@ -40,7 +40,7 @@ There are three places where this data can be stored.
 * On a backup device or storage, like AWS S3.
 This is slow to access, however is very portable and reliable. The data stored here would normally be copied to where it can be accessed. When a webserver front end is built, this would hold the configuration and static files of the web application.
 * On a shared data server, that is accessible by the 'compute' servers at run time. They access the data across the network.
-This is a bit faster, portable and reliable. This issue here comes down to which server is hosting the data. You could have a Network File System (NFS) server, however, you may end up with a 'pet' on your hands. I have discussed Pet servers in my post about [pets and cattle](/2016/10/06/pets-vs-cattle/index.html).
+This is a bit faster, portable and reliable. This issue here comes down to which server is hosting the data. You could have a Network File System (NFS) server, however, you may end up with a 'pet' on your hands. I have discussed Pet servers in my post about [pets and cattle](/2016/10/06/pets-vs-cattle.html).
 * On the server itself, this is restored from a backup location, then managed on the server or cluster.
 With this choice, you are picking Fast, Reliable, but not portable. Some applications will support the portable side of things for you, but this is very much at the application design level. If it does not support it, we have to use third party tools to do it.
 
