@@ -5,7 +5,18 @@ markdown:            kramdown
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           :year/:month/:day/:title/
+defaults:
+  -
+    scope:
+      path:
+      type: pages
+    values:
+      permalink: /:path/:basename:output_ext
+  -
+    scope:
+      type: posts
+    values:
+      permalink: /:year/:month/:day/:title.html
 
 # Setup
 title:  Neil Millard Blog
@@ -14,7 +25,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Neil Millard, speaker, business owner, author and DevOps specialist.
    Make work fun. Make life fun.
 baseurl:  "" # the subpath of your site, e.g. /blog
-url:      "http://www.neilmillard.com" # the base hostname & protocol for your site, e.g. http://example.com
+url:      "https://www.neilmillard.com" # the base hostname & protocol for your site, e.g. http://example.com
 paginate: 5
 paginate_path: "/blog/page:num/"
 
