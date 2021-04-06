@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: git push -u origin &lt;branch&gt?
+title: git push -u origin &lt;branch&gt;?
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [Development]
