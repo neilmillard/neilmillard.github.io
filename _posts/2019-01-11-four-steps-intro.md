@@ -28,17 +28,17 @@ you to put the Culture series of books by Iain M Banks on your reading list.
 
 I have four steps to help us deliver this value. Design, automation, scaling and data.
 
-<a href="{{ site.url }}/2019/01/18/four-steps-design/">**Design**</a> is sometimes called a minimum viable product, and isn’t the long and time-consuming
+<a href="{{ site.url }}/2019/01/18/four-steps-design.html">**Design**</a> is sometimes called a minimum viable product, and isn’t the long and time-consuming
 step that it once was. Agile says we need to do just enough design to start delivering value.
 
-<a href="{{ site.url }}/2019/01/25/four-steps-automate/">**Automation**</a> is where we build what we have designed, and perhaps revisit the design and build to improve
+<a href="{{ site.url }}/2019/01/25/four-steps-automate.html">**Automation**</a> is where we build what we have designed, and perhaps revisit the design and build to improve
 the automation in an iterative way.
 
-<a href="{{ site.url }}/2019/02/01/four-steps-scale/">**Scaling**</a> is where the biggest excitement and the biggest headaches of a product or start-up
+<a href="{{ site.url }}/2019/02/01/four-steps-scale.html">**Scaling**</a> is where the biggest excitement and the biggest headaches of a product or start-up
 lay. Having a small perfectly formed pizza is good to start with, but not quite going to cut it if you want to feed an army of
 conference delegates in one sitting.
 
-**Data** and keeping it safe is crucial. It’s the most valuable thing we have as individuals other than our time.
+<a href="{{ site.url }}/2019/02/08/four-steps-data.html">**Data**</a> and keeping it safe is crucial. It’s the most valuable thing we have as individuals other than our time.
 Ensuring it doesn’t get lost or stolen, either through hardware failure or theft, must be taken seriously.
 
 {% include book_info.html %}
