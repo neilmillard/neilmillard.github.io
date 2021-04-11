@@ -1,4 +1,5 @@
 ---
+# HTML required, not markdown
 DevOps: A term used in Agile.<br />1. A role that uses a mix of Infrastructure and
   Development Skills, often creating automated workflows and IaC.<br />2. A term that
   describes a way of teams working together
@@ -16,12 +17,19 @@ Router: A network device that links networks together
 Firewall: A network device that controls access between network components
 Software System: A collection of software, hardware and virtual hardware that makes
   up a system for running software
+Scaling: To grow or shrink the servers delivering a service. <a href="/2016/10/10/elastic-and-scalable.html">More...</a>
 Platform: Managed IaC to simplify the deployment of Software Systems.
+Database: A service that saves, holds and returns data. From a spreadsheet, to a full on Database with data analytics
+  stored functions and reports.
+API: Application Program Interface is the computer to computer information hub. It is used by third parties or mobile
+  Applications to provide data, but not visual information.
 Agile: Do just enough design to start delivering value. Iteritive and continious
   improvement of software/product.
 Development: Creation and improvement of software running in a Software System.
+ESB: Enterprise Service Bus is a common Data Access Layer used to link dispersed IT systems together within an organisation.
 Microservice: A small and deployable software program, part of a Software System.
 AWS: Amazon Web Services, a public cloud provider. Infrastructure as a service.
+Lambda: Serverless offering of AWS. They are small quick tasks running from a predefined Docker container.
 Blockers: An issue identified by an Agile team that is halting or slowing down progress.
 Capital Expense: CapEx, the money a project/company spends to buy, maintain or improve
   it's fixed assets, such as buildings, vehicles and hardware.
@@ -33,6 +41,8 @@ Continuous Integration: A pipeline where automated tests check commited code, pr
 CPU: Central Processing Unit. This provides the computer the power to run programs, code and tasks.
 Data Centre: A dedicated space that is climate controlled and secure, for housing and operating
   servers and other infrastructure.
+dDOS: Distributed Denial Of Service. Where a group of computers send traffic malicously to your website
+  with the aim of distrupting service.
 Dependencies: Reuseable stock or library code, that are installed alongside the main developer's
   code for the application to work.
 Hybrid private and public cloud: A mix of private and public cloud, usually seen during migrations
@@ -45,6 +55,8 @@ Memory (Non-Volatile): is able to store data for long periods of time, like tape
 Memory (RAM): Random access memory, programs and data stored while the computer is on.
 Memory (ROM): Read-only memory, programs and data stored while computer is off. Usually contains
   bootstrap code.
+MVP: Minimum Viable Product is a small scale product or service that is used to demonstrate a demand for that product
+  or service.
 Operation Expenses: OpEx, the ongoing costs running a product, business or system.
 Pair Programming: Where two people working together on a task improves efficiency. E.g building
   a wardrobe.
@@ -56,3 +68,6 @@ Test Driven Development: TDD - A programming practice where the tests are writte
   that given a set of inputs, a program or function produces the correct output.
 Virtualisation: Enabling the resources of a computer to run more than one logical computer in an isolated
   way on the same computer, whilst they are not aware of each other.
+Serverless: A paradyme where code is run on servers maintained by the cloud provider. They can be cheap to start with,
+  but cost can escalate for larger more frequent workloads.
+KPI: Key Performance Indicators enable decisions to be made through metrics about your business, app and service.
