@@ -30,6 +30,9 @@ ESB: Enterprise Service Bus is a common Data Access Layer used to link dispersed
 Microservice: A small and deployable software program, part of a Software System.
 AWS: Amazon Web Services, a public cloud provider. Infrastructure as a service.
 Lambda: Serverless offering of AWS. They are small quick tasks running from a predefined Docker container.
+Docker: A further step into application isolation where an independant image can run on a server. Often used with
+  microservices.
+ECS: Amazon Webservices Managed docker service. Enable the management of running docker containers.
 Blockers: An issue identified by an Agile team that is halting or slowing down progress.
 Capital Expense: CapEx, the money a project/company spends to buy, maintain or improve
   it's fixed assets, such as buildings, vehicles and hardware.
