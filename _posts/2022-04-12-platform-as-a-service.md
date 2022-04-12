@@ -32,9 +32,14 @@ This does mean that it can appear expensive compared to Infrastructure, but the 
 For instance, paying for AWS Lambda at scale is more expensive that the EC2 instances by a long way. There are of course payment structures
 that can reduce this bill (AWS Billing fun), but it might still be worth it to not have the server maintenance issues.
 
-Do you need a platform of your own, or just a team of infrastructure guys enabling self-service to your developer teams.
+Do you need a platform of your own, or just a team of infrastructure guys enabling self-service to your developer teams?
 
-In DevOps style, a dev team including infrastructure knowledge works well too.
+One of my customers runs over 900 microservices on AWS. They have invested in building a platform team.
+This is a dedicated team of engineers to build and run their platform, inspired by Heroku, and utilising Lambda and ECS (Elastic Container Service)
+
+Alternatively, in DevOps style, another customer has several developer teams including infrastructure knowledge, working as a cross discipline team.
 
 So in summary, it depends. For a quick start, it might be the way to go with an established PaaS listed above. But you might be paying for features you don't need.
+
+If you want to know more, [contact my team](/contact/index.html) or check out my [book](/book/index.html).
 
