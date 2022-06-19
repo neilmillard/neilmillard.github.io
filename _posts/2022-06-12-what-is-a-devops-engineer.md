@@ -13,7 +13,7 @@ crosspost_to_medium: false
 I am often asked, what does a devops engineer do?
 {% include image.html
 img="/public/img/devops-office-612x612.jpg"
-title="Do we need Servers" %}
+title="Working DevOps engineers" %}
 
 TLDR;
 Everything, seriously.
