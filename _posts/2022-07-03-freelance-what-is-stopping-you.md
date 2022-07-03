@@ -13,7 +13,7 @@ crosspost_to_medium: false
 Freelancing contractors, are you stuck by indecision?
 {% include image.html
 img="/public/img/indecision_siaron_james_flickr.jpg"
-title="" %}
+title="Indecision about Contracting" %}
 
 **You want to be a freelancing contractor?**
 
