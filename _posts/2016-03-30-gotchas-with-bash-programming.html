@@ -11,7 +11,7 @@ author:
 author_login: neil
 author_email: neil@neilmillard.com
 wordpress_id: 63
-wordpress_url: http://www.millardtechnicalservices.co.uk/?p=63
+wordpress_url: https://www.millardtechnicalservices.co.uk/?p=63
 date: '2016-03-30 11:09:06 +0000'
 date_gmt: '2016-03-30 10:09:06 +0000'
 categories:
@@ -25,8 +25,8 @@ comments: []
 <p>Working with Linux servers and automating tasks requires the use of bash programming. This is quite an old language if you compare it to 'modern' languages such as ruby.</p>
 <p>As such it has some very unfriendly ways. One of which bit me today.<br />
 One of the scripts purges old snapshot on AWS.</p>
-<p>Bash tries to be helpful by <a href="http://mywiki.wooledge.org/glob">file globbing</a> and <a href="http://mywiki.wooledge.org/WordSplitting">word splitting</a>. This caused some undesired effects.</p>
-<p>Fortunately, thanks to <a href="http://mywiki.wooledge.org/BashPitfalls#echo_.24foo">Greg's Wiki</a>&nbsp;the fix is quite easy. use quotes.</p>
+<p>Bash tries to be helpful by <a href="https://mywiki.wooledge.org/glob">file globbing</a> and <a href="https://mywiki.wooledge.org/WordSplitting">word splitting</a>. This caused some undesired effects.</p>
+<p>Fortunately, thanks to <a href="https://mywiki.wooledge.org/BashPitfalls#echo_.24foo">Greg's Wiki</a>&nbsp;the fix is quite easy. use quotes.</p>
 <pre>snap_data=$(/home/ec2/bin/ec2-describe-snapshots $snapshot_id_evaluated --region $AWS_REGION)<br />
 snap_description=$(echo "$snap_data" | grep complete | awk '{print $9}')<br />
 snap_creation_date=$(echo "$snap_data" | grep complete | awk '{print $5}')<br />

@@ -81,7 +81,7 @@ If you were going to plot the metric on a graph, the dimension would be a separa
     </tr>
   </tbody>
 </table>
-CPU is often used as a metric, but is [CPU representative](http://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html) of the service delivery?
+CPU is often used as a metric, but is [CPU representative](https://www.brendangregg.com/blog/2017-05-09/cpu-utilization-is-wrong.html) of the service delivery?
 With this metric in a monitored state, it could just send the metric dimension to a logging system such as [grafana](https://grafana.com/) to display on a board or report. This gives insights into the performance of a component or service.
 Some metrics are more binary than that, for instance a service could have crashed and is therefore stopped and not serving anything, or a better example requiring humans, would be the physical failure of a hard drive that requires replacement.
 

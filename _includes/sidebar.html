@@ -25,8 +25,8 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    <a class="sidebar-nav-item" href="http://www.millowgroup.co.uk">Mitese Group</a>
-    <a class="sidebar-nav-item" href="http://devops.neilmillard.com">DevOps Training</a>
+    <a class="sidebar-nav-item" href="https://www.millowgroup.co.uk">Mitese Group</a>
+    <a class="sidebar-nav-item" href="https://devops.neilmillard.com">DevOps Training</a>
     {% assign list_list = site.pages | where:"layout","list" | sort:"url" %}
     {% for node in list_list %}
       <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>

@@ -16,12 +16,12 @@ tags: [mongodb,x509,ca,authentication]
 comments: true
 ---
 The challenge this week was to find out why the authentication appeared to be broken on the automated mongodb build.
-Several weeks ago I had written a [puppet](http://www.puppet.com) module to build a mongodb cluster using a number of arguments,
+Several weeks ago I had written a [puppet](https://www.puppet.com) module to build a mongodb cluster using a number of arguments,
 like number of nodes, nodenames, certificates, etc.
 Despite having certificates generated from a CA (Certificate Authority), and the certificate with the client to log on,
 this user could do anything. and ```.auth()``` was not needed.
 ```bash
-mongo admin --ssl --sslCAFile /etc/mongodb/ssl/mongoCA.pem \  
+mongo admin --ssl --sslCAFile /etc/mongodb/ssl/mongoCA.pem \
     --sslPEMKeyFile /etc/mongodb/ssl/mongo1.pem \
     -u mongoReadony -p mongotest --host mongo1
 ```
@@ -61,7 +61,7 @@ _tls_name="${USER_KEY_SUBJ},CN=${ADMINUSER_CN}"
 /usr/bin/mongo localhost:27017/admin --quiet --eval \
   "printjson(
     db.getSiblingDB("\$external").runCommand(
-    { 
+    {
       createUser: "${_tls_name}",
       roles: [
                    { role: "readWrite", db: 'test' },
@@ -81,6 +81,6 @@ X509OPT=" --ssl --sslPEMKeyFile ${PKI_PATH}/${ADMINUSER_CN}.combo.pem --sslCAFil
 RS_AUTH="db.getSiblingDB(\"\$external\").auth({mechanism: \"MONGODB-X509\",user: \"${USER_KEY_SUBJ},CN=${ADMINUSER_CN}\"});"
 ```
 ```bash
-/usr/bin/mongo ${RSMASTER}:27017/admin --quiet ${X509OPT} --eval "${RS_AUTH}printjson(rs.status())" 
+/usr/bin/mongo ${RSMASTER}:27017/admin --quiet ${X509OPT} --eval "${RS_AUTH}printjson(rs.status())"
 ```
 to further configure the replica set.and rs.initiate().

@@ -25,7 +25,7 @@ Whilst enjoying the views of london, I listened to several people from [Puppet](
       caption="View from Altitude, London" %}
 
 A chord was struck with me when [Dion Hinchcliffe](https://dionhinchcliffe.com/) was mentioned in conjunction with working practices inside Enterprise organisations.
- Specifically around [Silos and team dynamics](http://www.zdnet.com/article/the-shift-from-app-silos-to-digital-workplace-as-platform/). Having worked in fast-paced and effective teams, I do feel a slight discomfort when working in a team that has not got to this level yet.
+ Specifically around [Silos and team dynamics](https://www.zdnet.com/article/the-shift-from-app-silos-to-digital-workplace-as-platform/). Having worked in fast-paced and effective teams, I do feel a slight discomfort when working in a team that has not got to this level yet.
 Environment and size of team are key to the performance of a team, both of which are heavily influenced by the management.
 
 Anyway, getting back on track, I spoke about Short-lived Immutable servers, and managing or specifically, building them with Puppet 3.
@@ -65,6 +65,6 @@ If you would like me to explain in more detail, we can discuss below.
 Links:
 [Slides](https://www.slideshare.net/neilmillard/short-lived-immutable-servers-with-masterless-puppet)
 
-[Training](http://devops.neilmillard.com)
+[Training](https://devops.neilmillard.com)
 
 [Speaking](/contact/)

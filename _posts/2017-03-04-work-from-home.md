@@ -12,7 +12,7 @@ tags: [environment, social, office life, collaboration]
 comments: true
 crosspost_to_medium: false
 ---
-The theme of the week has been geography. Listening to [Startup CEO](http://www.audible.co.uk/pd/Business/Startup-CEO-Audiobook/B00G4IMCSK), in which Matt Blumberg states strongly, that having a central office for as long as you can is important for that human connection, serendipitous conversations and culture. This is in contrast to virtual or home working. How connected are we to physical geography and at the same time, connected to a virtual world?
+The theme of the week has been geography. Listening to [Startup CEO](https://www.audible.co.uk/pd/Business/Startup-CEO-Audiobook/B00G4IMCSK), in which Matt Blumberg states strongly, that having a central office for as long as you can is important for that human connection, serendipitous conversations and culture. This is in contrast to virtual or home working. How connected are we to physical geography and at the same time, connected to a virtual world?
 
 ![Open Plan Office](/public/img/open_plan_office.jpg)
 
@@ -28,7 +28,7 @@ People have reported that apps like facebook may actually raise levels of anxiet
 
 There is a balance to be had as we humans occupy the physical space and computers are now ever increasingly occupying the virtual space.
 
-That balance is important, as even geeks need to get out and speak to and see people. That face to face connection is so important for all of us, which is why you will see me at conferences and meet up events. 
+That balance is important, as even geeks need to get out and speak to and see people. That face to face connection is so important for all of us, which is why you will see me at conferences and meet up events.
 As the website is having a redesign, I will be publishing events I attend soon. Who would like to meet me, or perhaps we could arrange our own exciting event.
 
 What are your thoughts? Please share in the comments.

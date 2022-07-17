@@ -18,15 +18,15 @@ Who moved my servers?
 --------------
 If your business is ready to embrace the fast-paced world of cloud and
 gain a competitive advantage, then this book will guide you through the common pitfalls and lead you
- and your business to an agile and stable platform that can scale with ease.  
-Sharing tried-and-tested methods to migrate, re-platform and move towards customer-first, mobile-first and 
-cloud-first applications, Neil Millard shows you how to save time, money and energy, while keeping the 
-service running and minimising downtime.  
+ and your business to an agile and stable platform that can scale with ease.
+Sharing tried-and-tested methods to migrate, re-platform and move towards customer-first, mobile-first and
+cloud-first applications, Neil Millard shows you how to save time, money and energy, while keeping the
+service running and minimising downtime.
 
 {% include image.html
-      img="http://www.neilmillard.com/public/img/wmms_cover3d.jpg"
+      img="https://www.neilmillard.com/public/img/wmms_cover3d.jpg"
       title="Who Moved My Servers book cover"
-      caption="Available now on amazon" 
+      caption="Available now on amazon"
       url="https://amzn.to/2AUJcUp" %}
 
 Read this book in order to:

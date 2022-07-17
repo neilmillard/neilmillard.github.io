@@ -12,7 +12,7 @@ comments: true
 crosspost_to_medium: false
 ---
 {% include image.html
-      img="http://www.neilmillard.com/public/img/cupcake_vending.jpg"
+      img="https://www.neilmillard.com/public/img/cupcake_vending.jpg"
       title="Cupcake vending - Automation Utopia" %}
 
 My idea of utopia is the choice to do what you want, when you want. By leveraging automation,

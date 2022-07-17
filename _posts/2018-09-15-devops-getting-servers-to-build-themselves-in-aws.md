@@ -11,9 +11,9 @@ tags: [automation, dependencies, AWS,]
 comments: true
 crosspost_to_medium: false
 ---
-I was asked to speak at an event, [Expert Talks, in Manchester](https://www.meetup.com/ExpertTalks-Manchester/).  This was originally scheduled before the summer break, but some [football event](https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup#2018_Finals) was happening on the some night.  
+I was asked to speak at an event, [Expert Talks, in Manchester](https://www.meetup.com/ExpertTalks-Manchester/).  This was originally scheduled before the summer break, but some [football event](https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup#2018_Finals) was happening on the some night.
 
-In the talk I share my four steps to running an application in the cloud.  
+In the talk I share my four steps to running an application in the cloud.
 * Cloud first Application
 * Automation
 * Scaling for flexible workloads
@@ -27,13 +27,13 @@ The main problem with the latter manual work, is the fact that cheap cloud based
 By automating the steps, server build and setup of the server, when it fails, it can recover itself.
 
 {% include image.html
-      img="http://www.neilmillard.com/public/img/decorating.jpg"
+      img="https://www.neilmillard.com/public/img/decorating.jpg"
       title="decorating_cake"
       caption="To bake or finish" %}
-      
+
 As I have written before on this blog, I subscribe to the cattle and short lived immutable server model.
-This means after identifying the smallest component practical, building code that in turn builds your servers, to be short-lived 
-and immutable. They don't change for the short (hours or days) time period they are working.  
+This means after identifying the smallest component practical, building code that in turn builds your servers, to be short-lived
+and immutable. They don't change for the short (hours or days) time period they are working.
 This concept is very similar to docker containers, every setup ready to go in seconds, and therefore easy to replace.
 
 The automation steps are broken into two phases:-
@@ -48,9 +48,9 @@ Therefore the advantage of the boot configuration handling software install and 
 
 You can find the slides on slideshare
 {% include image.html
-      img="http://www.neilmillard.com/public/img/getting-servers-to-build-themselves-on-aws-1-638.jpg"
+      img="https://www.neilmillard.com/public/img/getting-servers-to-build-themselves-on-aws-1-638.jpg"
       title="slides on slideshare"
       url="https://www.slideshare.net/neilmillard/getting-servers-to-build-themselves-on-aws"
       caption="Getting server to build themselves - slides" %}
-      
+
 

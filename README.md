@@ -1,7 +1,7 @@
 # neilmillard.github.io
-* check http://jekyllrb.com/
+* check https://jekyllrb.com/
 * https://help.github.com/articles/about-supported-custom-domains/
-* import wordpress http://import.jekyllrb.com/docs/wordpress/
+* import wordpress https://import.jekyllrb.com/docs/wordpress/
 
 ```
 bundle exec jekyll serve

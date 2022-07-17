@@ -36,7 +36,7 @@ highly opinionated tools and frameworks, which are provided with a wealth of sup
 Spotify has an open source platform called [BackStage](https://backstage.io), which is gaining traction because
 it allows developers to spend more time developing, rather than thinking about infrastructure.
 
-For the old skool, I have mentioned [Heroku](http://www.heroku.com/) many times before when describing [platforms][PaaS]
+For the old skool, I have mentioned [Heroku](https://www.heroku.com/) many times before when describing [platforms][PaaS]
 and [scaling 12 factor apps][12FactorStillRelevant]. The IT industry making endless remakes of Heroku, but some are still
 missing the point. Developer experience is more than just deployment.
 

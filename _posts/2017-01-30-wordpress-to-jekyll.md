@@ -11,7 +11,7 @@ comments: []
 ---
 Publishing a blog with Jekyll
 -----
-I had an idea. Why not publish the blog using [jekyll](http://jekyllrb.com/) and host it on [AWS S3](https://aws.amazon.com/s3/)?
+I had an idea. Why not publish the blog using [jekyll](https://jekyllrb.com/) and host it on [AWS S3](https://aws.amazon.com/s3/)?
 Working with [Puppet](https://puppet.com/) and [ruby](https://www.ruby-lang.org), I'm already very familiar with [gems](https://rubygems.org/) and getting jekyll working on my windows 10 workstation with RubyMine was relatively easy.
 
 As this source code is on my [github](https://github.com) repository, I would have gone with the easy [Github Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/) option.
@@ -19,17 +19,17 @@ So you will find this site on (https://neilmillard.github.io/) but I wanted to l
 
 Hosting on S3
 ----
-S3 has a feature to [host static websites](http://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html) direct from S3, serverless you could say. With this in mind it was quite easy to create a new bucket with the name of the domain and turn on this option.
+S3 has a feature to [host static websites](https://docs.aws.amazon.com/AmazonS3/latest/dev/HowDoIWebsiteConfiguration.html) direct from S3, serverless you could say. With this in mind it was quite easy to create a new bucket with the name of the domain and turn on this option.
 Next I uploaded the _site directory to the bucket after compiling the site with ```jekyll build```
 
 Migrating the blog
 ----
-I'm not the first person to take this route and as such there are blog migration tools available to [ingest my wordpress blog](http://import.jekyllrb.com/docs/wordpress/) and create a bunch of posts from it.
+I'm not the first person to take this route and as such there are blog migration tools available to [ingest my wordpress blog](https://import.jekyllrb.com/docs/wordpress/) and create a bunch of posts from it.
 This worked quite well, but I did have to tweak some of the html for paragraph tags.
 
 Automating the build
 ----
-Now I would not be an awesome DevOps dude if I didn't want to automate the build and upload to S3. AWS have been adding services throughout last year and one of these tools is [AWS CodeBuild](http://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html).
+Now I would not be an awesome DevOps dude if I didn't want to automate the build and upload to S3. AWS have been adding services throughout last year and one of these tools is [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html).
 ```
 Error: invalid byte sequence in US-ASCII
 ```
@@ -46,7 +46,7 @@ environment_variables:
 With these in place HTML Proofer was happy enough and spotted the &lt;p> tags I mentioned earlier.
 
 AWS CodeBuild says it will upload the compiled artifacts to S3. 'Great this should be easy' I thought. One minor snag, it needs a key to upload to. This means either a tarball or a subfolder, neither in the format I needed for the website to be hosted correctly.
-Again open source community to the rescue, with [Stout](http://stout.is/) a tool to deploy static websites to S3.
+Again open source community to the rescue, with [Stout](https://stout.is/) a tool to deploy static websites to S3.
 
 After a few more minor changes, like choosing a theme and adding font-awesome, I'm happy with how it turned out.
 

@@ -11,7 +11,7 @@ author:
 author_login: neil
 author_email: neil@neilmillard.com
 wordpress_id: 107
-wordpress_url: http://www.millardtechnicalservices.co.uk/?p=107
+wordpress_url: https://www.millardtechnicalservices.co.uk/?p=107
 date: '2016-09-24 17:44:12 +0000'
 date_gmt: '2016-09-24 16:44:12 +0000'
 categories:
@@ -21,10 +21,10 @@ comments: []
 ---
 <p>TLDR; <a href="https://github.com/neilmillard/rl10-rs_tag">rs_tag</a> that works on Rightlink 10 agents.</p>
 <p>As a DevOps guy that has to deal with AMIs (Amazon Machine Images) not under my control, this creates a few issues where we might be tempted to bake in tools.</p>
-<p>One of our clients uses <a href="http://www.rightscale.com/">rightscale</a> for infrastructure management and auditing and so one of these tools we use is the <a href="http://docs.rightscale.com/rl6/rl6_using.html">rightlink 6 agent</a>. No problem, the provisioning workflow installs it when it creates a server, not an issue unless you loose a server (autoscaling or it just dies) and there is no workflow to install the agent.</p>
-<p>Fortunately there is a solution, I've been testing the <a href="http://docs.rightscale.com/rl10/reference/10.5.2/rl10_install_at_boot.html">install 'on boot' of Rightlink 10</a>, however this has some breaking changes.<br />
+<p>One of our clients uses <a href="https://www.rightscale.com/">rightscale</a> for infrastructure management and auditing and so one of these tools we use is the <a href="https://docs.rightscale.com/rl6/rl6_using.html">rightlink 6 agent</a>. No problem, the provisioning workflow installs it when it creates a server, not an issue unless you loose a server (autoscaling or it just dies) and there is no workflow to install the agent.</p>
+<p>Fortunately there is a solution, I've been testing the <a href="https://docs.rightscale.com/rl10/reference/10.5.2/rl10_install_at_boot.html">install 'on boot' of Rightlink 10</a>, however this has some breaking changes.<br />
 The biggest is the missing tool RS_TAG, as a lot of the provisioning and automation scripts rely on this to get configuration information about the server.</p>
-<p>The rightlink 10 (RL10) agent does come with a <a href="https://github.com/rightscale/rsc/tree/master">RightScale Client (RSC)</a> that can help, but would require rewriting all the scripts. Some of the scripts need to be updated in any case, <a href="http://docs.rightscale.com/rl10/reference/10.5.2/rl10_non_root.html">as the agent no longer executes as root</a>.</p>
+<p>The rightlink 10 (RL10) agent does come with a <a href="https://github.com/rightscale/rsc/tree/master">RightScale Client (RSC)</a> that can help, but would require rewriting all the scripts. Some of the scripts need to be updated in any case, <a href="https://docs.rightscale.com/rl10/reference/10.5.2/rl10_non_root.html">as the agent no longer executes as root</a>.</p>
 <p>I have written a <a href="https://github.com/neilmillard/rl10-rs_tag">RL10 RS_TAG</a> that works on servers with the rightlink 10 agent installed as a&nbsp;drop in replacement.The only feature not implemented as of v0.1 is the --query function.</p>
 <p>I chose to write this&nbsp;in <a href="https://golang.org/">GO</a>&nbsp;as the RSC comes with a library in Golang. It also allows the binary to be statically linked, like the Rightscale Agent. This means no software dependencies are required on the server (other than the RightScale agent of course). Very handy when you're about to build and configure the server in your favourite tool such as <a href="https://puppet.com/">Puppet</a>&nbsp;or <a href="https://www.ansible.com/">ansible</a>.</p>
-<p><a href="http://www.millardtechnicalservices.co.uk/contact/">Let me know</a> if it is of use to you.</p>
+<p><a href="https://www.millardtechnicalservices.co.uk/contact/">Let me know</a> if it is of use to you.</p>
