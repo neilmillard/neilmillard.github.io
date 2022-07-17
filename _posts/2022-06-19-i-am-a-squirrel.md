@@ -39,7 +39,7 @@ Imagine the interesting things it could tell you about the things it sees in the
 
 How can you get involved?
 
-The path is clear to a point. Learn [Python](https://www.python.org/), understand [TensorFlow]() and [Machine Learning](https://www.tensorflow.org/), and down the [rabbit hole](https://www.tensorflow.org/responsible_ai) you go.
+The path is clear to a point. Learn [Python](https://www.python.org/), understand [TensorFlow](https://www.tensorflow.org/) and [Machine Learning](https://www.tensorflow.org/), and down the [rabbit hole](https://www.tensorflow.org/responsible_ai) you go.
 
 If you need help setting up an environment, my friends and I have worked on a [demo platform](https://www.equalexperts.com/our-services/data/).
 
