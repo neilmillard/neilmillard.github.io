@@ -62,7 +62,7 @@ Having a record of the activity of the server and application can be key in unde
 Given the ease of rebuilding the servers, often the log files local to that server are lost when bringing a fresh server in, as part of fixing the live service.
 
 {% include image.html
-      img="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo%20(2).svg"
+      img="/public/img/elasticsearch-kibana.png"
       title="Elastic"
       caption="Elasticsearch and Kibana"
       url = "https://www.elastic.co/downloads" %}
