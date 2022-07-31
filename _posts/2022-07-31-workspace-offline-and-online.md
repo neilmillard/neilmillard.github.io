@@ -13,7 +13,7 @@ crosspost_to_medium: false
 My workspace has changed drastically over the last 2 years (thanks Covid). Is it better?
 {% include image.html
 img="/public/img/neils_desk_800.jpg"
-title="BalticServers.com, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons" %}
+title="A messy but homely desk" %}
 
 The Office
 ==========
