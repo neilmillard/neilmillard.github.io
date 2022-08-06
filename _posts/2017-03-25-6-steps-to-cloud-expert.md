@@ -15,6 +15,9 @@ Though the cloud means different things to different people, as a basic concept,
 Instead of storing data and running applications on your home or work computer, it’s stored and processed on remote machines that are accessed via the Internet.
 This alternative method of computing has spawned a variety of new concepts, technologies and services, some of which have made their cross back into the in-house environment in the form of private clouds.
 
+{% include youtube.html
+ref="yd5SNo1eOWc"
+%}
 There are three main categories of cloud computing services:
 * Infrastructure as a Service (IaaS)
 * Platform as a Service (PaaS)
