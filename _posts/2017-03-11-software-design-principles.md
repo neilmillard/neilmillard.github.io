@@ -20,7 +20,9 @@ It was a new cluster, however an old chunk of the IAC was copied (yeah, root cau
 * don't assume you are running the latest code, check
 
 In addition to these 2 principles, following an talk by John Romero at GDC Europe last year, he talked about development of the game classic Doom.
-![Gamers focused on screens playing Overwatch](https://upload.wikimedia.org/wikipedia/commons/2/25/Overwatch_(28943036252).jpg)
+{% include image.html
+img="/public/img/overwatch.jpg"
+title="Gamers focused on screens playing Overwatch" %}
 id software was formed in 1st Feb 1991 by John Romero, John Carmack, Adrian Carmack (no relation to John)and Tom Hall.
 In the first year they created 12 games. During this year, id software were able to create games quickly  due to each of them having 10 years of intense game development and several principles.
 Even though these principles are specific to game development, a lot of these principles apply to any software development.
