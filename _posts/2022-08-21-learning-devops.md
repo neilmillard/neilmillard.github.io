@@ -24,9 +24,13 @@ compute, storage and networking.
 
 Compute is something that looks like a server, and it might even be a server.
 There are four types of compute
+
 1) Bare metal
+
 2) Virtual servers
+
 3) Application isolation or Containers
+
 4) Serverless environment
 
 As we go down the list, each item is dependent on the previous item, the difference is who is looking after it.
@@ -34,7 +38,7 @@ As we go down the list, each item is dependent on the previous item, the differe
 For our purposes 1 and 2 are pretty much the same, just a difference in lead time (the time it takes from expressing the
 desire to have and provisioning). We are dealing with a base operating system and need to install tooling and server
 software.
-You need a knowledge of server operating systems, storage manangement, and should use a tool like Packer with a
+You need a knowledge of server operating systems, storage management, and should use a tool like Packer with a
 Configuration management tool like Ansible.
 For the principles see [puppet camp london 2017](/2017/06/10/puppet-camp-london-june-2017.html)
 
