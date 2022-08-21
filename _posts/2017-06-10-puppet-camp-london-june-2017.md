@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: puppet camp london june 2017
+title: puppet camp london june 2017 Masterless puppet
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [Development, Infrastructure]
@@ -31,9 +31,10 @@ Environment and size of team are key to the performance of a team, both of which
 Anyway, getting back on track, I spoke about Short-lived Immutable servers, and managing or specifically, building them with Puppet 3.
 Of course support for Puppet 3 is now deprecated, so I'll be updating my examples to Puppet 4 at some point soon.
 {% include image.html
-      img="/public/img/immutableserverstitle.jpg"
+      img="/public/img/short_lived_immutable_servers_title.png"
       title="Immutable Servers with Puppet"
-      caption="My slide deck" %}
+      url="https://youtu.be/yETgehoQmIs"
+      caption="Video of presentation" %}
 
 The biggest challenges with this approach are;
 i) [Immutable](/tags/#immutable) servers don't change, this means should any configuration or software needs to be updated, you will have to rebuild the server.
@@ -67,4 +68,4 @@ Links:
 
 [Training](https://devops.neilmillard.com)
 
-[Speaking](/contact/)
+[YouTube](https://youtu.be/yETgehoQmIs)
