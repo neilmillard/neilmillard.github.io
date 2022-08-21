@@ -53,3 +53,5 @@ but on screen.
 
 
 I don't miss the commute though.
+
+I would love to hear your comments. You can find me on [Slack]({{site.data.slack.invite}}).
