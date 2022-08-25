@@ -66,6 +66,7 @@ feedback loop with the platform team is essential to ensure maximum adoption of 
 
 If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content soon.
 
+Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
 
 
 [spotify-golden-path]: https://engineering.atspotify.com/2020/08/how-we-use-golden-paths-to-solve-fragmentation-in-our-software-ecosystem/

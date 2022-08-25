@@ -60,4 +60,8 @@ We will focus on IaaS, where you purchase raw compute, servers, storage and othe
    Find [meet ups in your area](https://www.meetup.com/find/devops/) and network with fellow DevOps techies and programmers.
    You can find me at [AWS User Group UK North](https://www.meetup.com/AWS-User-Group-North/) and [DevOps Manchester](https://www.meetup.com/DevOps-Manchester/)
 
-Let me know how I can help you and I hope to meet you soon.
+If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content soon.
+
+Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
+
+Thinking about DevOps Contracting? Are you ready, [take the quiz](https://devopscontractor.scoreapp.com/)
