@@ -18,6 +18,10 @@ title="Working DevOps engineers" %}
 TLDR;
 Everything, seriously.
 
+{% include youtube.html
+ref="kqFIaRDLHl8"
+%}
+
 The main roles of a typical DevOps engineer can be broken into a couple of roles/responsibilities.
 ## Servers:
 The most obvious is looking after servers, networks and storage. This can include firewalls, Infrastructure as Code,
