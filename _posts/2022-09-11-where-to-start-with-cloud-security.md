@@ -17,6 +17,10 @@ title="Pirates attacking? https://www.flickr.com/photos/eunavfor/8250044062" %}
 
 For this article I am going to talk about a web facing server hosting a web application.
 
+{% include youtube.html
+ref="l_fCbqIQ_Y8"
+%}
+
 Where: Ports
 =====
 
