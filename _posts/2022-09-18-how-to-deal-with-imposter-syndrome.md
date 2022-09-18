@@ -15,6 +15,10 @@ Imposter syndrome, what is it and what can you do about it?
 img="/public/img/imposter.jpg"
 title="Courtesy of https://www.reddit.com/user/Kanelbullen00/" %}
 
+{% include youtube.html
+ref="zo9eM_mWufo"
+%}
+
 What is imposter syndrome?
 ==========
 
