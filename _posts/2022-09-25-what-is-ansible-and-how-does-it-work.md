@@ -160,11 +160,8 @@ understand what role it should configure itself with.
 In this way we can build a short lived immutable server, that configures itself on boot, by downloading the Ansible
 code, combining with configuration tags and running the playbook against itself.
 
-If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content.
+If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content.
 
 Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
-
-
-[youtube]: https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w
 
 

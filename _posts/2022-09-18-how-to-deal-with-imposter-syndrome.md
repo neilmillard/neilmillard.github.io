@@ -75,12 +75,11 @@ that can have a powerful negative impact on an individual's valuation of their o
 
 For more details you can read more on [Wikipedia][imposterWiki]
 
-If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube].
+If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}).
 
 Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
 
 
 [DNS]: {{ site.url }}/2019/01/25/four-steps-automate.html
-[youtube]: https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w
 [imposterWiki]: https://en.wikipedia.org/wiki/Impostor_syndrome
 [12]: https://scholarworks.uvm.edu/tvc/vol34/iss1/6/

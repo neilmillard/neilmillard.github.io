@@ -71,11 +71,10 @@ bug is fixed. This means regular updates to the server and application dependenc
 I hope that starting with these five areas, you can run secure web application and not get mentioned on [haveibeenpwned][hibp]
 
 
-If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content soon.
+If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content soon.
 
 Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
 
 
 [DNS]: {{ site.url }}/2019/01/25/four-steps-automate.html
-[youtube]: https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w
 [hibp]: https://haveibeenpwned.com

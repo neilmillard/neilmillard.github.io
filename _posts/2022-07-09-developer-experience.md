@@ -64,7 +64,7 @@ Conclusion
 Developer experience is more than a buzzword. It must provide the whole solution. Developer relations and a close
 feedback loop with the platform team is essential to ensure maximum adoption of the platform.
 
-If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content soon.
+If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content soon.
 
 Want to know more? Come ask me questions. You can find me on [Slack]({{site.data.slack.invite}}).
 
@@ -74,4 +74,3 @@ Want to know more? Come ask me questions. You can find me on [Slack]({{site.data
 [12FactorStillRelevant]: {{ site.url }}/2021/04/09/is-12-factor-still-relevant.html
 [gov.uk PaaS]: https://www.cloud.service.gov.uk/
 [gov-uk-observe]: https://www.cloud.service.gov.uk/observability/
-[youtube]: https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w
