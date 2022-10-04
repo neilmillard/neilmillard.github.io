@@ -67,3 +67,15 @@ footer {
     color: #959595;
   }
 }
+
+.download-btn {
+  border-radius: 25px;
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #223094;
+}
