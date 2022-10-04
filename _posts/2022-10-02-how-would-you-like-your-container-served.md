@@ -47,6 +47,10 @@ Mesosphere uses zookeeper or etcd, Nomad uses Consul, and Elastic Container Serv
 The alternative is to use a cloud in a box product. Here I am talking about OpenStack. Ha Kidding. You could use that
 but Kubernetes can do that all and make a better job of it.
 
+{% include image.html
+img="/public/img/k8s_learning.jpg"
+caption="Kubernetes learning curve is steep" %}
+
 Of course not everyone wants or needs to run a cloud in a box, and the tools mentioned above all have ecosystems of
 tools to make up that cloud solution.
 
