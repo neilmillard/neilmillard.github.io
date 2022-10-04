@@ -15,5 +15,5 @@ title="Who Moved My Servers book cover"
 caption="Available now on amazon"
 url="https://amzn.to/2AUJcUp" %}
 
-[1]:{{ site_url }}/download/wmms.pdf
+[1]:https://www.neilmillard.com/download/wmms.pdf
 
