@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: DevOps Engineer?
+title: What does a DevOps Engineer do?
 author_email: neil@neilmillard.com
 categories: [Infrastructure, Development]
 description: What does a DevOps Engineer do?
