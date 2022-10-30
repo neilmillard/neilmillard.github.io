@@ -135,7 +135,7 @@ If you found this useful, subscribe to updates and look out for my [YouTube chan
 [oop]: https://en.wikipedia.org/wiki/Object-oriented
 [puppet]: https://puppet.com/
 [chef]: https://www.chef.io/
-[gems]: http://rubygems.org/
+[gems]: https://rubygems.org/
 [ror]: https://rubyonrails.org/
 [go]: https://en.wikipedia.org/wiki/Go_(programming_language)
 [c]: https://en.wikipedia.org/wiki/C_(programming_language)
