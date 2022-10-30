@@ -20,6 +20,10 @@ Ansible provides a way to write code to configure your servers and environments 
 Having multiple environments, this enables development to be the same as production, so you know that software tested in
 development will work exactly the same, regardless of which environment it is install in, including production.
 
+{% include youtube.html
+ref="Acvn1s0ZqtY"
+%}
+
 Ansible is idempotent and can be used in an immutable way, allowing the servers to build themselves at boot up
 so that we can scale fast and recover quickly from failure.
 
