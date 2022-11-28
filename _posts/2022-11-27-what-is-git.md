@@ -66,7 +66,7 @@ Want to know more? Come ask me questions. You can find me on [Slack]({{site.data
 If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content.
 
 
-[cvs]: http://savannah.nongnu.org/projects/cvs
+[cvs]: https://savannah.nongnu.org/projects/cvs
 [svn]: https://subversion.apache.org/
 [merc]: https://www.mercurial-scm.org/
 [git]: https://git-scm.com/
