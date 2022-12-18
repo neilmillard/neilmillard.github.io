@@ -40,7 +40,7 @@ security.authorization: enabled
 security.clusterAuthMode: x509
 ```
 
-The article [Deploy a MongoDB 3.0 Replica Set With X.509 Authentication and Self-Signed Certificates](https://blog.cloudandheat.com/index.php/en/2015/04/19/deploy-a-mongodb-3-0-replica-set-with-x-509-authentication-and-self-signed-certificates/) help a lot.
+The article Deploy a MongoDB 3.0 Replica Set With X.509 Authentication and Self-Signed Certificates helped a lot.
 
 Now with authentication on, the automation stopped working. Lack of cluster permissions. Two issues here,
 1. As of v3.2.10, once replication is enabled, [users cannot be created with an O, OU and DC combination](https://docs.mongodb.com/v3.2/tutorial/configure-x509-client-authentication/) that matches the [Replica node accounts](https://docs.mongodb.com/v3.2/core/security-x.509/)

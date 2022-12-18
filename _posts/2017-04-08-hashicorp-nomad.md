@@ -6,7 +6,7 @@ title: Docker on Nomad
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [Infrastructure]
-description: 
+description:
 tags: [cloud computing, data, docker, immutable, docker, nomad, hashicorp]
 comments: true
 crosspost_to_medium: false
@@ -19,21 +19,21 @@ Running docker containers on a cluster has several solutions available today:
 
 I have been working with Nomad this week with the resulting 3 server cluster available here to play with. [Github Repo](https://github.com/neilmillard/vagrant-nomad).
 {% include image.html
-      img="https://www.nomadproject.io/assets/images/nomad-architecture-region-a5b20915.png"
+      img="https://content.hashicorp.com/api/assets?product=tutorials&version=main&asset=public%2Fimg%2Fnomad%2Fproduction%2Fnomad_reference_diagram.png"
       title="nomad Architecture"
       caption="Nomad Architecture" %}
-      
+
 Similar to the docker swarm tutorial, this code creates a cluster of 3 nodes, one server and two clients, to participate in a Nomad cluster.
 
 After the relative ease of setting up the cluster, I found the settings needed a bit of tweeking as I had two network cards (so I could have static IP, if anyone knows how Vagrant can do this with one NIC, let me know).
 
-This initial setup allows the command of 
+This initial setup allows the command of
 ```bash
 nomad run /vagrant/redis3/example.nomad
 ```
 to run 3 instances of Redis on our cluster. As the server is not setup as a client, this means two containers on one client and only one container on the other.
 
-This raises an issue, how do you know which port to connect to. The service is configured so that you can connect to a port on the server and Docker Proxy silently forwards your request to the correct client.  
+This raises an issue, how do you know which port to connect to. The service is configured so that you can connect to a port on the server and Docker Proxy silently forwards your request to the correct client.
 Without a service discovery service, it is a bit of a egg hunt to find which port you should use.
 
 {% include image.html

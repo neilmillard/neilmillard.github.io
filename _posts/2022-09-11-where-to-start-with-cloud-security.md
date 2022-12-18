@@ -77,4 +77,4 @@ Want to know more? Come ask me questions. You can find me on [Slack]({{site.data
 
 
 [DNS]: {{ site.url }}/2019/01/25/four-steps-automate.html
-[hibp]: https://haveibeenpwned.com
+[hibp]: https://haveibeenpwned.com/

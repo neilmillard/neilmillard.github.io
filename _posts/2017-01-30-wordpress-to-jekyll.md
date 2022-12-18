@@ -14,7 +14,7 @@ Publishing a blog with Jekyll
 I had an idea. Why not publish the blog using [jekyll](https://jekyllrb.com/) and host it on [AWS S3](https://aws.amazon.com/s3/)?
 Working with [Puppet](https://puppet.com/) and [ruby](https://www.ruby-lang.org), I'm already very familiar with [gems](https://rubygems.org/) and getting jekyll working on my windows 10 workstation with RubyMine was relatively easy.
 
-As this source code is on my [github](https://github.com) repository, I would have gone with the easy [Github Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/) option.
+As this source code is on my [github](https://github.com) repository, I would have gone with the easy [Github Pages](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll) option.
 So you will find this site on (https://neilmillard.github.io/) but I wanted to learn something new.
 
 Hosting on S3
@@ -46,7 +46,7 @@ environment_variables:
 With these in place HTML Proofer was happy enough and spotted the &lt;p> tags I mentioned earlier.
 
 AWS CodeBuild says it will upload the compiled artifacts to S3. 'Great this should be easy' I thought. One minor snag, it needs a key to upload to. This means either a tarball or a subfolder, neither in the format I needed for the website to be hosted correctly.
-Again open source community to the rescue, with [Stout](https://stout.is/) a tool to deploy static websites to S3.
+Again open source community to the rescue, with [Stout](https://github.com/EagerIO/Stout) a tool to deploy static websites to S3.
 
 After a few more minor changes, like choosing a theme and adding font-awesome, I'm happy with how it turned out.
 

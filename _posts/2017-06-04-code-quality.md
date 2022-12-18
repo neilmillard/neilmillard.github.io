@@ -36,7 +36,7 @@ Tools have been created to make this job easier for programmers,
 called [Linters](https://en.wikipedia.org/wiki/Lint_(software)).
 
 In Ruby for instance, there is [RuboCop](https://github.com/bbatsov/rubocop) which warns and enforces the Ruby Style guide.
-Puppet has [puppet-lint](https://puppet-lint.com/) for a similar purpose.
+Puppet has [puppet-lint](https://github.com/rodjek/puppet-lint) for a similar purpose.
 
 In addition to linters which can spot simple errors too, there are code analysis tools also.
 These are tools that are more in line with unit testing and run the code to varying degrees,

@@ -29,11 +29,11 @@ We will focus on IaaS, where you purchase raw compute, servers, storage and othe
 
 1. Master the cloud concepts
    The DevOps and Cloud engineering community centres around a few concepts.
-   * Virtualisation - One of the core cloud drivers has been virtualisation* of servers allowing many servers to share a piece of hardware. [VMWare Workstation](https://www.vmware.com/uk/products/workstation.html) or [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). Downloading the latest version of [Vagrant](https://www.vagrantup.com/) allows you to setup development servers to learn with. (* the UK english spelling in this case)
+   * Virtualisation - One of the core cloud drivers has been virtualisation* of servers allowing many servers to share a piece of hardware. [VMWare Workstation](https://www.vmware.com/uk/products/workstation-pro.html) or [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). Downloading the latest version of [Vagrant](https://www.vagrantup.com/) allows you to setup development servers to learn with. (* the UK english spelling in this case)
    * Infrastructure as Code - This is where the Infrastructure is defined in configuration and files, and read using a tool such as [Terraform](https://www.terraform.io/) which builds an environment of servers to build out a service stack. [Networking](https://en.wikipedia.org/wiki/Internet_protocol_suite) and [security principles](https://en.wikipedia.org/wiki/Internet_security) are also very important here. See [AWS Cloudformation](https://aws.amazon.com/cloudformation/)
    * Build Automation - Much of giving the developers an environment they can use and deliver through involves a tool or automation workflow. Continuous Integration/Continuous Deployment services are important. See [Jenkins](https://jenkins.io/) or [TeamCity](https://www.jetbrains.com/teamcity/).
    * Source Control - [Git](https://git-scm.com/) is the defacto tool in this respect. Where the source code for everything is stored.
-   * Programming Languages - Also look at these languages for tools and automation. [bash](https://www.gnu.org/software/bash/), [java](https://www.java.com/en/), [python](https://www.python.org/) and [Ruby](https://www.ruby-lang.org/en/). Maybe [Go](https://golang.org/)
+   * Programming Languages - Also look at these languages for tools and automation. [bash](https://www.gnu.org/software/bash/), [java](https://www.java.com/), [python](https://www.python.org/) and [Ruby](https://www.ruby-lang.org/en/). Maybe [Go](https://golang.org/)
    * Configuration Management - Leading tools here are [Puppet](https://puppet.com/download-open-source-puppet), [Chef](https://www.chef.io/chef/) and [Ansible](https://www.ansible.com/)
    * [LEAN](https://en.wikipedia.org/wiki/Lean_manufacturing) and Scrum - From Toyota's continuous improvement methods and elimination of waste.
    * Kanban - A board giving a visual way of showing and prioritising tasks.
@@ -57,7 +57,7 @@ We will focus on IaaS, where you purchase raw compute, servers, storage and othe
    Automatically building servers, with monitoring to scale UP and DOWN allows us to easily support [batch](https://en.wikipedia.org/wiki/Batch_processing) and scheduled workloads like [Big Data](https://en.wikipedia.org/wiki/Big_data), [Business Intelligence](https://en.wikipedia.org/wiki/Business_intelligence) or [Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) workloads.
 
 6.  Attend meet ups <img width="300px" align="right" alt="Amazon Web Services" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2000px-AmazonWebservices_Logo.svg.png">
-   Find [meet ups in your area](https://www.meetup.com/find/devops/) and network with fellow DevOps techies and programmers.
+   Find [meet ups in your area](https://www.meetup.com/) and network with fellow DevOps techies and programmers.
    You can find me at [AWS User Group UK North](https://www.meetup.com/AWS-User-Group-North/) and [DevOps Manchester](https://www.meetup.com/DevOps-Manchester/)
 
 If you found this useful, subscribe to updates and look out for my [YouTube channel][youtube] content soon.
