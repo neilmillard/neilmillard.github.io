@@ -15,7 +15,8 @@ phases:
       - chmod +x ./stout
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Lets upgrade rubygems
+      - gem update --system
   build:
     commands:
       - bundle exec jekyll build
