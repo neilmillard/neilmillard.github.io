@@ -10,13 +10,13 @@ environment_variables:
 phases:
   install:
     commands:
+      - gem update --system
       - bundle install
       - wget -O stout -q https://github.com/EagerIO/Stout/releases/download/v1.3.0/stout-linux
       - chmod +x ./stout
   pre_build:
     commands:
-      - echo Lets upgrade rubygems
-      - gem update --system
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - bundle exec jekyll build
