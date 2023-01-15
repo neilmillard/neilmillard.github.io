@@ -12,7 +12,7 @@
   }
   .image-caption {
     color: $grey-color;
-    margin-top: $spacing-unit / 3;
+    margin-top: calc($spacing-unit / 3);
   }
 }
 
