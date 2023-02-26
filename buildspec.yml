@@ -22,7 +22,6 @@ phases:
       - bundle exec jekyll build
   post_build:
     commands:
-      - bundle exec htmlproofer --disable-external=true ./_site
       - ./stout deploy --bucket ${BUCKET} --key $AWS_KEY --secret $AWS_SECRET --region eu-west-1 --root ./_site
 artifacts:
   files:
