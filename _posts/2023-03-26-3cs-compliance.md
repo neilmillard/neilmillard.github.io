@@ -10,7 +10,7 @@ tags: [contractor]
 comments: true
 crosspost_to_medium: false
 ---
-I am developing a new course to guide IT professionals leaping into Contracting.
+I am developing a new programme to guide IT professionals leaping into Contracting.
 {% include image.html
 img="/public/img/compliance.jpg"
 attrib="https://pixabay.com/de/users/geralt-9301/?tab=latest"
