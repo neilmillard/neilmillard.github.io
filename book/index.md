@@ -41,3 +41,27 @@ If you want to unlock the power of the cloud to build agile, stable, infrastruct
  delights your customers 24/7 and enables you to stay competitive, you need to read this book.
 
 {% include book_info.html %}
+
+Confident Contractor
+---------------
+
+Fed up with jumping through someone else’s IT hoops at work? Ready to take the leap and be your own boss?
+
+{% include image.html
+      img="https://www.neilmillard.com/public/img/cc_cover3d.png"
+      title="Confident Contractor book cover"
+      caption="Available now on amazon"
+      url="https://amzn.to/4bQ7bmo" %}
+
+Confident Contractor is the one-stop guide for setting out on your own. Backed up by two decades of IT contracting experience, this book provides practical guidance and actionable strategies for managing the day-to-day reality of running your own business and working for yourself in IT contracting, as well as tips and tricks that will help you succeed long-term.
+
+Understand how to:
+
+* Build robust business systems from the outset
+* Manage cash flow efficiently and safeguard your financial stability
+* Satisfy compliance requirements and minimise risk and legal liabilities
+* Negotiate contracts to maximise your earning potential
+* Build strong client relationships that generate repeat business and client recommendations
+
+{% include cc_book_info.html %}
+
