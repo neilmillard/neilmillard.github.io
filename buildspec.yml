@@ -10,6 +10,7 @@ environment_variables:
 phases:
   install:
     commands:
+      - ruby --version
       - gem update --system
       - bundle install
       - wget -O stout -q https://github.com/EagerIO/Stout/releases/download/v1.3.0/stout-linux
