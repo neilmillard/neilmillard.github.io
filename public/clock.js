@@ -1,22 +1,24 @@
 // Calling showTime function at every second
 setInterval(showTime, 1000);
 
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 // Defining showTime function
 function showTime() {
   // Getting current time and date
   let time = new Date();
+  let weekday = weekdays[time.getDay()];
+  let date = time.getDate();
+  let month = months[time.getMonth()];
   let hour = time.getHours();
   let min = time.getMinutes();
   let sec = time.getSeconds();
-  let am_pm = "AM";
 
   // Setting time for 12 Hrs format
   if (hour >= 12) {
       if (hour > 12) hour -= 12;
-      am_pm = "PM";
   } else if (hour === 0) {
       hour = 12;
-      am_pm = "AM";
   }
 
   // leading 0 padding
@@ -32,8 +34,14 @@ function showTime() {
       ":" +
       min +
       ":" +
-      sec +
-      am_pm;
+      sec;
+    document.getElementById(
+      "date"
+    ).innerHTML = weekday +
+      " " +
+      date +
+      " " +
+      month;
 }
 
 showTime();
