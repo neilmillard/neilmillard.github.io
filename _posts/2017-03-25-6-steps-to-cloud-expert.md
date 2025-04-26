@@ -10,6 +10,7 @@ description: 6 steps to help you become a cloud expert
 tags: [cloud computing, cloud expert, virtualisation]
 comments: true
 crosspost_to_medium: false
+date: 2017-03-25 13:00
 ---
 Though the cloud means different things to different people, as a basic concept, it’s really very simple.
 Instead of storing data and running applications on your home or work computer, it’s stored and processed on remote machines that are accessed via the Internet.

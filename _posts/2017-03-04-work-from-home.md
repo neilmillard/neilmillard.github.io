@@ -11,6 +11,7 @@ description: Work from home, is it working? Open plan offices, virtual meetings.
 tags: [environment, social, office life, collaboration]
 comments: true
 crosspost_to_medium: false
+date: 2017-03-04 13:00
 ---
 The theme of the week has been geography. Listening to [Startup CEO](https://www.audible.co.uk/pd/Business/Startup-CEO-Audiobook/B00G4IMCSK), in which Matt Blumberg states strongly, that having a central office for as long as you can is important for that human connection, serendipitous conversations and culture. This is in contrast to virtual or home working. How connected are we to physical geography and at the same time, connected to a virtual world?
 

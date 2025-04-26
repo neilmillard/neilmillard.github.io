@@ -9,6 +9,7 @@ categories:
 - Development
 tags: [authentication, firewalls, security]
 comments: true
+date: 2017-02-18 13:00
 ---
 I ran into a couple of problems this week involving [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
 A security group acts like a virtual firewall on your instance. It controls what traffic enters and leaves and is attached to an instance on start.

@@ -10,6 +10,7 @@ description:
 tags: [monitoring, logging, sensu]
 comments: true
 crosspost_to_medium: false
+date: 2017-05-07 13:00
 ---
 Our team run morning checks every day to ensure the development environments have been deployed successfully from our automation schedule.
 The quickest indicator is a dashboard using [dashing](https://github.com/Shopify/dashing) and [uchiwa](https://uchiwa.io/) which has a tile for each role in the environment with a helpful red or green status.

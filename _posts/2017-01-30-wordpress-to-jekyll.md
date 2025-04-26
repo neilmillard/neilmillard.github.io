@@ -8,6 +8,7 @@ categories:
 - Development
 tags: [jekyll,building]
 comments: []
+date: 2017-01-30 13:00
 ---
 Publishing a blog with Jekyll
 -----

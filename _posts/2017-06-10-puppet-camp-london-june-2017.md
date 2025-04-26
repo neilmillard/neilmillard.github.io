@@ -10,9 +10,10 @@ description: I spoke at puppetcamp london. Masterless Puppet
 tags: [puppet, masterless, immutable]
 comments: true
 crosspost_to_medium: false
+date: 2017-06-10 13:00
 ---
 {% include image.html
-      img="/public/img/puppetcamplondon2017.jpg"
+      img="img/puppetcamplondon2017.jpg"
       title="Puppetcamp London"
       caption="Puppetcamp, London" %}
 This week I attended and spoke [again](/2016/11/09/puppet-camp-fall-autumn-london-2016.html), at [PuppetCamp London 2017](https://puppet.com/community/events/camp/two-part-puppet-camp-london).
@@ -20,7 +21,7 @@ We enjoyed some interesting talks off the back of the [State of Devops report](h
 
 Whilst enjoying the views of london, I listened to several people from [Puppet](https://puppet.com/) in the morning.
 {% include image.html
-      img="/public/img/londonfromaltitude.jpg"
+      img="img/londonfromaltitude.jpg"
       title="Views of London"
       caption="View from Altitude, London" %}
 
@@ -31,7 +32,7 @@ Environment and size of team are key to the performance of a team, both of which
 Anyway, getting back on track, I spoke about Short-lived Immutable servers, and managing or specifically, building them with Puppet 3.
 Of course support for Puppet 3 is now deprecated, so I'll be updating my examples to Puppet 4 at some point soon.
 {% include image.html
-      img="/public/img/short_lived_immutable_servers_title.png"
+      img="img/short_lived_immutable_servers_title.png"
       title="Immutable Servers with Puppet"
       url="https://youtu.be/yETgehoQmIs"
       caption="Video of presentation" %}
@@ -45,7 +46,7 @@ iii) Unless logs are shipped elsewhere, when the server is rebuilt, those logs w
 An [ELK/Elastic stack](https://www.elastic.co/webinars/introduction-elk-stack) or [Loggly](https://www.loggly.com/) can help with logging to a central server.
 
 {% include image.html
-      img="/public/img/immutableagenda.jpg"
+      img="img/immutableagenda.jpg"
       title="Immutable Servers with Puppet Agenda"
       caption="Agenda" %}
 
@@ -53,7 +54,7 @@ The bit that always get a laugh, is where I explain ordering. In puppet you defi
 This means a lot of what is done can be executed simultaneously. In some cases this creates issues where certain things have to happen in a specific order.
 The fun is around the keywords used to specify this in the Puppet manifest.
 {% include image.html
-      img="/public/img/before_before.jpg"
+      img="/img/before_before.jpg"
       title="Immutable Servers with Puppet Ordering"
       caption="Before me, or before you" %}
 
