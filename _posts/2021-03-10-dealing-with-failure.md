@@ -5,10 +5,20 @@ published: true
 title: Your stuff will Break Part 2!
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: Cloud applications and software still need Disaster Recovery.
-tags: [automation, application, infrastructure, product, devops, dev, ops]
+tags:
+  - automation
+  - application
+  - infrastructure
+  - product
+  - devops
+  - dev
+  - ops
 comments: true
+date: '2021-03-10 13:00:00 +0000'
 ---
 A thermal event has occurred at a data centre.
 {% include image.html

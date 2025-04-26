@@ -4,11 +4,22 @@ status: publish
 published: true
 title: Run your own serverless
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure]
-description: What is serverless, and what does it take to run a platform with a serverless product
-tags: [devops, serverless, lambda, aws, heroku, developer experience]
+categories:
+  - DevOps
+  - Infrastructure
+description: >-
+  What is serverless, and what does it take to run a platform with a serverless
+  product
+tags:
+  - devops
+  - serverless
+  - lambda
+  - aws
+  - heroku
+  - developer experience
 comments: true
 crosspost_to_medium: false
+date: '2022-08-07 13:00:00 +0000'
 ---
 Serverless has been a hot topic for a while, but really it has been available to developers for ages.
 What is it? Where is it? and can you work without it?

@@ -4,11 +4,18 @@ status: publish
 published: true
 title: What is git?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
-description: git the source control tool, what is it?
-tags: [devops, developer, source control, git]
+categories:
+  - Platform
+  - Infrastructure
+description: 'git the source control tool, what is it?'
+tags:
+  - devops
+  - developer
+  - source control
+  - git
 comments: true
 crosspost_to_medium: false
+date: '2022-11-27 13:00:00 +0000'
 ---
 Git is a very well known open source control tool. But what is it and how is it used?
 {% include image.html

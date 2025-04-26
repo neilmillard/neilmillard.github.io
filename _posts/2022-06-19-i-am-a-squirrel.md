@@ -4,11 +4,17 @@ status: publish
 published: true
 title: I am a squirrel
 author_email: neil@neilmillard.com
-categories: [Artificial Intelligence, Development]
+categories:
+  - Artificial Intelligence
+  - Development
 description: How do we know if something is sentient?
-tags: [data, machine learning, ai]
+tags:
+  - data
+  - machine learning
+  - ai
 comments: true
 crosspost_to_medium: false
+date: '2022-06-19 13:00:00 +0000'
 ---
 I am a squirrel. I am sentient.
 {% include image.html

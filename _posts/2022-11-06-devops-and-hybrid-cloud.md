@@ -4,11 +4,17 @@ status: publish
 published: true
 title: What does hybrid cloud mean for DevOps?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: DevOps skills for a hybrid future!
-tags: [devops, servers, programming]
+tags:
+  - devops
+  - servers
+  - programming
 comments: true
 crosspost_to_medium: false
+date: '2022-11-06 13:00:00 +0000'
 ---
 Hybrid is making a comeback, are your DevOps skills ready?
 {% include image.html

@@ -4,11 +4,15 @@ status: publish
 published: true
 title: Running your own business
 author_email: neil@neilmillard.com
-categories: [Contractor]
-description: Tax, accounts and more Tax?
-tags: [devops, developer]
+categories:
+  - Contractor
+description: 'Tax, accounts and more Tax?'
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-03-19 13:00:00 +0000'
 ---
 I was asked this week about running a business.
 {% include image.html

@@ -5,10 +5,19 @@ published: true
 title: What keeps the containers safe?
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
-description: Your application is in a container, what is the container in?
-tags: [automation, application, infrastructure, product, devops, dev, ops]
+categories:
+  - Infrastructure
+description: 'Your application is in a container, what is the container in?'
+tags:
+  - automation
+  - application
+  - infrastructure
+  - product
+  - devops
+  - dev
+  - ops
 comments: true
+date: '2021-03-24 13:00:00 +0000'
 ---
 When you think you are safe because everything is a container, but you forgot to make sure that the things that
 runs your container need TLC as well

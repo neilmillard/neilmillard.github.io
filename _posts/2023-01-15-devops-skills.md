@@ -4,11 +4,16 @@ status: publish
 published: true
 title: DevOps skills in 2023
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: Are you ready to progress in your career?
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-01-15 13:00:00 +0000'
 ---
 Today lets look at the DevOps career map!
 {% include image.html

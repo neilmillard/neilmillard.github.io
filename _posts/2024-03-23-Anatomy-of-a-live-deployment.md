@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Anatomy of a live deployment
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
-description: You have a local docker image, now what?
-tags: [devops, developer]
+categories:
+  - Platform
+  - Development
+description: 'You have a local docker image, now what?'
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2024-03-23 13:00:00 +0000'
 ---
 You have dockerised your web application, and now it's time for the world to see it. What does that look like?
 {% include image.html

@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Google announces closure of Stadia
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
-description: Stadia closing, this means the end of google cloud!
-tags: [devops, servers, docker, containers]
+categories:
+  - Platform
+  - Infrastructure
+description: 'Stadia closing, this means the end of google cloud!'
+tags:
+  - devops
+  - servers
+  - docker
+  - containers
 comments: true
 crosspost_to_medium: false
+date: '2022-10-09 13:00:00 +0000'
 ---
 A few years ago Google launched the gaming service Stadia. Soon it will be gone.
 {% include image.html

@@ -4,11 +4,18 @@ status: publish
 published: true
 title: System Reliability and Canaries
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: Keeping things going and knowing when they are impaired?
-tags: [devops, servers, microservices, canary]
+tags:
+  - devops
+  - servers
+  - microservices
+  - canary
 comments: true
 crosspost_to_medium: false
+date: '2022-11-20 13:00:00 +0000'
 ---
 Getting a service in Production is a big step, monitoring it and keeping it healthy is an endless battle.
 {% include image.html

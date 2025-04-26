@@ -5,11 +5,22 @@ published: true
 title: My Four Steps for a successful cloud deployment - Design
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development, Book]
+categories:
+  - Infrastructure
+  - Development
+  - Book
 description: Design your application with the cloud in mind
-tags: [automation, application, infrastructure, book, devops, dev, ops]
+tags:
+  - automation
+  - application
+  - infrastructure
+  - book
+  - devops
+  - dev
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2019-01-18 13:00:00 +0000'
 ---
 Application designed for Cloud
 ------------

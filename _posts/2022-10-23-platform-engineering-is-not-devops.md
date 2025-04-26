@@ -4,11 +4,19 @@ status: publish
 published: true
 title: Platform engineering is not DevOps
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: What I think CloudOps is?
-tags: [devops, servers, agile, cloud, ops]
+tags:
+  - devops
+  - servers
+  - agile
+  - cloud
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2022-10-23 13:00:00 +0000'
 ---
 Platform engineering is running a self service platform. DevOps helps but it is more than that!
 {% include image.html

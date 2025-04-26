@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Azure Outage
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: how can I reduce the impact of outages
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-01-29 13:00:00 +0000'
 ---
 Running large scale cloud operations is complicated. This week Microsoft Azure suffered [an outage][teamsoutage] ref MO502273.
 {% include image.html

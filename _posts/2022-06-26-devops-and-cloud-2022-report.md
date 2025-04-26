@@ -4,11 +4,18 @@ status: publish
 published: true
 title: DevOps and Cloud 2022 InfoQ report
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure, Development]
+categories:
+  - DevOps
+  - Infrastructure
+  - Development
 description: The latest InfoQ report about DevOps
-tags: [jobs, devops, platform]
+tags:
+  - jobs
+  - devops
+  - platform
 comments: true
 crosspost_to_medium: false
+date: '2022-06-26 13:00:00 +0000'
 ---
 The latest trends in DevOps
 {% include image.html

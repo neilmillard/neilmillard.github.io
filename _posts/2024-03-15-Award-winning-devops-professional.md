@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Award winning DevOps Professional
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: Available to provide DevOps consulting for your project
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2024-03-15 13:00:00 +0000'
 ---
 You might of heard about my latest award [DevOps Professional of the Year 2024][devopsaward] if you follow me on [LinkedIn][linkedin].
 {% include image.html

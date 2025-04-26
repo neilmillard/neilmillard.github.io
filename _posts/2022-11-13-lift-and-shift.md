@@ -4,11 +4,17 @@ status: publish
 published: true
 title: Lift and shift to the cloud?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: Can I save money lifting and shifting my servers to the cloud?
-tags: [devops, servers, ansible]
+tags:
+  - devops
+  - servers
+  - ansible
 comments: true
 crosspost_to_medium: false
+date: '2022-11-13 13:00:00 +0000'
 ---
 Moving Virtual machines to a cloud provider sounds like a good plan, lets examine the evidence.
 {% include image.html

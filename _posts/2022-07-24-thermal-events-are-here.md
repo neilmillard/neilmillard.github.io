@@ -4,11 +4,17 @@ status: publish
 published: true
 title: Thermal events are here
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure]
-description: Unexpected heat, brings unexpected server shutdowns
-tags: [devops, platform, cloud]
+categories:
+  - DevOps
+  - Infrastructure
+description: 'Unexpected heat, brings unexpected server shutdowns'
+tags:
+  - devops
+  - platform
+  - cloud
 comments: true
 crosspost_to_medium: false
+date: '2022-07-24 13:00:00 +0000'
 ---
 Summer has arrived in the UK, record temperatures and servers shutting down. What can you do?
 {% include image.html

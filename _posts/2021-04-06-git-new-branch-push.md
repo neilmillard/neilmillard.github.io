@@ -5,10 +5,17 @@ published: true
 title: git push -u origin &lt;branch&gt;?
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Development]
-description: Your application is in a container, what is the container in?
-tags: [automation, application, devops, dev, ops]
+categories:
+  - Development
+description: 'Your application is in a container, what is the container in?'
+tags:
+  - automation
+  - application
+  - devops
+  - dev
+  - ops
 comments: true
+date: '2021-04-06 13:00:00 +0000'
 ---
 Git is a Source Control versioning tool for software development.
 {% include image.html

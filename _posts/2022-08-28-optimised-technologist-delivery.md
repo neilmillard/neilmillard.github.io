@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Optimised Technologist delivery?
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development, Platform]
+categories:
+  - Infrastructure
+  - Development
+  - Platform
 description: Building a platform for digital business?
-tags: [devops]
+tags:
+  - devops
 comments: true
 crosspost_to_medium: false
+date: '2022-08-28 13:00:00 +0000'
 ---
 Gartner have just released 'Hype cycle for emerging technologies'.
 {% include image.html

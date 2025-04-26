@@ -35,13 +35,14 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
   );
 }
 
-// Function to replace Jekyll-style image includes with JSX interpolation
+// Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
+  // @ts-ignore js18+
   const includeRegex = /{% include image\.html\s+(.*?)%}/gs;
 
   // First, replace Jekyll-style image includes
-  let processedContent = content.replace(includeRegex, (match, params) => {
+  let processedContent = content.replace(includeRegex, (_match, params) => {
     // Extract parameters from the include tag
     const imgMatch = params.match(/img="([^"]+)"/);
     const captionMatch = params.match(/caption="([^"]+)"/);
@@ -64,10 +65,35 @@ function replaceImageIncludes(content: string): string {
   });
 
   // Also replace standard Markdown image syntax
-  const markdownImageRegex = /!\[(.*?)\]\((\/public\/img\/[^)]+)\)/g;
-  processedContent = processedContent.replace(markdownImageRegex, (match, alt, imgPath) => {
+  const markdownImageRegex = /!\[(.*?)]\((\/public\/img\/[^)]+)\)/g;
+  processedContent = processedContent.replace(markdownImageRegex, (_match, alt, imgPath) => {
     const newImgPath = imgPath.replace('/public/img', '/img');
     return `![${alt}](${newImgPath})`;
+  });
+
+  // Convert underlined headers (===== or ----- style) to standard Markdown headers (# style)
+  // This regex looks for a line of text followed by a line of equals signs (h1) or dashes (h2)
+  // The regex is more flexible to handle various formatting cases
+  const h1HeaderRegex = /^([^\n=]+)\n=+\s*$/gm;
+  processedContent = processedContent.replace(h1HeaderRegex, (_match, title) => {
+    return `# ${title.trim()}`;
+  });
+
+  const h2HeaderRegex = /^([^\n-]+)\n-+\s*$/gm;
+  processedContent = processedContent.replace(h2HeaderRegex, (_match, title) => {
+    return `## ${title.trim()}`;
+  });
+
+  // Additional regex to handle headers that might have different formatting
+  // This handles cases where there might be multiple newlines or other variations
+  const h1HeaderRegex2 = /^([^\n=]+)\n+={3,}\s*$/gm;
+  processedContent = processedContent.replace(h1HeaderRegex2, (_match, title) => {
+    return `# ${title.trim()}`;
+  });
+
+  const h2HeaderRegex2 = /^([^\n-]+)\n+-{3,}\s*$/gm;
+  processedContent = processedContent.replace(h2HeaderRegex2, (_match, title) => {
+    return `## ${title.trim()}`;
   });
 
   return processedContent;

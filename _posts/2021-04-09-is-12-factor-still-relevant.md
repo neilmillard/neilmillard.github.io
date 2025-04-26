@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Is 12 factor still relevant?
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: 12 things your cloud app should do and have.
-tags: [automation, devops, immutable, ops]
+tags:
+  - automation
+  - devops
+  - immutable
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2021-04-09 13:00:00 +0000'
 ---
 In 2011 [Adam Wiggins](https://adamwiggins.com/) created [12factor](https://12factor.net/).
 It describes the 12 factors modern applications should have.

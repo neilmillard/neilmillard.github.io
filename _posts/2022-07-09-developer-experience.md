@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Developer Experience
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure, Development]
+categories:
+  - DevOps
+  - Infrastructure
+  - Development
 description: How we help developers make stuff?
-tags: [devops, platform, dx]
+tags:
+  - devops
+  - platform
+  - dx
 comments: true
 crosspost_to_medium: false
+date: '2022-07-09 13:00:00 +0000'
 ---
 UX = User Experience, DX = Developer experience, what is that?
 {% include image.html

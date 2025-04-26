@@ -4,11 +4,17 @@ status: publish
 published: true
 title: What is Ansible and how does it work?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
-description: Ansible, build me a server!
-tags: [devops, servers, ansible]
+categories:
+  - Platform
+  - Infrastructure
+description: 'Ansible, build me a server!'
+tags:
+  - devops
+  - servers
+  - ansible
 comments: true
 crosspost_to_medium: false
+date: '2022-09-25 13:00:00 +0000'
 ---
 Configuration management gives your servers roles and profiles.
 {% include image.html

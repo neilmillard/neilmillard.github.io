@@ -4,11 +4,18 @@ status: publish
 published: true
 title: How would you like your container served?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
-description: You have a container or docker image, now what!
-tags: [devops, servers, docker, containers]
+categories:
+  - Platform
+  - Infrastructure
+description: 'You have a container or docker image, now what!'
+tags:
+  - devops
+  - servers
+  - docker
+  - containers
 comments: true
 crosspost_to_medium: false
+date: '2022-10-02 13:00:00 +0000'
 ---
 Containers and Docker images offer fast testing and deployment. They need deploying to be useful.
 {% include image.html

@@ -4,11 +4,19 @@ status: publish
 published: true
 title: What fish teach us about asynchronous operations
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: fish operate independently?
-tags: [devops, developer, infrastructure, events, scaling]
+tags:
+  - devops
+  - developer
+  - infrastructure
+  - events
+  - scaling
 comments: true
 crosspost_to_medium: false
+date: '2022-12-04 13:00:00 +0000'
 ---
 Have you ever noticed how fish move in a school. It looks like a synchronised dance.
 {% include image.html

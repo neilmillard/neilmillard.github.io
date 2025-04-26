@@ -2,13 +2,20 @@
 layout: post
 status: publish
 published: true
-title: Freelance, why not?
+title: 'Freelance, why not?'
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure, Development]
+categories:
+  - DevOps
+  - Infrastructure
+  - Development
 description: We discuss the merits and cons of freelancing.
-tags: [jobs, devops, platform]
+tags:
+  - jobs
+  - devops
+  - platform
 comments: true
 crosspost_to_medium: false
+date: '2022-07-03 13:00:00 +0000'
 ---
 Freelancing contractors, are you stuck by indecision?
 {% include image.html

@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Platform As A Service?
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: Would your developers benefit from a Platform?
-tags: [automation, devops, immutable, ops]
+tags:
+  - automation
+  - devops
+  - immutable
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2022-04-12 13:00:00 +0000'
 ---
 There are a few well known platforms that offer a service to developers. Deployment without servers!
 {% include image.html

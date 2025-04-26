@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Budgets and cash-flow
 author_email: neil@neilmillard.com
-categories: [Contractor]
-description: The 3 Cs of Contracting, cashflow
-tags: [contractor, cash-flow, cashflow]
+categories:
+  - Contractor
+description: 'The 3 Cs of Contracting, cashflow'
+tags:
+  - contractor
+  - cash-flow
+  - cashflow
 comments: true
 crosspost_to_medium: false
+date: '2023-04-02 13:00:00 +0000'
 ---
 I am developing a new programme to guide IT professionals leaping into Contracting.
 {% include image.html
