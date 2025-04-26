@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -6,6 +7,10 @@ const nextConfig: NextConfig = {
     output: 'export',
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     trailingSlash: true,
+    images: {
+      loader: 'custom',
+      deviceSizes: imageConfigDefault.deviceSizes,
+      imageSizes: imageConfigDefault.imageSizes,
+    },
 };
 
-export default nextConfig;

@@ -1,8 +1,9 @@
-import Link from "next/link";
+import SocialLinks from "@/app/components/SocialLinks";
 
 export function Footer() {
   return <div className="pt-4 flex h-full flex-col justify-center">
-    <div className="flex flex-row justify-center">
+              <SocialLinks />
+    <div className="flex flex-row justify-center mt-3">
       © 2017-2025 Neil Millard
     </div>
     <div className="text-xs text-gray-500 h-10 mt-2 text-center">
