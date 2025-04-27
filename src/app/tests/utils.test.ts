@@ -1,11 +1,13 @@
 import { formatClockDisplay } from '@/lib/utils';
 
+type DateConstructor = typeof Date;
+
 describe('formatClockDisplay', () => {
   test('returns an object with time and date properties', () => {
     // Mock Date to return a fixed date for testing
     const mockDate = new Date(2023, 0, 15, 10, 30, 45); // Jan 15, 2023, 10:30:45
     const originalDate = global.Date;
-    global.Date = jest.fn(() => mockDate) as any;
+    global.Date = jest.fn(() => mockDate) as unknown as DateConstructor;
 
     const result = formatClockDisplay();
 
@@ -27,7 +29,7 @@ describe('formatClockDisplay', () => {
     // Mock Date to return a fixed PM time
     const mockDate = new Date(2023, 0, 15, 15, 5, 10); // Jan 15, 2023, 15:05:10 (3:05:10 PM)
     const originalDate = global.Date;
-    global.Date = jest.fn(() => mockDate) as any;
+    global.Date = jest.fn(() => mockDate) as unknown as DateConstructor;
 
     const result = formatClockDisplay();
 
@@ -42,7 +44,7 @@ describe('formatClockDisplay', () => {
     // Mock Date to return midnight
     const mockDate = new Date(2023, 0, 15, 0, 5, 10); // Jan 15, 2023, 00:05:10
     const originalDate = global.Date;
-    global.Date = jest.fn(() => mockDate) as any;
+    global.Date = jest.fn(() => mockDate) as unknown as DateConstructor;
 
     const result = formatClockDisplay();
 

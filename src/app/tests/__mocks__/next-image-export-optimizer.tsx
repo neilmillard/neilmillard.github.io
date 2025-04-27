@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
 // Mock for ExportedImage component
-// @ts-ignore
 const ExportedImage = ({ src, alt, width, height, className, ...props }) => {
   return (
     <img

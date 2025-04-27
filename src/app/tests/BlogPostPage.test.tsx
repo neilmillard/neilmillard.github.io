@@ -21,6 +21,7 @@ interface MockBlogPostPageProps {
 }
 
 const MockBlogPostPage = ({params}: MockBlogPostPageProps) => {
+  console.log(params);
   return (
     <div className={"max-w-2x1 mx-auto pt-6"}>
       <div data-testid="blog-nav" data-previous={mockAdjacentPosts.previous.id} data-next={mockAdjacentPosts.next.id}>
