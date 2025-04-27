@@ -2,7 +2,15 @@
 import React from 'react';
 
 // Mock for ExportedImage component
-const ExportedImage = ({ src, alt, width, height, className, ...props }) => {
+interface ExportedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  className?: string;
+}
+
+const ExportedImage = ({ src, alt, width, height, className, ...props }: ExportedImageProps) => {
   return (
     <img
       src={src}
