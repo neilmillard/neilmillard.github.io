@@ -22,7 +22,7 @@ export default function ContactPage(props: ContactFormProps) {
         </div>
         <div className="w-full h-full lg:w-1/2 mt-8 lg:mt-0">
           <address className="not-italic p-3">
-            Delta Famiglia Limited<br/>
+            Neil Millard c/o Delta Famiglia Limited<br/>
             The Stable<br/>
             3-6 Wadham Street<br/>
             Weston-super-Mare<br/>
