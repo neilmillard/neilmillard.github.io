@@ -1,5 +1,4 @@
 import ExportedImage from 'next-image-export-optimizer';
-import SocialLinks from "@/app/components/SocialLinks";
 
 export default function DevOpsComponent() {
     return <div>

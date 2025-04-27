@@ -1,6 +1,4 @@
 import ExportedImage from 'next-image-export-optimizer';
-import { socialLinks } from '@/app/data/socialLinks';
-import SocialLinks from "@/app/components/SocialLinks";
 
 export default function AboutComponent() {
     return <div>
@@ -17,13 +15,13 @@ export default function AboutComponent() {
                     height={300}
                     className="float-right ml-4 mb-4"
                   />
-                  Neil's mission is to make life and work, FUN. Playing the game of life should be a challenge like any game, but it is when it becomes mired by the boring and monotonous, things need to change.
+                  Neil&apos;s mission is to make life and work, FUN. Playing the game of life should be a challenge like any game, but it is when it becomes mired by the boring and monotonous, things need to change.
                 </p>
-                <p className="mb-4">Business too, is a team sport. This is where the wonderful diversity of life and preferences comes into it's own. You don't like the same stuff as everyone else, which means tasks can be shared with those whom like performing those tasks.</p>
+                <p className="mb-4">Business too, is a team sport. This is where the wonderful diversity of life and preferences comes into it&apos;s own. You don&apos;t like the same stuff as everyone else, which means tasks can be shared with those whom like performing those tasks.</p>
                 <p className="mb-4">Neil Millard is a successful entrepreneur, speaker and trainer.
                   A recognised expert on cloud and automated server infrastructures, he assists businesses to embrace new
                   technology
-                  to move faster, become more automated and respond more quickly to their customers' wants and needs. Having
+                  to move faster, become more automated and respond more quickly to their customers&apos; wants and needs. Having
                   spent
                   many years in the financial sector with clients such as Barclays, Lloyds and AXA, he is now on a mission
                   to share his knowledge with the world.</p>

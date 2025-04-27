@@ -62,7 +62,7 @@ export default function BookComponent() {
                       height={400}
                       className="float-right ml-4 mb-4"
                     />
-                    Fed up with jumping through someone else's IT hoops at work? Ready to take the leap and be your own boss?
+                    Fed up with jumping through someone else&apos;s IT hoops at work? Ready to take the leap and be your own boss?
                   </p>
 
                   <p className="mb-4">

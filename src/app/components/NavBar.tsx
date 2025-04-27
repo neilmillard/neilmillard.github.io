@@ -1,7 +1,7 @@
 'use client';
 import React, {useState} from "react";
 import Link from "next/link";
-import {ChevronDown, MenuIcon, XIcon} from 'lucide-react'
+import {MenuIcon, XIcon} from 'lucide-react'
 import {usePathname} from "next/navigation";
 import {useViewportSize} from "@mantine/hooks";
 import {twMerge} from "tailwind-merge";

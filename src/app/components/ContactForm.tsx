@@ -6,7 +6,7 @@ interface ContactFormProps {
 }
 
 export default function ContactPage(props: ContactFormProps) {
-  let {siteEmail} = props;
+  const {siteEmail} = props;
   return (
     <>
     <div className="w-[83%] mx-auto p-6 bg-white rounded-2xl shadow-md mt-10">

@@ -12,6 +12,10 @@ const config: Config = {
     testEnvironment: 'jsdom',
     // Add more setup options before each test is run
     // setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+    moduleNameMapper: {
+        '^next-image-export-optimizer$': '<rootDir>/src/app/tests/__mocks__/next-image-export-optimizer.tsx',
+        '^@/(.*)$': '<rootDir>/src/$1',
+    },
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
