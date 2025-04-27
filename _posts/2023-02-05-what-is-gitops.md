@@ -4,11 +4,16 @@ status: publish
 published: true
 title: What is GitOps?
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: GitOps and how to get started
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-02-05 13:00:00 +0000'
 ---
 GitOps focuses on using Git as a source of truth for changes to your system.
 {% include image.html

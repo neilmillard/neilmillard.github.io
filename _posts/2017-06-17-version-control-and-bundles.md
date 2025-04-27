@@ -5,11 +5,18 @@ published: true
 title: Avoid unstable server builds using version control and bundles
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
-description: Software versions are released constantly, but not all versions play nice. Bundles of compatible software versions will create stability.
-tags: [python, puppet, tarball]
+categories:
+  - Infrastructure
+description: >-
+  Software versions are released constantly, but not all versions play nice.
+  Bundles of compatible software versions will create stability.
+tags:
+  - python
+  - puppet
+  - tarball
 comments: true
 crosspost_to_medium: false
+date: '2017-06-17 13:00:00 +0000'
 ---
 {% include image.html
       img="https://www.neilmillard.com/public/img/server_error_640.jpg"

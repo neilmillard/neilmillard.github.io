@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Registry update for Kubernetes
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: Old registry being frozen
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-02-26 13:00:00 +0000'
 ---
 The community registry is now the best source for images.
 {% include image.html

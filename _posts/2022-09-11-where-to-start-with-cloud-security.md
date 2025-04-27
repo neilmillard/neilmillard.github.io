@@ -4,11 +4,17 @@ status: publish
 published: true
 title: Where to start with cloud security?
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: Cloud. security and then?
-tags: [security, devops, ops]
+tags:
+  - security
+  - devops
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2022-09-11 13:00:00 +0000'
 ---
 Security means a couple of things when talking about cloud, so where to start?
 {% include image.html

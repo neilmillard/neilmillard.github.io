@@ -4,11 +4,16 @@ status: publish
 published: true
 title: What is next for DevOps and platform engineering?
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: The end of DevOps and Platform Engineering?
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-02-12 13:00:00 +0000'
 ---
 One of the key takeaways of [Gartner's London 2022 Conference][londoncon] was to Accelerate the adoption of automation and platform engineering.
 {% include image.html

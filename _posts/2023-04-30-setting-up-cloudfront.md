@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Setting up a cloudfront with S3 bucket
 author_email: neil@neilmillard.com
-categories: [Devops]
+categories:
+  - Devops
 description: Static or CDN
-tags: [devops, developer, terraform]
+tags:
+  - devops
+  - developer
+  - terraform
 comments: true
 crosspost_to_medium: false
+date: '2023-04-30 13:00:00 +0000'
 ---
 A technical post today. Setting up Static Website with Terraform
 {% include image.html

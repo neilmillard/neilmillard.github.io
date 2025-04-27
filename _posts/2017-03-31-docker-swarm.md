@@ -6,20 +6,21 @@ title: Docker Swarm
 author_login: neil
 author_email: neil@neilmillard.com
 categories: [Infrastructure]
-description: 
+description:
 tags: [cloud computing, data, docker, immutable, docker swarm]
 comments: true
 crosspost_to_medium: false
+date: 2017-03-31 13:00
 ---
 This weeks challenge. Automate the creation of a docker swarm.
 
-Docker has been going through some big changes recently. 1.13 -> 17.03 . No there haven't been a whole raft of changes. Just a rejig of the versioning. Docker intend to release a new version every month, so the versions follow a calendar. 2017 March in this example.  
+Docker has been going through some big changes recently. 1.13 -> 17.03 . No there haven't been a whole raft of changes. Just a rejig of the versioning. Docker intend to release a new version every month, so the versions follow a calendar. 2017 March in this example.
 So what has changed? If you look for articles about Swarm, most of them are for versions before 1.12. So I'm writing this to get myself as well as anyone else reading this up to date.
 
 ### Version 17.03
 First up, lets create a swarm. Easy but with one catch. Swarm uses tokens internally for allowing new nodes to join the swarm. A typical way of doing this is:
 ```
-[root@localhost ~]# docker swarm init --advertise-addr eth0 
+[root@localhost ~]# docker swarm init --advertise-addr eth0
 Swarm initialized: current node (otq2node46ab7onelq88k4xe) is now a manager.
 
 To add a worker to this swarm, run the following command:
@@ -59,7 +60,7 @@ systemctl start docker
 docker swarm --force-new-cluster --advertise-addr eth0
 ```
 
-The worker token can be confirmed by running 
+The worker token can be confirmed by running
 ```
 [root@localhost ~]# docker swarm join-token worker --quiet
 SWMTKN-1-49notae85i8c5rea5alx8abc2toke546ny9x8qy7r2f398dwkt-cryin443sc2xpocqb24niawk9

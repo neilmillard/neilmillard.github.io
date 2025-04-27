@@ -5,11 +5,16 @@ published: true
 title: Getting servers to build themselves in AWS
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
-description: Anyone can start an EC2 instance, but getting it ready to work?
-tags: [automation, dependencies, AWS,]
+categories:
+  - Infrastructure
+description: 'Anyone can start an EC2 instance, but getting it ready to work?'
+tags:
+  - automation
+  - dependencies
+  - AWS
 comments: true
 crosspost_to_medium: false
+date: '2018-09-15 13:00:00 +0000'
 ---
 I was asked to speak at an event, [Expert Talks, in Manchester](https://www.meetup.com/ExpertTalks-Manchester/).  This was originally scheduled before the summer break, but some [football event](https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup#2018_Finals) was happening on the some night.
 

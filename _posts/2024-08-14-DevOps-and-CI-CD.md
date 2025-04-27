@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Beginners guide to DevOps and CI/CD
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: Automation and CI/CD?
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2024-08-14 13:00:00 +0000'
 ---
 Your boss likes your work, but want's it faster...
 

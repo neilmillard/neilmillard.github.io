@@ -4,11 +4,15 @@ status: publish
 published: true
 title: Contracts and Flexibility
 author_email: neil@neilmillard.com
-categories: [Contractor]
-description: The 3 Cs of Contracting, Contracts
-tags: [contractor, contracts]
+categories:
+  - Contractor
+description: 'The 3 Cs of Contracting, Contracts'
+tags:
+  - contractor
+  - contracts
 comments: true
 crosspost_to_medium: false
+date: '2023-04-09 13:00:00 +0000'
 ---
 I am developing a new programme to guide IT professionals leaping into Contracting.
 {% include image.html

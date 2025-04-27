@@ -4,11 +4,22 @@ status: publish
 published: true
 title: What is CloudOps?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: What I think CloudOps is?
-tags: [devops, servers, agile, automated build, ansible, automation, cloud, ops]
+tags:
+  - devops
+  - servers
+  - agile
+  - automated build
+  - ansible
+  - automation
+  - cloud
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2022-10-16 13:00:00 +0000'
 ---
 I was asked this question recently. Here's my answer.
 {% include image.html

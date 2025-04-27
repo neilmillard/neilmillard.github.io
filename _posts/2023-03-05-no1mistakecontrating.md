@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Do not make this mistake when IT contracting
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
-description: After contracting for over 20 years I can share with you some of the mistakes and lessons learned.
-tags: [devops, developer]
+categories:
+  - Platform
+  - Development
+description: >-
+  After contracting for over 20 years I can share with you some of the mistakes
+  and lessons learned.
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-03-05 13:00:00 +0000'
 ---
 I was forced into contracting. I had been made redundant from my two previous, so-called, perm roles.
 {% include image.html

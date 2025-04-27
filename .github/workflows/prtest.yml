@@ -1,0 +1,22 @@
+name: Deployment Workflow
+
+# Trigger this workflow on pushes to the specified branch
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test Next.js app
+        run: npm test
+
+      - name: Build Next.js app
+        run: npm run build

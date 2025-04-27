@@ -5,11 +5,20 @@ published: true
 title: What is devops?
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: What does it mean to be a DevOps engineer.
-tags: [automation, product, devops, job, dev, ops]
+tags:
+  - automation
+  - product
+  - devops
+  - job
+  - dev
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2017-08-19 13:00:00 +0000'
 ---
 {% include image.html
       img="https://www.neilmillard.com/public/img/devopsvenn.jpg"

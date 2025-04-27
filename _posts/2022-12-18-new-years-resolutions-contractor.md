@@ -4,11 +4,17 @@ status: publish
 published: true
 title: New years resolution for a career boost in 2023
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: Are you ready for the next level in your career?
-tags: [devops, developer, events]
+tags:
+  - devops
+  - developer
+  - events
 comments: true
 crosspost_to_medium: false
+date: '2022-12-18 13:00:00 +0000'
 ---
 As the new year approaches, many people are thinking about resolutions they can make to improve their lives in the coming year.
 {% include image.html

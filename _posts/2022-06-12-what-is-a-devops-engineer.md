@@ -4,11 +4,18 @@ status: publish
 published: true
 title: What does a DevOps Engineer do?
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: What does a DevOps Engineer do?
-tags: [automation, devops, immutable, ops]
+tags:
+  - automation
+  - devops
+  - immutable
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2022-06-12 13:00:00 +0000'
 ---
 I am often asked, what does a devops engineer do?
 {% include image.html

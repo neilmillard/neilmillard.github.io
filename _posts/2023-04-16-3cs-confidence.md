@@ -4,11 +4,15 @@ status: publish
 published: true
 title: Confidence and how it affects your business
 author_email: neil@neilmillard.com
-categories: [Contractor]
+categories:
+  - Contractor
 description: Why confidence is important?
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-04-16 13:00:00 +0000'
 ---
 If you want to earn more, being confident is key.
 {% include image.html

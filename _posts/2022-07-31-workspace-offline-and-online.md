@@ -2,13 +2,19 @@
 layout: post
 status: publish
 published: true
-title: Workspace, offline and online
+title: 'Workspace, offline and online'
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure]
+categories:
+  - DevOps
+  - Infrastructure
 description: Have a happy and effective workspace.
-tags: [devops, wfh, office]
+tags:
+  - devops
+  - wfh
+  - office
 comments: true
 crosspost_to_medium: false
+date: '2022-07-31 13:00:00 +0000'
 ---
 My workspace has changed drastically over the last 2 years (thanks Covid). Is it better?
 {% include image.html

@@ -14,6 +14,7 @@ categories:
 - Development
 tags: [mongodb,x509,ca,authentication]
 comments: true
+date: 2017-02-11 13:00
 ---
 The challenge this week was to find out why the authentication appeared to be broken on the automated mongodb build.
 Several weeks ago I had written a [puppet](https://www.puppet.com) module to build a mongodb cluster using a number of arguments,

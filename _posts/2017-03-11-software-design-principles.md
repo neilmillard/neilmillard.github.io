@@ -10,6 +10,7 @@ description: John Romero talks at GDC Europe about id software and is design and
 tags: [software development, principles, agile]
 comments: true
 crosspost_to_medium: false
+date: 2017-03-11 13:00
 ---
 This week ' I've been mainly checking ' [Infrastructure As Code](https://en.wikipedia.org/wiki/Infrastructure_as_Code), IAC for a new mongodb cluster. One of my design and implementation principles states:
 * only pay for the server, when your team needs it

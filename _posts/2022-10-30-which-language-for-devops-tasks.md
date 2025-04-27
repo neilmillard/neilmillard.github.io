@@ -4,11 +4,17 @@ status: publish
 published: true
 title: Which language for DevOps tasks?
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: Language decision tree for DevOps!
-tags: [devops, servers, programming]
+tags:
+  - devops
+  - servers
+  - programming
 comments: true
 crosspost_to_medium: false
+date: '2022-10-30 13:00:00 +0000'
 ---
 With so many languages to choose from, how do you choose?
 {% include image.html

@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Staying technical?
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
+categories:
+  - Platform
+  - Development
 description: The career path doesn't always mean management
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-02-19 13:00:00 +0000'
 ---
 For the aspiring career go-getter, the obvious path to getting a higher paid job is management.
 {% include image.html

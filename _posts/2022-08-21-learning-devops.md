@@ -4,11 +4,17 @@ status: publish
 published: true
 title: Learning DevOps
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure]
+categories:
+  - DevOps
+  - Infrastructure
 description: Skills you need to get the DevOps job you really want
-tags: [devops, platform, cloud]
+tags:
+  - devops
+  - platform
+  - cloud
 comments: true
 crosspost_to_medium: false
+date: '2022-08-21 13:00:00 +0000'
 ---
 Want to get to the next level? Beyond reading Stack Overflow. What can you do?
 {% include image.html

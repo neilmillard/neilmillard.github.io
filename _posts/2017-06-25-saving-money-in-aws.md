@@ -5,11 +5,16 @@ published: true
 title: Avoid unexpected big bills from AWS
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
+categories:
+  - Infrastructure
 description: A short article helping keep Amazon Web Services bill under control.
-tags: [aws, cost control, ec2]
+tags:
+  - aws
+  - cost control
+  - ec2
 comments: true
 crosspost_to_medium: false
+date: '2017-06-25 13:00:00 +0000'
 ---
 {% include image.html
       img="https://www.neilmillard.com/public/img/burn-money_480.jpg"

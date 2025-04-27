@@ -5,11 +5,15 @@ published: true
 title: Automating servers while you sleep
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
+categories:
+  - Infrastructure
 description: The morning in the life of a DevOps engineer.
-tags: [automation, dependencies]
+tags:
+  - automation
+  - dependencies
 comments: true
 crosspost_to_medium: false
+date: '2017-07-12 13:00:00 +0000'
 ---
 On a daily basis, my code runs to build multiple environments for the database warehouse project.
 The dev side of DevOps is about the role of creating and testing the automation processes.

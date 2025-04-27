@@ -4,11 +4,16 @@ status: publish
 published: true
 title: How to deal with Imposter syndrome?
 author_email: neil@neilmillard.com
-categories: [Development]
+categories:
+  - Development
 description: Cloud. security and then?
-tags: [ego, devops, imposter syndrome]
+tags:
+  - ego
+  - devops
+  - imposter syndrome
 comments: true
 crosspost_to_medium: false
+date: '2022-09-18 13:00:00 +0000'
 ---
 Imposter syndrome, what is it and what can you do about it?
 {% include image.html

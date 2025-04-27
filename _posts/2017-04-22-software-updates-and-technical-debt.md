@@ -10,6 +10,7 @@ description:
 tags: [immutable, servers, software updates]
 comments: true
 crosspost_to_medium: false
+date: 2017-04-22 13:00
 ---
 I cannot stress enough how important it is to keep updated with the latest software versions. This does give us two problems however.
 

@@ -4,11 +4,16 @@ status: publish
 published: true
 title: How DevOps can help deploy faster
 author_email: neil@neilmillard.com
-categories: [Platform, Infrastructure]
+categories:
+  - Platform
+  - Infrastructure
 description: I explain how to deploy more often
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-01-22 13:00:00 +0000'
 ---
 A sign of Maturity in some DevOps and Agile models, improving deployment throughput.
 {% include image.html

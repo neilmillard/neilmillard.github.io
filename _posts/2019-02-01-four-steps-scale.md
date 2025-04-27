@@ -5,11 +5,22 @@ published: true
 title: My Four Steps for a successful cloud deployment - Scale
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development, Book]
-description: Scaling up is harder than it seems, strong foundations make it easier
-tags: [automation, application, infrastructure, book, devops, dev, ops]
+categories:
+  - Infrastructure
+  - Development
+  - Book
+description: 'Scaling up is harder than it seems, strong foundations make it easier'
+tags:
+  - automation
+  - application
+  - infrastructure
+  - book
+  - devops
+  - dev
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2019-02-01 13:00:00 +0000'
 ---
 Scaling for flexible workloads
 -------------

@@ -5,11 +5,17 @@ published: true
 title: What does immutable mean?
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
+categories:
+  - Infrastructure
 description: Unchanging over time or unable to be changed.
-tags: [automation, devops, immutable, ops]
+tags:
+  - automation
+  - devops
+  - immutable
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2017-09-16 13:00:00 +0000'
 ---
 {% include image.html
       img="/public/img/stonehenge-under-the-sunset-skies.jpg"

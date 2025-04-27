@@ -4,11 +4,14 @@ status: publish
 published: true
 title: Reporting and Compliance
 author_email: neil@neilmillard.com
-categories: [Contractor]
-description: The 3 Cs of Contracting, Compliance
-tags: [contractor]
+categories:
+  - Contractor
+description: 'The 3 Cs of Contracting, Compliance'
+tags:
+  - contractor
 comments: true
 crosspost_to_medium: false
+date: '2023-03-26 13:00:00 +0000'
 ---
 I am developing a new programme to guide IT professionals leaping into Contracting.
 {% include image.html

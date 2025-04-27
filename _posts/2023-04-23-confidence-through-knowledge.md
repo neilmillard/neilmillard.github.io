@@ -4,11 +4,15 @@ status: publish
 published: true
 title: Confidence - Get more confident - Know your Sh*t
 author_email: neil@neilmillard.com
-categories: [Contractor]
+categories:
+  - Contractor
 description: How you can be more confident through Knowledge
-tags: [devops, developer]
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-04-23 13:00:00 +0000'
 ---
 Being confident is knowing you're scared, but not showing everyone else.
 {% include image.html

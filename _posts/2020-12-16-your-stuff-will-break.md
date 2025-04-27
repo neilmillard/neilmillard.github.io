@@ -5,11 +5,21 @@ published: true
 title: Your stuff will Break!
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: Cloud applications and software must be resilient to failure.
-tags: [automation, application, infrastructure, product, devops, dev, ops]
+tags:
+  - automation
+  - application
+  - infrastructure
+  - product
+  - devops
+  - dev
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2020-12-16 13:00:00 +0000'
 ---
 Your stuff will Break!
 ------------

@@ -5,11 +5,21 @@ published: true
 title: What is a digital platform?
 author_login: neil
 author_email: neil@neilmillard.com
-categories: [Infrastructure, Development]
+categories:
+  - Infrastructure
+  - Development
 description: My Partners share the details
-tags: [automation, application, infrastructure, product, devops, dev, ops]
+tags:
+  - automation
+  - application
+  - infrastructure
+  - product
+  - devops
+  - dev
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2020-11-09 13:00:00 +0000'
 ---
 Digital Platform
 ------------

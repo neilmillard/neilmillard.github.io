@@ -4,11 +4,16 @@ status: publish
 published: true
 title: Leaping into IT contracting
 author_email: neil@neilmillard.com
-categories: [Platform, Development]
-description: When to leap, that is the question?
-tags: [devops, developer]
+categories:
+  - Platform
+  - Development
+description: 'When to leap, that is the question?'
+tags:
+  - devops
+  - developer
 comments: true
 crosspost_to_medium: false
+date: '2023-03-12 13:00:00 +0000'
 ---
 I often get asked how do you know when you are ready enough for contracting?
 {% include image.html

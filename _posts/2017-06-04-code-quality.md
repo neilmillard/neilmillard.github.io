@@ -10,6 +10,7 @@ description:
 tags: [code quality, lint, linter]
 comments: true
 crosspost_to_medium: false
+date: 2017-06-04 13:00
 ---
 This week's focus is on code quality.
 This is where the code that we create is clear and uniform for the purposes of making it easier to maintain.

@@ -4,11 +4,17 @@ status: publish
 published: true
 title: What does cloud application architecture look like?
 author_email: neil@neilmillard.com
-categories: [Infrastructure]
+categories:
+  - Infrastructure
 description: 3 tier architecture in the cloud.
-tags: [automation, devops, immutable, ops]
+tags:
+  - automation
+  - devops
+  - immutable
+  - ops
 comments: true
 crosspost_to_medium: false
+date: '2021-04-11 13:00:00 +0000'
 ---
 Secure, fast and valuable web applications share a similar architecture.
 You have a [MVP](/glossary/index.html#MVP) and now need to scale and grow, to profitability.

@@ -4,11 +4,18 @@ status: publish
 published: true
 title: Multi-cloud is bad
 author_email: neil@neilmillard.com
-categories: [DevOps, Infrastructure, Development]
+categories:
+  - DevOps
+  - Infrastructure
+  - Development
 description: Should you write infrastructure code for multiple cloud vendors?
-tags: [devops, platform, cloud]
+tags:
+  - devops
+  - platform
+  - cloud
 comments: true
 crosspost_to_medium: false
+date: '2022-07-17 13:00:00 +0000'
 ---
 I have had customers that want to reduce their risk by running in multiple clouds. You shouldn't.
 {% include image.html
