@@ -32,7 +32,7 @@ jobs:
           aws-region: eu-west-1
 
       - name: Deploy to S3
-        run: aws s3 sync ./out s3://${{ env.BUCKET }}
+        run: aws s3 sync ./out s3://${{ vars.BUCKET }}
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/" "/glossary/" "/book/" "/devops/" "/about/" "/contact/" "/clock/"
