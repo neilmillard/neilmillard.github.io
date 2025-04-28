@@ -30,7 +30,7 @@ export default function Home() {
         <div className="lg:w-1/2 h-128 bg-center bg-no-repeat bg-cover" style={{ backgroundImage: "url('/img/devops_excellence_awards_neil_4_3.jpg')" }}></div>
         <div className="lg:w-1/2 h-full">
           <p className="text-xl m-5 mt-4 font-medium">
-            With over 20 years IT experience, I can help you and your tech team deliver.
+            With over 20 years IT experience, I can help you and your tech team deliver. Here is how I was introduced at my last talk.
           </p>
           <p className="text-xl m-5 mt-4 font-medium">
             Neil Millard is a successful entrepreneur, speaker and trainer. A recognised expert on cloud and automated
