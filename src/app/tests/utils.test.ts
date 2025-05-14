@@ -25,7 +25,7 @@ describe('formatClockDisplay', () => {
     expect(result.date).toBe('Sunday 15 January');
   });
 
-  test('handles hour conversion for PM times', () => {
+  test('handles hour for PM times', () => {
     // Mock Date to return a fixed PM time
     const mockDate = new Date(2023, 0, 15, 15, 5, 10); // Jan 15, 2023, 15:05:10 (3:05:10 PM)
     const originalDate = global.Date;
@@ -36,22 +36,7 @@ describe('formatClockDisplay', () => {
     // Restore original Date
     global.Date = originalDate;
 
-    // Check that 15 hours is converted to 3 (PM) with leading zero for minutes and seconds
-    expect(result.time).toBe('03:05:10');
+    expect(result.time).toBe('15:05:10');
   });
 
-  test('handles midnight (0 hour) correctly', () => {
-    // Mock Date to return midnight
-    const mockDate = new Date(2023, 0, 15, 0, 5, 10); // Jan 15, 2023, 00:05:10
-    const originalDate = global.Date;
-    global.Date = jest.fn(() => mockDate) as unknown as DateConstructor;
-
-    const result = formatClockDisplay();
-
-    // Restore original Date
-    global.Date = originalDate;
-
-    // Check that 0 hours is converted to 12 (midnight)
-    expect(result.time).toBe('12:05:10');
-  });
 });

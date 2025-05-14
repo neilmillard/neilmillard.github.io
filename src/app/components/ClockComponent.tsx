@@ -7,9 +7,9 @@ export default function ClockComponent() {
   const [displayDate, setDisplayDate] = useState<string>("Sunday 1 Jan");
 
   function updateClockDisplay() {
-    const { time, date } = formatClockDisplay();
-    setDisplayTime(time);
-    setDisplayDate(date);
+    const clockDisplay = formatClockDisplay();
+    setDisplayTime(clockDisplay.time);
+    setDisplayDate(clockDisplay.date);
   }
 
   useEffect(() => {
