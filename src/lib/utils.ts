@@ -1,30 +1,51 @@
 // Clock utility functions
+export type ClockDisplay = {
+  time: string,
+  date: string
+}
+
+export function getTimeString(displayHour: string | number, displayMin: string | number, displaySec: string | number) {
+  return displayHour + ":" + displayMin + ":" + displaySec;
+}
+
+function getDateString(weekdays: string[], time: Date, months: string[]) {
+  return weekdays[time.getDay()] + " " + time.getDate() + " " + months[time.getMonth()];
+}
+
+export function getTwoDigitDisplay(data: number) {
+  return data < 10 ? "0" + data : data;
+}
 
 /**
  * Formats the current time in 12-hour format and returns the formatted time and date strings
  * @returns {Object} Object containing formatted time and date strings
  */
-export function formatClockDisplay() {
+export function formatClockDisplay(): ClockDisplay {
   const time = new Date();
-  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  // Setting time for 12 Hrs format
-  let hour = time.getHours();
-  if (hour > 12) hour -= 12;
-  if (hour === 0) hour = 12;
-  const min = time.getMinutes();
-  const sec = time.getSeconds();
+  const hours = getTwoDigitDisplay(time.getHours())
+  const minutes = getTwoDigitDisplay(time.getMinutes());
+  const seconds = getTwoDigitDisplay(time.getSeconds());
 
-  const displayHour = hour < 10 ? "0" + hour : hour;
-  const displayMin = min < 10 ? "0" + min : min;
-  const displaySec = sec < 10 ? "0" + sec : sec;
-
-  const timeString = displayHour + ":" + displayMin + ":" + displaySec;
-  const dateString = weekdays[time.getDay()] + " " + time.getDate() + " " + months[time.getMonth()];
+  const timeString = getTimeString(hours, minutes, seconds);
+  const dateString = getDateString(weekdays, time, months);
 
   return {
     time: timeString,
     date: dateString
   };
+}
+
+export function formatTimerDisplay(seconds: number): string {
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const secs = seconds % 60;
+
+  const displayHour = getTwoDigitDisplay(hours);
+  const displayMin = getTwoDigitDisplay(minutes);
+  const displaySec = getTwoDigitDisplay(secs);
+
+  return getTimeString(displayHour, displayMin, displaySec);
 }
