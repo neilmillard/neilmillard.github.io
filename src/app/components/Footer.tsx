@@ -13,7 +13,7 @@ export function Footer() {
       href="https://www.facebook.com/neil.millard/" target="_blank">Facebook</a> - <a
       href="https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w" target="_blank">YouTube channel</a> - <a
       href="https://www.techanswers.club/" target="_blank">Tech Answers Club</a> - <a
-      href="/clock/index.html">Clock</a>
+      href="/clock/">Clock</a>
     </div>
   </div>
 }
