@@ -1,12 +1,17 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import ExportedImage from 'next-image-export-optimizer';
 
 interface ContactFormProps {
   siteEmail: string;
+  apiUrl: string;
 }
 
 export default function ContactPage(props: ContactFormProps) {
-  const {siteEmail} = props;
+  const {siteEmail, apiUrl} = props;
+  const api = `${apiUrl}${siteEmail}`;
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [responseMessage, setResponseMessage] = useState<string>('');
   return (
     <>
     <div className="w-[83%] mx-auto p-6 bg-white rounded-2xl shadow-md mt-10">
@@ -34,15 +39,40 @@ export default function ContactPage(props: ContactFormProps) {
     <div className="w-[83%] mx-auto p-6 bg-white rounded-2xl shadow-md mt-10">
       <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
         <form
-          action={`https://formspree.io/${siteEmail}`}
+          action={api}
           method="post"
           className="space-y-4"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setFormStatus('submitting');
+
+            const formData = new FormData(e.currentTarget);
+            const formValues = Object.fromEntries(formData.entries());
+
+            try {
+              const response = await fetch(api, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formValues),
+              });
+
+              if (response.ok) {
+                const data = await response.json();
+                setResponseMessage(data.message);
+                setFormStatus('success');
+              } else {
+                setResponseMessage('An error occurred. Please try again later.');
+                setFormStatus('error');
+              }
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            } catch (error) {
+              setResponseMessage('An error occurred. Please try again later.');
+              setFormStatus('error');
+            }
+          }}
         >
-          <input
-            type="hidden"
-            name="_next"
-            value={`/thanks/`}
-          />
           <input
             type="text"
             name="_gotcha"
@@ -71,7 +101,7 @@ export default function ContactPage(props: ContactFormProps) {
             <input
               type="email"
               id="email"
-              name="_replyto"
+              name="email"
               className="w-full max-w-md p-2 border rounded"
               required
               aria-required="true"
@@ -90,12 +120,27 @@ export default function ContactPage(props: ContactFormProps) {
             />
           </div>
 
-          <button
-            type="submit"
-            className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
-          >
-            Send
-          </button>
+          <div className="space-y-4">
+            <button
+              type="submit"
+              className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 disabled:bg-gray-400"
+              disabled={formStatus === 'submitting'}
+            >
+              {formStatus === 'submitting' ? 'Sending...' : 'Send'}
+            </button>
+
+            {formStatus === 'success' && (
+              <div className="mt-4 p-3 bg-green-100 text-green-800 rounded">
+                {responseMessage}
+              </div>
+            )}
+
+            {formStatus === 'error' && (
+              <div className="mt-4 p-3 bg-red-100 text-red-800 rounded">
+                {responseMessage}
+              </div>
+            )}
+          </div>
         </form>
       </div>
 
