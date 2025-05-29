@@ -15,6 +15,7 @@ export default function Home() {
     },
     { title: "Build an online product", description: "Have an idea? Discuss with me. Connect and we can build it together.", link: "https://linkedin.com/in/neilmillard" },
     { title: "Hire ME!", description: "Bookable sessions for you or your team", link: "https://linkedin.com/in/neilmillard" },
+    { title: "Deployment Strategies", description: "Learn about effective deployment practices and how to implement them in your projects.", link: "/deploys" },
     { title: "Other services", description: "Find out more", link: "https://deltafamiglia.com"}
   ];
   return (
