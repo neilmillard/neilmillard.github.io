@@ -19,7 +19,7 @@ describe("ContactPage", () => {
     expect(contactForm).toBeInTheDocument();
 
     // Check if the correct email is passed to the ContactForm
-    expect(contactForm).toHaveAttribute("data-email", "f/mgepvvjk");
+    expect(contactForm).toHaveAttribute("data-email", "f14mocr2dc");
 
     cleanup();
   });

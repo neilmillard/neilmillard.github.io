@@ -5,9 +5,10 @@ import ContactForm from "@/app/components/ContactForm";
 
 describe("ContactForm Component", () => {
   const mockEmail = "test@example.com";
+  const mockApiUrl = "https://mock-api.example.com/contact/";
 
   test("renders without crashing", () => {
-    render(<ContactForm siteEmail={mockEmail} />);
+    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
 
     // Check if the form elements are rendered
     expect(screen.getByLabelText(/Your Name/i)).toBeInTheDocument();
@@ -19,7 +20,7 @@ describe("ContactForm Component", () => {
   });
 
   test("form has required fields", () => {
-    render(<ContactForm siteEmail={mockEmail} />);
+    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
 
     // Check if name and email fields are required
     const nameInput = screen.getByLabelText(/Your Name/i);
@@ -32,11 +33,11 @@ describe("ContactForm Component", () => {
   });
 
   test("form has correct action URL", () => {
-    render(<ContactForm siteEmail={mockEmail} />);
+    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
 
     // Check if the form has the correct action URL
     const form = document.querySelector("form");
-    expect(form).toHaveAttribute("action", `https://formspree.io/${mockEmail}`);
+    expect(form).toHaveAttribute("action", `${mockApiUrl}${mockEmail}`);
 
     cleanup();
   });
