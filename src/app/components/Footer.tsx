@@ -18,7 +18,8 @@ export function Footer() {
       href="https://www.facebook.com/neil.millard/" target="_blank" className="hover:text-gray-300">Facebook</a> - <a
       href="https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w" target="_blank" className="hover:text-gray-300">YouTube channel</a> - <a
       href="https://www.techanswers.club/" target="_blank" className="hover:text-gray-300">Tech Answers Club</a> - <a
-      href="/clock/" className="hover:text-gray-300">Clock</a>
+      href="/clock/" className="hover:text-gray-300">Clock</a> - <a
+      href="https://www.deltafamiglia.com/" className="hover:text-gray-300">Delta Famiglia Ltd</a>
     </div>
   </div>
 }
