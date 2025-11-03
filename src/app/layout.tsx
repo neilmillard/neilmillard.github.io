@@ -43,7 +43,7 @@ export default function RootLayout({
     <div className='h-10'></div>
     {children}
     <Footer/>
-    <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
+    <GoogleTagManager gtmId="G-C5CKFSXQSX" />
     </body>
     </html>
   );
