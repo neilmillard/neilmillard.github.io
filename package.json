@@ -19,7 +19,7 @@
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.501.0",
     "markdown-to-jsx": "^7.7.4",
-    "next": "15.5.9",
+    "next": "16.1.5",
     "next-image-export-optimizer": "^1.18.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.0",
