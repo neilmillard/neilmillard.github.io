@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@mantine/hooks": "^7.17.4",
-    "@next/third-parties": "^16.1.0",
+    "@next/third-parties": "^16.1.5",
     "@tailwindcss/typography": "^0.5.16",
     "chart.js": "^4.4.9",
     "clsx": "^2.1.1",
@@ -20,7 +20,7 @@
     "lucide-react": "^0.501.0",
     "markdown-to-jsx": "^7.7.4",
     "next": "16.1.5",
-    "next-image-export-optimizer": "^1.18.0",
+    "next-image-export-optimizer": "^1.19.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.12.0",
