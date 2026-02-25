@@ -1,5 +1,5 @@
 const ImageWrapper = ({ url, title, img, caption }) => (
-  <div className="image-wrapper" >
+  <span className="image-wrapper" style={{ display: 'block' }}>
     {url ?
       <a href={url} title={title} target="_blank" rel="noopener noreferrer">
         <img src={img} alt={title || "Amazing picture"}/>
@@ -7,8 +7,8 @@ const ImageWrapper = ({ url, title, img, caption }) => (
       :
       <img src={img} alt={title || "Amazing picture"}/>
     }
-    {caption && <p className="image-caption">{caption}</p>}
-  </div>
+    {caption && <span className="image-caption" style={{ display: 'block' }}>{caption}</span>}
+  </span>
 );
 
 export default ImageWrapper;
