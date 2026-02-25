@@ -25,7 +25,10 @@ export default function BlogPost({ title, date, content }: BlogPostProps) {
             wrapper: Fragment,
             overrides: {
               ImageWrapper: {
-                component: ImageWrapper
+                component: ImageWrapper,
+                props: {
+                  forceBlock: true
+                }
               }
             }
           }}>

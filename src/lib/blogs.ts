@@ -38,15 +38,15 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
 // Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
-  const includeRegex = /{% include image\.html[\s\S]+(.*?)%}/g;
+  const includeRegex = /{% include image\.html([\s\S]+?)%}/g;
 
   // First, replace Jekyll-style image includes
   let processedContent = content.replace(includeRegex, (_match, params) => {
     // Extract parameters from the include tag
-    const imgMatch = params.match(/img="([^"]+)"/);
-    const captionMatch = params.match(/caption="([^"]+)"/);
-    const urlMatch = params.match(/url="([^"]+)"/);
-    const titleMatch = params.match(/title="([^"]+)"/);
+    const imgMatch = params.match(/img="([^"]+)"/s);
+    const captionMatch = params.match(/caption="([^"]+)"/s);
+    const urlMatch = params.match(/url="([^"]+)"/s);
+    const titleMatch = params.match(/title="([^"]+)"/s);
 
     // Get parameter values or set to undefined if not present
     let img = imgMatch ? imgMatch[1] : undefined;
