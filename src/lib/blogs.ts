@@ -43,10 +43,10 @@ function replaceImageIncludes(content: string): string {
   // First, replace Jekyll-style image includes
   let processedContent = content.replace(includeRegex, (_match, params) => {
     // Extract parameters from the include tag
-    const imgMatch = params.match(/img="([^"]+)"/s);
-    const captionMatch = params.match(/caption="([^"]+)"/s);
-    const urlMatch = params.match(/url="([^"]+)"/s);
-    const titleMatch = params.match(/title="([^"]+)"/s);
+    const imgMatch = params.match(/img="([^"]+)"/);
+    const captionMatch = params.match(/caption="([^"]+)"/);
+    const urlMatch = params.match(/url="([^"]+)"/);
+    const titleMatch = params.match(/title="([^"]+)"/);
 
     // Get parameter values or set to undefined if not present
     let img = imgMatch ? imgMatch[1] : undefined;
