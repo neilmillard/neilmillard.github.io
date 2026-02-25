@@ -13,7 +13,7 @@ tags:
   - AI
 comments: true
 crosspost_to_medium: false
-date: '2026-02-23 13:00:00 +0000'
+date: '2026-03-01 13:00:00 +0000'
 ---
 How to be the person who turns AI output into production-quality changes.
 
