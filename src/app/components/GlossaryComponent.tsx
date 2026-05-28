@@ -9,6 +9,10 @@ interface GlossaryTerm {
 // Glossary terms from the Jekyll site
 const glossaryTerms: GlossaryTerm[] = [
   {
+    term: 'AI',
+    definition: 'Artificial Intelligence. The simulation of human intelligence processes by computer systems, including learning, reasoning, and self-correction. AI encompasses a broad range of techniques used to enable machines to perform tasks that typically require human intelligence.'
+  },
+  {
     term: 'Agile',
     definition: 'Do just enough design to start delivering value. Iteritive and continious improvement of software/product.'
   },
@@ -139,6 +143,10 @@ const glossaryTerms: GlossaryTerm[] = [
   {
     term: 'Lambda',
     definition: 'Serverless offering of AWS. They are small quick tasks running from a predefined Docker container.'
+  },
+  {
+    term: 'LLM',
+    definition: 'Large Language Model. A type of AI model trained on vast amounts of text data, capable of generating, summarising, and understanding human language. Examples include GPT and Claude, which power many modern AI assistants and tools.'
   },
   {
     term: 'Memory',

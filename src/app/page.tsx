@@ -16,7 +16,9 @@ export default function Home() {
     { title: "Build an online product", description: "Have an idea? Discuss with me. Connect and we can build it together.", link: "https://linkedin.com/in/neilmillard" },
     { title: "Hire ME!", description: "Bookable sessions for you or your team", link: "https://linkedin.com/in/neilmillard" },
     { title: "Deployment Strategies", description: "Learn about effective deployment practices and how to implement them in your projects.", link: "/deploys" },
-    { title: "Other services", description: "Find out more", link: "https://deltafamiglia.com"}
+    { title: "Other services", description: "Find out more", link: "https://deltafamiglia.com"},
+    { title: "Mortgage Affordability", description: "Find out how much you can afford to borrow for your mortgage.", link: "https://www.helpfulmoney.site/tools/afford/" },
+    { title: "Mortgage Overpayment Calculator", description: "See how much you can save by overpaying your mortgage.", link: "https://www.helpfulmoney.site/tools/mortgage-overpayment-calculator/" }
   ];
   return (
     <div className="px-4 py-5 sm:p-6">
@@ -38,7 +40,9 @@ export default function Home() {
             server infrastructures, he assists businesses to embrace new technology to move faster, become more
             automated and respond more quickly to their customers’ wants and needs. Having spent many years in the
             financial sector with clients such as Barclays, HMRC and AXA, he is now on a mission to help grow companies,
-            through DevOps and Platforms, helping the world.</p>
+            through DevOps and Platforms, helping the world. He also shares financial tips, including{" "}
+            <Link href="https://www.helpfulmoney.site/blog/how-much-save-mortgage-overpayment/" className="text-indigo-600 underline">how much you can save with mortgage overpayments</Link>{" "}
+            and <Link href="https://www.helpfulmoney.site/blog/paid-off-mortgage-what-next/" className="text-indigo-600 underline">what to do after paying off your mortgage</Link>.</p>
         </div>
       </div>
       <div className="mt-10">
