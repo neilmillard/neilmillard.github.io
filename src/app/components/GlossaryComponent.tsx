@@ -29,6 +29,10 @@ const glossaryTerms: GlossaryTerm[] = [
     definition: 'Amazon Web Services, a public cloud provider. Infrastructure as a service.'
   },
   {
+    term: 'Azure',
+    definition: 'Microsoft Azure, a public cloud computing platform offering a wide range of services including computing, analytics, storage, and networking. A major competitor to AWS and Google Cloud.'
+  },
+  {
     term: 'Blockers',
     definition: 'An issue identified by an Agile team that is halting or slowing down progress.'
   },
@@ -105,8 +109,20 @@ const glossaryTerms: GlossaryTerm[] = [
     definition: 'A network device that controls access between network components.'
   },
   {
+    term: 'Cloud',
+    definition: 'A network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or personal computer. Major providers include AWS, Azure, and Google Cloud.'
+  },
+  {
     term: 'Git',
     definition: 'A distributed version-control system for tracking changes in source code during software development.'
+  },
+  {
+    term: 'GitHub',
+    definition: 'A web-based platform for hosting and collaborating on Git repositories. It provides source control, code review, issue tracking, and CI/CD features used by millions of developers worldwide.'
+  },
+  {
+    term: 'GitHub Actions',
+    definition: 'A CI/CD and automation platform built into GitHub. It allows developers to define workflows triggered by repository events such as pushes or pull requests, automating build, test, and deployment pipelines.'
   },
   {
     term: 'Hybrid private and public cloud',
@@ -123,6 +139,10 @@ const glossaryTerms: GlossaryTerm[] = [
   {
     term: 'Infrastructure as Code (IaC)',
     definition: 'Where code is written that can create or destroy infrastructure and computer environments.'
+  },
+  {
+    term: 'Jira',
+    definition: 'A project management and issue tracking tool by Atlassian. Widely used in Agile teams to plan sprints, track bugs, and manage backlogs across software development projects.'
   },
   {
     term: 'Jenkins',
@@ -235,6 +255,134 @@ const glossaryTerms: GlossaryTerm[] = [
   {
     term: 'Virtualisation',
     definition: 'Enabling the resources of a computer to run more than one logical computer in an isolated way on the same computer, whilst they are not aware of each other.'
+  },
+  {
+    term: 'Backlog',
+    definition: 'A prioritised list of work items, features, or bugs to be addressed by a development team. In Agile, the backlog is continuously refined and reprioritised based on business value.'
+  },
+  {
+    term: 'Blue/Green Deployment',
+    definition: 'A release strategy that maintains two identical production environments (blue and green). New versions are deployed to the inactive environment and traffic is switched over, enabling zero-downtime releases and easy rollbacks.'
+  },
+  {
+    term: 'Canary Release',
+    definition: 'A deployment technique where a new version of software is rolled out to a small subset of users before a full release, reducing risk by catching issues early.'
+  },
+  {
+    term: 'ChatOps',
+    definition: 'A collaboration model that connects people, tools, and processes through chat platforms (e.g. Slack). Teams can trigger deployments, run scripts, and receive alerts directly within a chat interface.'
+  },
+  {
+    term: 'Confluence',
+    definition: 'A team collaboration and documentation tool by Atlassian. Widely used alongside Jira to create, share, and organise project documentation and knowledge bases.'
+  },
+  {
+    term: 'DNS',
+    definition: 'Domain Name System. Translates human-readable domain names (e.g. example.com) into IP addresses that computers use to communicate over a network.'
+  },
+  {
+    term: 'Encryption',
+    definition: 'The process of converting data into a coded format to prevent unauthorised access. Essential for securing data in transit (e.g. HTTPS) and at rest (e.g. encrypted databases).'
+  },
+  {
+    term: 'GCP',
+    definition: 'Google Cloud Platform. A suite of cloud computing services offered by Google, including compute, storage, machine learning, and networking. A major competitor to AWS and Azure.'
+  },
+  {
+    term: 'Helm',
+    definition: 'A package manager for Kubernetes. Helm charts define, install, and upgrade complex Kubernetes applications, simplifying deployment management.'
+  },
+  {
+    term: 'HTTP/HTTPS',
+    definition: 'HyperText Transfer Protocol (Secure). The foundation of data communication on the web. HTTPS adds encryption via TLS/SSL to secure data between clients and servers.'
+  },
+  {
+    term: 'Incident Management',
+    definition: 'The process of identifying, analysing, and resolving service disruptions or outages. Includes on-call rotations, runbooks, post-mortems, and SLA tracking.'
+  },
+  {
+    term: 'Load Balancer',
+    definition: 'A device or service that distributes incoming network traffic across multiple servers to ensure reliability, availability, and performance.'
+  },
+  {
+    term: 'Logging',
+    definition: 'The practice of recording events, errors, and system activity to files or centralised services. Logs are essential for debugging, auditing, and monitoring application behaviour.'
+  },
+  {
+    term: 'Monitoring',
+    definition: 'The continuous observation of a system\'s health, performance, and availability. Tools like Prometheus, Grafana, and Datadog are commonly used to collect and visualise metrics.'
+  },
+  {
+    term: 'Observability',
+    definition: 'The ability to understand the internal state of a system from its external outputs. Built on three pillars: logs, metrics, and traces. Goes beyond monitoring to enable root cause analysis.'
+  },
+  {
+    term: 'On-Premise',
+    definition: 'Infrastructure and software that is hosted and managed within an organisation\'s own data centre, rather than in the cloud.'
+  },
+  {
+    term: 'Open Source',
+    definition: 'Software whose source code is publicly available for anyone to view, use, modify, and distribute. Many foundational DevOps tools (Linux, Kubernetes, Terraform) are open source.'
+  },
+  {
+    term: 'Post-Mortem',
+    definition: 'A blameless review conducted after an incident or outage to understand what happened, why it happened, and how to prevent it in future. Also called a retrospective or incident review.'
+  },
+  {
+    term: 'Pull Request',
+    definition: 'A mechanism in source control platforms (e.g. GitHub) for proposing code changes. Team members review, discuss, and approve changes before they are merged into the main branch.'
+  },
+  {
+    term: 'Puppet',
+    definition: 'An open-source configuration management tool that automates the provisioning and management of infrastructure using a declarative language.'
+  },
+  {
+    term: 'Reliability',
+    definition: 'The ability of a system to perform its intended function consistently over time. Site Reliability Engineering (SRE) is a discipline focused on building and maintaining reliable systems.'
+  },
+  {
+    term: 'Repository',
+    definition: 'A storage location for source code and its history, managed by a version control system such as Git. Can be hosted on platforms like GitHub or GitLab.'
+  },
+  {
+    term: 'S3',
+    definition: 'Amazon Simple Storage Service. An object storage service from AWS used to store and retrieve any amount of data, commonly used for backups, static websites, and data lakes.'
+  },
+  {
+    term: 'Security',
+    definition: 'The practice of protecting systems, networks, and data from digital attacks, unauthorised access, and damage. In DevOps, security is integrated throughout the pipeline (DevSecOps).'
+  },
+  {
+    term: 'Slack',
+    definition: 'A cloud-based team messaging and collaboration platform widely used in tech organisations for communication, notifications, and ChatOps integrations.'
+  },
+  {
+    term: 'SLA',
+    definition: 'Service Level Agreement. A formal commitment between a service provider and a customer defining the expected level of service, including uptime, response times, and support.'
+  },
+  {
+    term: 'SLO',
+    definition: 'Service Level Objective. A specific measurable target within an SLA, such as 99.9% uptime per month. Used by SRE teams to balance reliability with development velocity.'
+  },
+  {
+    term: 'Sprint',
+    definition: 'A fixed-length iteration in Scrum (typically 1–4 weeks) during which a team completes a set of planned work items from the backlog.'
+  },
+  {
+    term: 'SRE',
+    definition: 'Site Reliability Engineering. A discipline that applies software engineering principles to infrastructure and operations, with a focus on reliability, scalability, and automation.'
+  },
+  {
+    term: 'SSL/TLS',
+    definition: 'Secure Sockets Layer / Transport Layer Security. Cryptographic protocols that provide secure communication over a network. TLS is the modern successor to SSL, used in HTTPS.'
+  },
+  {
+    term: 'Staging',
+    definition: 'A pre-production environment that mirrors production as closely as possible, used to test changes before they are released to end users.'
+  },
+  {
+    term: 'VPN',
+    definition: 'Virtual Private Network. Extends a private network across a public network, allowing users to securely access resources as if they were directly connected to the private network.'
   }
 ];
 
