@@ -20,6 +20,18 @@ export default function Home() {
     { title: "Mortgage Affordability", description: "Find out how much you can afford to borrow for your mortgage.", link: "https://www.helpfulmoney.site/tools/afford/" },
     { title: "Mortgage Overpayment Calculator", description: "See how much you can save by overpaying your mortgage.", link: "https://www.helpfulmoney.site/tools/mortgage-overpayment-calculator/" }
   ];
+  const talks = [
+    {
+      title: "The Psychology of the Side Hustle",
+      description: "Hear me speak at the Blakehay Theatre.",
+      link: "https://www.blakehay.org.uk/event-details/the-psychology-of-the-side-hustle",
+    },
+    {
+      title: "Do you really need Kubernetes?",
+      description: "My PlatformCon session — watch online.",
+      link: "https://platformcon.com/sessions/do-you-really-need-kubernetes",
+    },
+  ];
   return (
     <div className="px-4 py-5 sm:p-6">
       <div className="text-center">
@@ -27,6 +39,23 @@ export default function Home() {
         <p className="mt-1 font-extrabold text-gray-900 sm:text-2xl sm:tracking-tight">
           I am Neil. How can I help you today?
         </p>
+      </div>
+
+      {/* Talks moved above the fold */}
+      <div className="mt-6">
+        <h3 className="text-lg leading-6 font-medium text-gray-900">Talks & Sessions</h3>
+        <ul className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {talks.map((talk, index) => (
+            <li key={index} className="bg-white overflow-hidden shadow rounded-lg">
+              <Link href={talk.link} target="_blank" rel="noopener noreferrer" className="p-5 block">
+                <p className="mt-2 text-sm text-gray-500">{talk.title}</p>
+                <div className="mt-3">
+                  <p className="text-base font-semibold text-gray-900">{talk.description}</p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="flex flex-col lg:flex-row mt-10">
