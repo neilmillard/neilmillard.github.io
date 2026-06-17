@@ -14,6 +14,7 @@ export function Footer() {
     <div className="text-xs text-gray-500 h-10 mt-2 text-center">
       <a href="https://github.com/neilmillard" target="_blank" className="hover:text-gray-300">Github</a> - <a
       href="https://twitter.com/neil_millard" target="_blank" className="hover:text-gray-300">Twitter</a> - <a
+      href="https://devops-answers.com" target="_blank" className="hover:text-gray-300">DevOps Answers</a> - <a
       href="https://www.helpfulmoney.site" target="_blank" className="hover:text-gray-300">Finance Tools</a> - <a
       href="https://www.facebook.com/neil.millard/" target="_blank" className="hover:text-gray-300">Facebook</a> - <a
       href="https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w" target="_blank" className="hover:text-gray-300">YouTube channel</a> - <a
