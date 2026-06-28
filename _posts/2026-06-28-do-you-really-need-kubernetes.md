@@ -5,6 +5,7 @@ date: 2026-06-28
 categories: [devops, platform-engineering]
 tags: [kubernetes, ecs, aws, container-orchestration, platform-engineering]
 description: "Most teams adopt Kubernetes for the wrong reasons. Here's the honest case for ECS — and the questions you should be asking before you choose."
+image: /img/kubernetes-vs-ecs.png
 ---
 
 There are two airports I want you to think about. Istanbul Airport — one of the busiest in the world, handling over 850 aircraft movements a day. And Zell Am See in Austria, a small airfield that handles nine. Both are airports. Both do the job they were built for. Neither is wrong.
@@ -89,5 +90,3 @@ I'm working out what DevOps Answers should be — a community, a resource, somet
 If you're a DevOps or platform engineer and you've got opinions on what's missing in the space — what you'd pay for that you can't get free, what you wish existed — I'd genuinely like to hear from you.
 
 No pitch. No funnel. Just a conversation.
-
-[Get in touch →](/contact)

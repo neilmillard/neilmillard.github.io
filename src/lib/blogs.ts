@@ -111,6 +111,7 @@ export async function getBlogPost(id: string) {
     title: data.title,
     date: data.date instanceof Date ? data.date.toISOString().split('T')[0] : data.date,
     content: processedContent,
+    image: data.image ?? null,
   };
 }
 
