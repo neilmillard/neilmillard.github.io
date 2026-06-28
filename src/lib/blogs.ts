@@ -23,7 +23,7 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
       return {
         id: file.replace(/\.md$/, ""),
         title: data.title,
-        date: data.date,
+        date: data.date instanceof Date ? data.date.toISOString().split('T')[0] : data.date,
       };
     }
   }).filter(n => n.title); // chop the null values
@@ -109,7 +109,7 @@ export async function getBlogPost(id: string) {
   return {
     id,
     title: data.title,
-    date: data.date,
+    date: data.date instanceof Date ? data.date.toISOString().split('T')[0] : data.date,
     content: processedContent,
   };
 }
