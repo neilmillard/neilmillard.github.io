@@ -29,7 +29,7 @@ export default function Home() {
     {
       title: "Do you really need Kubernetes?",
       description: "My PlatformCon session — watch online.",
-      link: "https://platformcon.com/sessions/do-you-really-need-kubernetes",
+      link: "/blog/2026-06-28-do-you-really-need-kubernetes/",
     },
   ];
   return (
