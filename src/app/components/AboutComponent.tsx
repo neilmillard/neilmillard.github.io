@@ -27,6 +27,17 @@ export default function AboutComponent() {
                   to share his knowledge with the world.</p>
               </div>
             </div>
+            <div className="mt-6">
+              <h3 className="text-xl font-semibold mb-4">Speaker Badges</h3>
+              <div className="flex flex-wrap justify-center gap-4">
+                <ExportedImage
+                  src="/img/neil-millard-pc26.png"
+                  alt="Neil Millard - Speaker at PlatformCon 2026, London"
+                  width={150}
+                  height={150}
+                />
+              </div>
+            </div>
           </div>
         </div>
     </div>
