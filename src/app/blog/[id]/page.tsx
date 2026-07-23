@@ -3,8 +3,7 @@ import BlogPost, {BlogPostShort} from "@/app/components/blog/BlogPost";
 import {BlogNav} from "@/app/components/blog/BlogNav";
 import ContactForm from "@/app/components/ContactForm";
 
-const CONTACT_API_URL = "https://mh3o4ge2vf.execute-api.eu-west-1.amazonaws.com/v1/contact/";
-const CONTACT_SITE_EMAIL = "f14mocr2dc";
+const CONTACT_API_URL = "/api/contact";
 
 const BLOG_CONTACT_FRAMING: Record<string, string> = {
   "2026-06-28-do-you-really-need-kubernetes":
@@ -30,7 +29,7 @@ export default async function BlogPage({ params, }: {
       {framingQuestion && (
         <div className="mt-12">
           <h2 className="text-2xl font-semibold text-center mb-2">{framingQuestion}</h2>
-          <ContactForm apiUrl={CONTACT_API_URL} siteEmail={CONTACT_SITE_EMAIL}/>
+          <ContactForm apiUrl={CONTACT_API_URL}/>
         </div>
       )}
     </div>

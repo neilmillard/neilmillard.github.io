@@ -4,11 +4,10 @@ import {cleanup, render, screen} from "@testing-library/react";
 import ContactForm from "@/app/components/ContactForm";
 
 describe("ContactForm Component", () => {
-  const mockEmail = "test@example.com";
-  const mockApiUrl = "https://mock-api.example.com/contact/";
+  const mockApiUrl = "https://mock-api.example.com/api/contact";
 
   test("renders without crashing", () => {
-    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
+    render(<ContactForm apiUrl={mockApiUrl} />);
 
     // Check if the form elements are rendered
     expect(screen.getByLabelText(/Your Name/i)).toBeInTheDocument();
@@ -20,7 +19,7 @@ describe("ContactForm Component", () => {
   });
 
   test("form has required fields", () => {
-    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
+    render(<ContactForm apiUrl={mockApiUrl} />);
 
     // Check if name and email fields are required
     const nameInput = screen.getByLabelText(/Your Name/i);
@@ -33,11 +32,11 @@ describe("ContactForm Component", () => {
   });
 
   test("form has correct action URL", () => {
-    render(<ContactForm siteEmail={mockEmail} apiUrl={mockApiUrl} />);
+    render(<ContactForm apiUrl={mockApiUrl} />);
 
-    // Check if the form has the correct action URL
+    // Check if the form posts to the Cloudflare Function endpoint
     const form = document.querySelector("form");
-    expect(form).toHaveAttribute("action", `${mockApiUrl}${mockEmail}`);
+    expect(form).toHaveAttribute("action", mockApiUrl);
 
     cleanup();
   });

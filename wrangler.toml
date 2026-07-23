@@ -1,0 +1,11 @@
+name = "neilmillard-com"
+compatibility_date = "2026-07-23"
+pages_build_output_dir = "out"
+
+# functions/api/contact.ts sends via the Brevo transactional API (Delta
+# Famiglia's standard email provider). BREVO_API_KEY must be set as a
+# Pages secret, e.g. `wrangler pages secret put BREVO_API_KEY` — never
+# commit it here.
+[vars]
+CONTACT_TO_EMAIL = "neil@neilmillard.com"
+CONTACT_FROM_EMAIL = "team@deltafamiglia.com"

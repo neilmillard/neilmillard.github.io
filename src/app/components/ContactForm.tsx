@@ -3,13 +3,11 @@ import React, { useState } from 'react';
 import ExportedImage from 'next-image-export-optimizer';
 
 interface ContactFormProps {
-  siteEmail: string;
   apiUrl: string;
 }
 
 export default function ContactPage(props: ContactFormProps) {
-  const {siteEmail, apiUrl} = props;
-  const api = `${apiUrl}${siteEmail}`;
+  const {apiUrl: api} = props;
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [responseMessage, setResponseMessage] = useState<string>('');
   return (
