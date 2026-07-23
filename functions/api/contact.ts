@@ -1,6 +1,5 @@
 export interface Env {
-  CF_ACCOUNT_ID: string;
-  CF_EMAIL_API_TOKEN: string;
+  BREVO_API_KEY: string;
   CONTACT_TO_EMAIL: string;
   CONTACT_FROM_EMAIL: string;
 }
@@ -24,32 +23,31 @@ function jsonResponse(body: { message: string }, status: number): Response {
   });
 }
 
-// Cloudflare Pages Functions don't support the `send_email` Worker binding
-// (Pages config validation rejects it), so we call the Email Sending REST API instead.
+// Brevo is Delta Famiglia's standard transactional email provider, so the
+// contact form sends through the Brevo API rather than Cloudflare Email
+// Sending (which Pages Functions can't bind to anyway).
 async function sendContactEmail(
   env: Env,
   { name, email, message }: { name: string; email: string; message: string },
 ): Promise<void> {
-  const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/email/sending/send`,
-    {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${env.CF_EMAIL_API_TOKEN}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        to: env.CONTACT_TO_EMAIL,
-        from: { address: env.CONTACT_FROM_EMAIL, name: "neilmillard.com contact form" },
-        reply_to: email,
-        subject: `New contact form message from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-      }),
+  const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: {
+      "api-key": env.BREVO_API_KEY,
+      "Content-Type": "application/json",
+      Accept: "application/json",
     },
-  );
+    body: JSON.stringify({
+      sender: { name: "neilmillard.com contact form", email: env.CONTACT_FROM_EMAIL },
+      to: [{ email: env.CONTACT_TO_EMAIL }],
+      replyTo: { email },
+      subject: `New contact form message from ${name}`,
+      textContent: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    }),
+  });
 
   if (!response.ok) {
-    throw new Error(`Email Sending API returned ${response.status}`);
+    throw new Error(`Brevo API returned ${response.status}`);
   }
 }
 

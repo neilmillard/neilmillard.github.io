@@ -16,10 +16,9 @@ function makeRequest(body: unknown): Request {
 
 function makeEnv(): Env {
   return {
-    CF_ACCOUNT_ID: "test-account-id",
-    CF_EMAIL_API_TOKEN: "test-api-token",
+    BREVO_API_KEY: "test-brevo-api-key",
     CONTACT_TO_EMAIL: "neil@neilmillard.com",
-    CONTACT_FROM_EMAIL: "team@neilmillard.com",
+    CONTACT_FROM_EMAIL: "team@deltafamiglia.com",
   };
 }
 
@@ -34,9 +33,9 @@ afterEach(() => {
 });
 
 describe("onRequestPost /api/contact", () => {
-  test("sends an email via the Email Sending REST API and returns a success message", async () => {
+  test("sends an email via the Brevo transactional API and returns a success message", async () => {
     const fetchMock = global.fetch as FetchMock;
-    fetchMock.mockResolvedValue(new Response(JSON.stringify({ result: {} }), { status: 200 }));
+    fetchMock.mockResolvedValue(new Response(JSON.stringify({ messageId: "abc" }), { status: 201 }));
     const env = makeEnv();
 
     const response = await onRequestPost({
@@ -50,19 +49,15 @@ describe("onRequestPost /api/contact", () => {
 
     expect(fetchMock).toHaveBeenCalledTimes(1);
     const [url, init] = fetchMock.mock.calls[0];
-    expect(url).toBe(
-      `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/email/sending/send`,
-    );
+    expect(url).toBe("https://api.brevo.com/v3/smtp/email");
     expect(init?.method).toBe("POST");
-    expect((init?.headers as Record<string, string>).Authorization).toBe(
-      `Bearer ${env.CF_EMAIL_API_TOKEN}`,
-    );
+    expect((init?.headers as Record<string, string>)["api-key"]).toBe(env.BREVO_API_KEY);
     const sentBody = JSON.parse(init?.body as string);
-    expect(sentBody.to).toBe("neil@neilmillard.com");
-    expect(sentBody.from.address).toBe("team@neilmillard.com");
-    expect(sentBody.reply_to).toBe("ada@example.com");
-    expect(sentBody.text).toContain("Ada Lovelace");
-    expect(sentBody.text).toContain("Hello there");
+    expect(sentBody.to).toEqual([{ email: "neil@neilmillard.com" }]);
+    expect(sentBody.sender.email).toBe("team@deltafamiglia.com");
+    expect(sentBody.replyTo).toEqual({ email: "ada@example.com" });
+    expect(sentBody.textContent).toContain("Ada Lovelace");
+    expect(sentBody.textContent).toContain("Hello there");
   });
 
   test("rejects a submission missing the required name field", async () => {
@@ -116,9 +111,9 @@ describe("onRequestPost /api/contact", () => {
     expect(global.fetch).not.toHaveBeenCalled();
   });
 
-  test("returns 502 when the Email Sending API call fails", async () => {
+  test("returns 502 when the Brevo API call fails", async () => {
     const fetchMock = global.fetch as FetchMock;
-    fetchMock.mockResolvedValue(new Response("error", { status: 500 }));
+    fetchMock.mockResolvedValue(new Response("error", { status: 400 }));
     const env = makeEnv();
 
     const response = await onRequestPost({
