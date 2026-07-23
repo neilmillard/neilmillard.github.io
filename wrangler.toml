@@ -2,8 +2,12 @@ name = "neilmillard-com"
 compatibility_date = "2026-07-23"
 pages_build_output_dir = "out"
 
-send_email = [{ name = "EMAIL" }]
-
+# Pages Functions do not support the `send_email` Worker binding, so
+# functions/api/contact.ts calls the Email Sending REST API directly.
+# CF_EMAIL_API_TOKEN (Email Sending: Edit permission) must be set as a
+# Pages secret, e.g. `wrangler pages secret put CF_EMAIL_API_TOKEN` —
+# never commit it here.
 [vars]
+CF_ACCOUNT_ID = "8f1b6bf33c4c994d864703b7c5e18594"
 CONTACT_TO_EMAIL = "neil@neilmillard.com"
 CONTACT_FROM_EMAIL = "team@neilmillard.com"

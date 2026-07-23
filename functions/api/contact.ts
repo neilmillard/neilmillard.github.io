@@ -1,13 +1,6 @@
-export interface EmailMessage {
-  to: string;
-  from: { email: string; name?: string };
-  replyTo?: string;
-  subject: string;
-  text: string;
-}
-
 export interface Env {
-  EMAIL: { send(message: EmailMessage): Promise<unknown> };
+  CF_ACCOUNT_ID: string;
+  CF_EMAIL_API_TOKEN: string;
   CONTACT_TO_EMAIL: string;
   CONTACT_FROM_EMAIL: string;
 }
@@ -29,6 +22,35 @@ function jsonResponse(body: { message: string }, status: number): Response {
     status,
     headers: { "Content-Type": "application/json" },
   });
+}
+
+// Cloudflare Pages Functions don't support the `send_email` Worker binding
+// (Pages config validation rejects it), so we call the Email Sending REST API instead.
+async function sendContactEmail(
+  env: Env,
+  { name, email, message }: { name: string; email: string; message: string },
+): Promise<void> {
+  const response = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/email/sending/send`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.CF_EMAIL_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        to: env.CONTACT_TO_EMAIL,
+        from: { address: env.CONTACT_FROM_EMAIL, name: "neilmillard.com contact form" },
+        reply_to: email,
+        subject: `New contact form message from ${name}`,
+        text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      }),
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error(`Email Sending API returned ${response.status}`);
+  }
 }
 
 export async function onRequestPost({ request, env }: RequestContext): Promise<Response> {
@@ -53,13 +75,7 @@ export async function onRequestPost({ request, env }: RequestContext): Promise<R
   }
 
   try {
-    await env.EMAIL.send({
-      to: env.CONTACT_TO_EMAIL,
-      from: { email: env.CONTACT_FROM_EMAIL, name: "neilmillard.com contact form" },
-      replyTo: email,
-      subject: `New contact form message from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-    });
+    await sendContactEmail(env, { name, email, message });
   } catch {
     return jsonResponse({ message: "An error occurred. Please try again later." }, 502);
   }
