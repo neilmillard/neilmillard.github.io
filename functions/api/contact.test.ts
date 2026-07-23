@@ -18,7 +18,7 @@ function makeEnv(send: SendMock): Env {
   return {
     EMAIL: { send },
     CONTACT_TO_EMAIL: "neil@neilmillard.com",
-    CONTACT_FROM_EMAIL: "contact@neilmillard.com",
+    CONTACT_FROM_EMAIL: "team@neilmillard.com",
   };
 }
 
@@ -39,7 +39,7 @@ describe("onRequestPost /api/contact", () => {
     expect(send).toHaveBeenCalledTimes(1);
     const sentMessage = send.mock.calls[0][0];
     expect(sentMessage.to).toBe("neil@neilmillard.com");
-    expect(sentMessage.from.email).toBe("contact@neilmillard.com");
+    expect(sentMessage.from.email).toBe("team@neilmillard.com");
     expect(sentMessage.replyTo).toBe("ada@example.com");
     expect(sentMessage.text).toContain("Ada Lovelace");
     expect(sentMessage.text).toContain("Hello there");

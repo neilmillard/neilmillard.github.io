@@ -6,4 +6,4 @@ send_email = [{ name = "EMAIL" }]
 
 [vars]
 CONTACT_TO_EMAIL = "neil@neilmillard.com"
-CONTACT_FROM_EMAIL = "contact@neilmillard.com"
+CONTACT_FROM_EMAIL = "team@neilmillard.com"
