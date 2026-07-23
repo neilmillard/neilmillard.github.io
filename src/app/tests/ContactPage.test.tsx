@@ -5,8 +5,8 @@ import ContactPage from "@/app/contact/page";
 
 // Mock the ContactForm component to avoid testing its internals again
 jest.mock("@/app/components/ContactForm", () => {
-  return function MockContactForm({ siteEmail }) {
-    return <div data-testid="contact-form" data-email={siteEmail}>Contact Form Mock</div>;
+  return function MockContactForm({ apiUrl }: { apiUrl: string }) {
+    return <div data-testid="contact-form" data-api-url={apiUrl}>Contact Form Mock</div>;
   };
 });
 
@@ -18,8 +18,8 @@ describe("ContactPage", () => {
     const contactForm = screen.getByTestId("contact-form");
     expect(contactForm).toBeInTheDocument();
 
-    // Check if the correct email is passed to the ContactForm
-    expect(contactForm).toHaveAttribute("data-email", "f14mocr2dc");
+    // Check if the Cloudflare Function endpoint is passed to the ContactForm
+    expect(contactForm).toHaveAttribute("data-api-url", "/api/contact");
 
     cleanup();
   });
