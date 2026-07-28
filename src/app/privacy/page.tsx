@@ -1,3 +1,11 @@
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/privacy/",
+  },
+};
+
 export default function Privacy() {
   return (
     <div className="w-[83%] mx-auto p-8 bg-white rounded-2xl shadow-md mt-10 mb-10">

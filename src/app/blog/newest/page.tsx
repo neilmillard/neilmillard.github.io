@@ -1,6 +1,13 @@
+import type {Metadata} from "next";
 import Link from "next/link";
 import {getAllBlogPosts} from "@/lib/blogs";
 import SortLinks from "@/app/components/blog/SortLinks";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/blog/newest/",
+  },
+};
 
 export default function BlogIndex() {
   const blogs = getAllBlogPosts("newest");
@@ -12,7 +19,7 @@ export default function BlogIndex() {
       <ul>
         {blogs.map((blog) => (
           <li key={blog.id} className="mb-2">
-            <Link href={`/blog/${blog.id}`} className="text-blue-500 hover:underline">
+            <Link href={`/blog/${blog.id}/`} className="text-blue-500 hover:underline">
               {blog.title}
             </Link>
             <p className="text-sm text-gray-500">{blog.date}</p>
