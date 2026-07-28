@@ -11,4 +11,14 @@ describe("Footer", () => {
 
     cleanup();
   });
+
+  test("internal links use a trailing slash to avoid redirect chains", () => {
+    render(<Footer />);
+
+    expect(screen.getByText("Privacy Policy")).toHaveAttribute("href", "/privacy/");
+    expect(screen.getByText("Terms of Service")).toHaveAttribute("href", "/terms/");
+    expect(screen.getByText("Contact Us")).toHaveAttribute("href", "/contact/");
+
+    cleanup();
+  });
 });

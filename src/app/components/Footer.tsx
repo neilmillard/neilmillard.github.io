@@ -7,9 +7,9 @@ export function Footer() {
       © 2017-2026 Neil Millard
     </div>
     <div className="text-xs text-gray-500 h-10 mt-2 text-center">
-      <a href="/privacy" className="hover:text-gray-300">Privacy Policy</a> - <a
-      href="/terms" className="hover:text-gray-300">Terms of Service</a> - <a
-      href="/contact" className="hover:text-gray-300">Contact Us</a>
+      <a href="/privacy/" className="hover:text-gray-300">Privacy Policy</a> - <a
+      href="/terms/" className="hover:text-gray-300">Terms of Service</a> - <a
+      href="/contact/" className="hover:text-gray-300">Contact Us</a>
     </div>
     <div className="text-xs text-gray-500 h-10 mt-2 text-center">
       <a href="https://github.com/neilmillard" target="_blank" className="hover:text-gray-300">Github</a> - <a
