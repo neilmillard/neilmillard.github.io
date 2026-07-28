@@ -5,6 +5,7 @@ import React from "react";
 import { GoogleTagManager } from "@next/third-parties/google"
 import {NavBar} from "@/app/components/NavBar";
 import {Footer} from "@/app/components/Footer";
+import {SITE_URL} from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +18,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Neil Millard",
   description: "Blog, Speaker, Author, Contracting and DevOps",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
