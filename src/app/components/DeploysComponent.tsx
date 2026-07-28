@@ -265,7 +265,7 @@ export default function DeploysComponent() {
 
         <div className="text-center">
           <a
-            href="/contact"
+            href="/contact/"
             className="inline-block px-8 py-4 bg-white text-green-600 font-bold rounded-lg hover:bg-gray-100 transition-colors text-lg"
           >
             Claim Your Free Consultation Now
@@ -297,7 +297,7 @@ export default function DeploysComponent() {
           The future of your software development hinges on efficient and secure deployment. Don&apos;t let manual processes, security vulnerabilities, or slow release cycles hold you back any longer. The opportunity to transform your workflow, reclaim your time, and focus on what you love – building incredible software – is right here, right now.
         </p>
         <a
-          href="/contact"
+          href="/contact/"
           className="inline-block px-8 py-4 bg-white text-red-600 font-bold rounded-lg hover:bg-gray-100 transition-colors text-lg"
         >
           Get Started Today
