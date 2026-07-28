@@ -31,6 +31,9 @@ export async function generateMetadata({ params, }: {
       type: "article",
       images: [{url: image}],
     },
+    alternates: {
+      canonical: `/blog/${id}/`,
+    },
   };
 }
 

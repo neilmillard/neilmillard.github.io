@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | Neil Millard",
   description: "Read the privacy policy for neilmillard.com, covering what information is collected, how it is used, and your rights over your personal data.",
+  alternates: {
+    canonical: "/privacy/",
+  },
 };
 
 export default function Privacy() {
