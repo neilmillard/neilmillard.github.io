@@ -1,3 +1,4 @@
+import type {Metadata} from "next";
 import {getAdjacentBlogPosts, getAllBlogPosts, getBlogPost} from "@/lib/blogs";
 import BlogPost, {BlogPostShort} from "@/app/components/blog/BlogPost";
 import {BlogNav} from "@/app/components/blog/BlogNav";
@@ -9,6 +10,17 @@ const BLOG_CONTACT_FRAMING: Record<string, string> = {
   "2026-06-28-do-you-really-need-kubernetes":
     "ECS or Kubernetes — still not sure which fits your team? Tell me about your setup and I'll give you an honest answer.",
 };
+
+export async function generateMetadata({params}: {
+  params: Promise<{ id: string }>
+}): Promise<Metadata> {
+  const {id} = await params;
+  return {
+    alternates: {
+      canonical: `/blog/${id}/`,
+    },
+  };
+}
 
 export default async function BlogPage({ params, }: {
   params: Promise<{ id: string }>
