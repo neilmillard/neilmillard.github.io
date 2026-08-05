@@ -1,0 +1,19 @@
+# Neil Millard
+
+> Neil Millard is a speaker, author, and DevOps/platform engineering consultant. He helps businesses adopt cloud and automated infrastructure, drawing on years of experience in the financial sector (Barclays, Lloyds, AXA) and as a conference speaker.
+
+This site is a personal blog and portfolio covering DevOps, cloud infrastructure (AWS, Cloudflare), automation, and technical leadership.
+
+## Key pages
+
+- [About](https://www.neilmillard.com/about/): Background, experience, and speaking history.
+- [Blog](https://www.neilmillard.com/blog/): Articles on DevOps, AWS, automation, and technical debt, dating back to 2015.
+- [DevOps](https://www.neilmillard.com/devops/): Overview of DevOps consulting and services offered.
+- [Glossary](https://www.neilmillard.com/glossary/): Definitions of common DevOps and cloud terminology.
+- [Book](https://www.neilmillard.com/book/): Book by Neil Millard.
+- [Contact](https://www.neilmillard.com/contact/): How to get in touch.
+
+## Notes
+
+- Blog posts are written in Markdown and rendered as static HTML; each post is available at `/blog/<slug>/`.
+- [Terms](https://www.neilmillard.com/terms/) and [Privacy](https://www.neilmillard.com/privacy/) pages cover site policies.
