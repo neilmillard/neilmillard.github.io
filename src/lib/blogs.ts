@@ -43,6 +43,19 @@ export function replaceSiteDataTokens(content: string): string {
     .replace(/{{\s*site\.data\.youtube\.channel\s*}}/g, 'https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w/');
 }
 
+// Function to replace leftover Jekyll `{{ site.url }}` tokens: legacy YYYY/MM/DD/slug.html
+// permalinks -> current /blog/<id>/ routes, /public/img paths -> /img, and any remaining
+// bare token -> the site root.
+export function replaceLegacySiteUrls(content: string): string {
+  return content
+    .replace(
+      /{{\s*site\.url\s*}}\/(\d{4})\/(\d{2})\/(\d{2})\/([\w-]+)\.html/g,
+      (_match, year, month, day, slug) => `/blog/${year}-${month}-${day}-${slug}/`
+    )
+    .replace(/{{\s*site\.url\s*}}\/public\/img\//g, '/img/')
+    .replace(/{{\s*site\.url\s*}}/g, '/');
+}
+
 // Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
@@ -112,7 +125,7 @@ export async function getBlogPost(id: string) {
   const { data, content } = matter(fileContents);
 
   // Replace Jekyll-style image includes with JSX interpolation
-  const processedContent = replaceImageIncludes(replaceSiteDataTokens(content));
+  const processedContent = replaceImageIncludes(replaceLegacySiteUrls(replaceSiteDataTokens(content)));
 
   return {
     id,
