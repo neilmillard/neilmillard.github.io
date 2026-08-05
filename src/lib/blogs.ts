@@ -35,6 +35,14 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
   );
 }
 
+// Function to replace leftover Jekyll `{{site.data...}}` tokens that never got interpolated
+// after the migration away from Jekyll (the `_data` files backing them no longer exist).
+export function replaceSiteDataTokens(content: string): string {
+  return content
+    .replace(/{{\s*site\.data\.slack\.invite\s*}}/g, '/contact')
+    .replace(/{{\s*site\.data\.youtube\.channel\s*}}/g, 'https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w/');
+}
+
 // Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
@@ -104,7 +112,7 @@ export async function getBlogPost(id: string) {
   const { data, content } = matter(fileContents);
 
   // Replace Jekyll-style image includes with JSX interpolation
-  const processedContent = replaceImageIncludes(content);
+  const processedContent = replaceImageIncludes(replaceSiteDataTokens(content));
 
   return {
     id,
