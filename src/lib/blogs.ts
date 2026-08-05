@@ -56,6 +56,30 @@ export function replaceLegacySiteUrls(content: string): string {
     .replace(/{{\s*site\.url\s*}}/g, '/');
 }
 
+// Function to replace leftover Jekyll `{% include ... %}` tags whose _includes source files
+// were deleted in the migration away from Jekyll, with the HTML they used to render.
+export function replaceJekyllIncludes(content: string): string {
+  return content
+    .replace(
+      /{%\s*include\s+book_info\.html\s*%}/g,
+      '<div><p>Read <a href="/book/">Who Moved My Servers</a>. Available from Amazon in ' +
+      '<a href="https://amzn.to/2HxjFXf">Paperback</a> and <a href="https://amzn.to/2RbKKig">Kindle</a> now.</p></div>'
+    )
+    .replace(
+      /{%\s*include\s+youtube\.html\s+ref="([^"]+)"\s*%}/g,
+      (_match, ref) => `<iframe width="560" height="315" src="https://www.youtube.com/embed/${ref}" frameborder="0" allowfullscreen></iframe>`
+    );
+}
+
+// Function to replace Jekyll's `{% highlight lang %}...{% endhighlight %}` code blocks
+// (the highlighter that rendered them was dropped in the migration away from Jekyll)
+// with standard Markdown fenced code blocks.
+export function replaceHighlightTags(content: string): string {
+  return content
+    .replace(/{%\s*highlight\s+(\w+)\s*%}\n?/g, '```$1\n')
+    .replace(/\n?{%\s*endhighlight\s*%}/g, '\n```');
+}
+
 // Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
@@ -125,7 +149,9 @@ export async function getBlogPost(id: string) {
   const { data, content } = matter(fileContents);
 
   // Replace Jekyll-style image includes with JSX interpolation
-  const processedContent = replaceImageIncludes(replaceLegacySiteUrls(replaceSiteDataTokens(content)));
+  const processedContent = replaceImageIncludes(
+    replaceHighlightTags(replaceJekyllIncludes(replaceLegacySiteUrls(replaceSiteDataTokens(content))))
+  );
 
   return {
     id,
