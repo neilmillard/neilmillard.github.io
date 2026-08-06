@@ -35,6 +35,51 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
   );
 }
 
+// Function to replace leftover Jekyll `{{site.data...}}` tokens that never got interpolated
+// after the migration away from Jekyll (the `_data` files backing them no longer exist).
+export function replaceSiteDataTokens(content: string): string {
+  return content
+    .replace(/{{\s*site\.data\.slack\.invite\s*}}/g, '/contact')
+    .replace(/{{\s*site\.data\.youtube\.channel\s*}}/g, 'https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w/');
+}
+
+// Function to replace leftover Jekyll `{{ site.url }}` tokens: legacy YYYY/MM/DD/slug.html
+// permalinks -> current /blog/<id>/ routes, /public/img paths -> /img, and any remaining
+// bare token -> the site root.
+export function replaceLegacySiteUrls(content: string): string {
+  return content
+    .replace(
+      /{{\s*site\.url\s*}}\/(\d{4})\/(\d{2})\/(\d{2})\/([\w-]+)\.html/g,
+      (_match, year, month, day, slug) => `/blog/${year}-${month}-${day}-${slug}/`
+    )
+    .replace(/{{\s*site\.url\s*}}\/public\/img\//g, '/img/')
+    .replace(/{{\s*site\.url\s*}}/g, '/');
+}
+
+// Function to replace leftover Jekyll `{% include ... %}` tags whose _includes source files
+// were deleted in the migration away from Jekyll, with the HTML they used to render.
+export function replaceJekyllIncludes(content: string): string {
+  return content
+    .replace(
+      /{%\s*include\s+book_info\.html\s*%}/g,
+      '<div><p>Read <a href="/book/">Who Moved My Servers</a>. Available from Amazon in ' +
+      '<a href="https://amzn.to/2HxjFXf">Paperback</a> and <a href="https://amzn.to/2RbKKig">Kindle</a> now.</p></div>'
+    )
+    .replace(
+      /{%\s*include\s+youtube\.html\s+ref="([^"]+)"\s*%}/g,
+      (_match, ref) => `<iframe width="560" height="315" src="https://www.youtube.com/embed/${ref}" frameborder="0" allowfullscreen></iframe>`
+    );
+}
+
+// Function to replace Jekyll's `{% highlight lang %}...{% endhighlight %}` code blocks
+// (the highlighter that rendered them was dropped in the migration away from Jekyll)
+// with standard Markdown fenced code blocks.
+export function replaceHighlightTags(content: string): string {
+  return content
+    .replace(/{%\s*highlight\s+(\w+)\s*%}\n?/g, '```$1\n')
+    .replace(/\n?{%\s*endhighlight\s*%}/g, '\n```');
+}
+
 // Function to replace Jekyll-style image includes with JSX interpolation and process Markdown
 function replaceImageIncludes(content: string): string {
   // Regular expression to match {% include image.html ... %} tags
@@ -104,7 +149,9 @@ export async function getBlogPost(id: string) {
   const { data, content } = matter(fileContents);
 
   // Replace Jekyll-style image includes with JSX interpolation
-  const processedContent = replaceImageIncludes(content);
+  const processedContent = replaceImageIncludes(
+    replaceHighlightTags(replaceJekyllIncludes(replaceLegacySiteUrls(replaceSiteDataTokens(content))))
+  );
 
   return {
     id,
