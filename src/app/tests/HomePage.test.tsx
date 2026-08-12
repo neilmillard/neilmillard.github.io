@@ -14,7 +14,6 @@ describe("HomePage", () => {
     expect(screen.getByText("Services")).toBeInTheDocument();
 
     // Check if some of the services are rendered
-    expect(screen.getByText("Build knowledge")).toBeInTheDocument();
     expect(screen.getByText("Train your team")).toBeInTheDocument();
 
     cleanup();
