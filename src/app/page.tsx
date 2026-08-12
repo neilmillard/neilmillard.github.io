@@ -1,5 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Neil Millard | DevOps Speaker, Author & Consultant",
+  description: "Neil Millard helps engineering teams ship faster with DevOps consulting, training and speaking. Over 20 years building automated, resilient infrastructure.",
+};
 
 export default function Home() {
   const services = [

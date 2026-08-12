@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Neil Millard",
-  description: "Blog, Speaker, Author, Contracting and DevOps",
+  description: "Neil Millard is a DevOps speaker, author and consultant helping engineering teams build automated, resilient cloud infrastructure and ship with confidence.",
 };
 
 export default function RootLayout({
