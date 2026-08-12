@@ -39,7 +39,7 @@ export function getAllBlogPosts(sortOrder: "newest" | "oldest" = "newest"): Blog
 // after the migration away from Jekyll (the `_data` files backing them no longer exist).
 export function replaceSiteDataTokens(content: string): string {
   return content
-    .replace(/{{\s*site\.data\.slack\.invite\s*}}/g, '/contact')
+    .replace(/{{\s*site\.data\.slack\.invite\s*}}/g, '/contact/')
     .replace(/{{\s*site\.data\.youtube\.channel\s*}}/g, 'https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w/');
 }
 
