@@ -73,7 +73,7 @@ Want to know more? Come ask me questions. You can find me on [Slack]({{site.data
 
 If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content.
 
-[6stepsexpert]: {{ site.url }}/2017/03/25/6-steps-to-cloud-expert.html
+[6stepsexpert]: /blog/2017-03-25-6-steps-to-cloud-expert/
 [terraform]: https://terraform.io
 [ansible]: {{ site.url }}/2022/09/25/what-is-ansible-and-how-does-it-work.html
 [mpms]: https://web.devopstopologies.com/#anti-types

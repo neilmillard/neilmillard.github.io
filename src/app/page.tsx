@@ -11,7 +11,7 @@ export default function Home() {
     {
       title: "Train your team",
       description: "I can upskill and mentor your team.",
-      link: "/blog/6-steps-to-cloud-expert/"
+      link: "/blog/2017-03-25-6-steps-to-cloud-expert/"
     },
     { title: "Build an online product", description: "Have an idea? Discuss with me. Connect and we can build it together.", link: "https://linkedin.com/in/neilmillard" },
     { title: "Hire ME!", description: "Bookable sessions for you or your team", link: "https://linkedin.com/in/neilmillard" },
