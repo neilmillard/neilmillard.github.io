@@ -45,7 +45,7 @@ London load balancer setup. Customers in USA, route to Virginia for a faster res
 ALB
 ===========
 The [Application Load balancer][alb] enables incoming requests (load) to be balanced across multiple deployed containers
-(instances) which enables horizontal [scaling](/2016/10/10/elastic-and-scalable.html) of your application.
+(instances) which enables horizontal [scaling](/blog/2016-10-10-elastic-and-scalable/) of your application.
 
 CloudMap
 ========

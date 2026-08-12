@@ -8,7 +8,7 @@ describe('replaceSiteDataTokens', () => {
 
     const result = replaceSiteDataTokens(content);
 
-    expect(result).toBe('You can find me on [Slack](/contact).');
+    expect(result).toBe('You can find me on [Slack](/contact/).');
   });
 
   test('replaces multiple occurrences in the same content', () => {
@@ -16,7 +16,7 @@ describe('replaceSiteDataTokens', () => {
 
     const result = replaceSiteDataTokens(content);
 
-    expect(result).toBe('[a](/contact) and [b](/contact)');
+    expect(result).toBe('[a](/contact/) and [b](/contact/)');
   });
 
   test('replaces the leftover Jekyll youtube channel token', () => {

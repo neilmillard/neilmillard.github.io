@@ -74,7 +74,7 @@ Want to know more? Come ask me questions. You can find me on [Slack]({{site.data
 
 If you found this useful, subscribe to updates and look out for my [YouTube channel]({{site.data.youtube.channel}}) content.
 
-[vmware]: {{ site.url }}/2017/03/25/6-steps-to-cloud-expert.html
+[vmware]: /blog/2017-03-25-6-steps-to-cloud-expert/
 [yt-measured-service]: https://www.youtube.com/watch?v=wzgWp1oP9LM
 [build-themselves]: {{ site.url }}/2018/09/15/devops-getting-servers-to-build-themselves-in-aws.html
 [terraform]: https://terraform.io
