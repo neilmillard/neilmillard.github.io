@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Neil Millard",
+  description: "Read the privacy policy for neilmillard.com, covering what information is collected, how it is used, and your rights over your personal data.",
+};
+
 export default function Privacy() {
   return (
     <div className="w-[83%] mx-auto p-8 bg-white rounded-2xl shadow-md mt-10 mb-10">

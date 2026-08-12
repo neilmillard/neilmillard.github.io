@@ -1,6 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import {getAllBlogPosts} from "@/lib/blogs";
 import SortLinks from "@/app/components/blog/SortLinks";
+
+export const metadata: Metadata = {
+  title: "Blog Posts, Oldest First | Neil Millard",
+  description: "Browse Neil Millard's blog posts on DevOps, cloud infrastructure and platform engineering, sorted oldest first.",
+};
 
 export default function BlogIndex() {
   const blogs = getAllBlogPosts("oldest");
