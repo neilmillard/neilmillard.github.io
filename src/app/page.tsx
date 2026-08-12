@@ -10,11 +10,6 @@ export const metadata: Metadata = {
 export default function Home() {
   const services = [
     {
-      title: "Build knowledge",
-      description: "Build an effective team. Q&A sessions. Free public sessions or Private sessions, it's up to you!",
-      link: "https://www.techanswers.club"
-    },
-    {
       title: "Train your team",
       description: "I can upskill and mentor your team.",
       link: "/blog/2017-03-25-6-steps-to-cloud-expert/"
