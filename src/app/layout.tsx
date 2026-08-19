@@ -34,7 +34,6 @@ export default function RootLayout({
       <meta property="og:url" content="https://www.neilmillard.com" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Neil Millard" />
-      <title>Neil Millard, Speaker, Author, DevOps</title>
     </head>
     <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
