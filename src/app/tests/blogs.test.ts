@@ -64,6 +64,38 @@ describe('replaceLegacySiteUrls', () => {
 
     expect(replaceLegacySiteUrls(content)).toBe(content);
   });
+
+  test('rewrites a bare legacy Jekyll permalink (no site.url token) to the current blog route', () => {
+    const content = 'See <a href="/2019/01/25/four-steps-automate.html">this post</a>.';
+
+    const result = replaceLegacySiteUrls(content);
+
+    expect(result).toBe('See <a href="/blog/2019-01-25-four-steps-automate/">this post</a>.');
+  });
+
+  test('rewrites a bare /public/img path (no site.url token) to the current /img path', () => {
+    const content = '<img src="/public/img/docker.jpg" alt="x" />';
+
+    const result = replaceLegacySiteUrls(content);
+
+    expect(result).toBe('<img src="/img/docker.jpg" alt="x" />');
+  });
+
+  test('rewrites an absolute-domain /public/img path to the current relative /img path', () => {
+    const content = 'img="https://www.neilmillard.com/public/img/cloudy-sunrise_640.jpg"';
+
+    const result = replaceLegacySiteUrls(content);
+
+    expect(result).toBe('img="/img/cloudy-sunrise_640.jpg"');
+  });
+
+  test('rewrites an absolute-domain (no www) /public/img path to the current relative /img path', () => {
+    const content = 'img="https://neilmillard.com/public/img/wackamole.jpg"';
+
+    const result = replaceLegacySiteUrls(content);
+
+    expect(result).toBe('img="/img/wackamole.jpg"');
+  });
 });
 
 describe('replaceJekyllIncludes', () => {
@@ -123,6 +155,23 @@ describe('rendered blog post content', () => {
       // `{{ var }}` syntax) is intentionally literal, not an unrendered Jekyll/Liquid tag.
       const withoutCodeFences = content.replace(/```[\s\S]*?```/g, '');
       const matches = withoutCodeFences.match(new RegExp(MUSTACHE_TAG_REGEX, 'g'));
+
+      if (matches) {
+        leftovers.push({ id: post.id, matches });
+      }
+    }
+
+    expect(leftovers).toEqual([]);
+  });
+
+  test('every published post is free of broken /public/img, legacy YYYY/MM/DD permalinks, and /tags/ links', async () => {
+    const posts = getAllBlogPosts();
+    const BROKEN_LINK_REGEX = /public\/img\/|\/\d{4}\/\d{2}\/\d{2}\/[\w-]+\.html|\/tags\//;
+    const leftovers: { id: string; matches: string[] }[] = [];
+
+    for (const post of posts) {
+      const { content } = await getBlogPost(post.id);
+      const matches = content.match(new RegExp(BROKEN_LINK_REGEX, 'g'));
 
       if (matches) {
         leftovers.push({ id: post.id, matches });
