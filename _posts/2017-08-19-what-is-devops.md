@@ -58,7 +58,7 @@ I provide easy to use services that enable any member of your organisation to bu
 
 This means I provide three main things;
 
-1) An easy to use interface to allow Developers to ask for [freshly built servers](https://www.neilmillard.com/tags/#immutable) in the cloud and get what you want; as easy as ordering a book from Amazon.
+1) An easy to use interface to allow Developers to ask for freshly built servers in the cloud and get what you want; as easy as ordering a book from Amazon.
 
 2) When your server is created, it is ready to be used as quickly as possible; the software and more importantly, [your data is available from where you left off](https://www.neilmillard.com/2017/03/18/persistent-data-docker-and-cloud/).
 In the case of a multi server deployment, all servers’ data is synchronised.

@@ -43,16 +43,18 @@ export function replaceSiteDataTokens(content: string): string {
     .replace(/{{\s*site\.data\.youtube\.channel\s*}}/g, 'https://www.youtube.com/channel/UCAaoh3jk1qtvD3ALPp48_8w/');
 }
 
-// Function to replace leftover Jekyll `{{ site.url }}` tokens: legacy YYYY/MM/DD/slug.html
-// permalinks -> current /blog/<id>/ routes, /public/img paths -> /img, and any remaining
-// bare token -> the site root.
+// Function to replace legacy YYYY/MM/DD/slug.html permalinks -> current /blog/<id>/ routes,
+// and /public/img paths -> /img, whether they carry a leftover Jekyll `{{ site.url }}` token,
+// the full https://[www.]neilmillard.com domain, or are already relative (all three forms were
+// left behind by the migration away from Jekyll). Any remaining bare `{{ site.url }}` token is
+// replaced with the site root.
 export function replaceLegacySiteUrls(content: string): string {
   return content
     .replace(
-      /{{\s*site\.url\s*}}\/(\d{4})\/(\d{2})\/(\d{2})\/([\w-]+)\.html/g,
+      /(?:{{\s*site\.url\s*}}|https?:\/\/(?:www\.)?neilmillard\.com)?\/(\d{4})\/(\d{2})\/(\d{2})\/([\w-]+)\.html/g,
       (_match, year, month, day, slug) => `/blog/${year}-${month}-${day}-${slug}/`
     )
-    .replace(/{{\s*site\.url\s*}}\/public\/img\//g, '/img/')
+    .replace(/(?:{{\s*site\.url\s*}}|https?:\/\/(?:www\.)?neilmillard\.com)?\/public\/img\//g, '/img/')
     .replace(/{{\s*site\.url\s*}}/g, '/');
 }
 

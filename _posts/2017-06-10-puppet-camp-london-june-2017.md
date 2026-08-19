@@ -38,7 +38,7 @@ Of course support for Puppet 3 is now deprecated, so I'll be updating my example
       caption="Video of presentation" %}
 
 The biggest challenges with this approach are;
-i) [Immutable](/tags/#immutable) servers don't change, this means should any configuration or software needs to be updated, you will have to rebuild the server.
+i) Immutable servers don't change, this means should any configuration or software needs to be updated, you will have to rebuild the server.
 In Development this is no big issue, especially if those environments are rebuilt daily. After all, no point paying for a server or environment when your developers are tucked up in bed.
 ii) The puppet code is usually only run once, on boot. This means intrusion detection needs to be factored into the design, as you cannot rely on puppet to revert edited files, malicious or not.
 Again regular rebuilds can reduce this issue, but active monitoring of all instances is a must.
