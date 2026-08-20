@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
-import { GoogleTagManager } from "@next/third-parties/google"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import {NavBar} from "@/app/components/NavBar";
 import {Footer} from "@/app/components/Footer";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
     <div className='h-10'></div>
     {children}
     <Footer/>
-    <GoogleTagManager gtmId="G-C5CKFSXQSX" />
+    <GoogleAnalytics gaId="G-C5CKFSXQSX" />
     </body>
     </html>
   );
