@@ -20,6 +20,19 @@ describe("RootLayout head markup", () => {
     expect(layoutSource).toMatch(/title:\s*"Neil Millard"/);
   });
 
+  test("does not hardcode og: meta tags in the head", () => {
+    // These now live in `openGraph` on the Metadata export, which Next
+    // renders itself — a hardcoded <meta property="og:..."> in the JSX head
+    // would duplicate them (and never included og:image in the first place).
+    expect(layoutSource).not.toMatch(/<meta property="og:/);
+  });
+
+  test("exports a site-wide default og:image via openGraph.images", () => {
+    expect(layoutSource).toMatch(/openGraph:\s*{/);
+    expect(layoutSource).toMatch(/images:\s*\[{\s*url:\s*DEFAULT_OG_IMAGE/);
+    expect(layoutSource).toMatch(/metadataBase:\s*new URL\(SITE_URL\)/);
+  });
+
   test("uses the GoogleAnalytics component for the GA4 measurement ID", () => {
     // G-C5CKFSXQSX is a GA4 measurement ID, not a GTM container ID (GTM-XXXXXXX).
     // The GoogleTagManager component loads gtm.js, which never calls
