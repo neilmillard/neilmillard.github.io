@@ -20,3 +20,21 @@ export function buildMetaDescription(content: string, maxLength = 155): string {
 
   return cut.trim().replace(/[.,;:]+$/, '') + '…';
 }
+
+// Finds the first image referenced in a post's (already-processed) content, checking
+// standard Markdown image syntax first and falling back to the ImageWrapper JSX tag
+// left behind by replaceImageIncludes, so a per-post og:image can be derived without
+// requiring every post to carry an explicit `image:` frontmatter field.
+export function extractFirstImage(content: string): string | null {
+  const markdownMatch = content.match(/!\[.*?]\(([^)]+)\)/);
+  if (markdownMatch) {
+    return markdownMatch[1];
+  }
+
+  const wrapperMatch = content.match(/<ImageWrapper[^>]*\bimg="([^"]+)"/);
+  if (wrapperMatch) {
+    return wrapperMatch[1];
+  }
+
+  return null;
+}

@@ -1,4 +1,4 @@
-import { buildMetaDescription } from '@/lib/seo';
+import { buildMetaDescription, extractFirstImage } from '@/lib/seo';
 
 describe('buildMetaDescription', () => {
   test('strips markdown formatting and returns plain text', () => {
@@ -37,5 +37,27 @@ describe('buildMetaDescription', () => {
   test('collapses repeated whitespace and newlines into single spaces', () => {
     const content = 'Line one.\n\n\nLine   two.';
     expect(buildMetaDescription(content)).toBe('Line one. Line two.');
+  });
+});
+
+describe('extractFirstImage', () => {
+  test('finds a standard Markdown image', () => {
+    const content = 'Some intro text.\n\n![a diagram](/img/diagram.png)\n\nMore text.';
+    expect(extractFirstImage(content)).toBe('/img/diagram.png');
+  });
+
+  test('finds an ImageWrapper JSX image when there is no Markdown image', () => {
+    const content = 'Intro.\n\n<ImageWrapper img="/img/wrapper-pic.jpg" caption="x" />\n\nOutro.';
+    expect(extractFirstImage(content)).toBe('/img/wrapper-pic.jpg');
+  });
+
+  test('prefers the first Markdown image over a later ImageWrapper image', () => {
+    const content = '![first](/img/first.png)\n\n<ImageWrapper img="/img/second.jpg" />';
+    expect(extractFirstImage(content)).toBe('/img/first.png');
+  });
+
+  test('returns null when the content has no images', () => {
+    const content = 'Just plain text with no pictures at all.';
+    expect(extractFirstImage(content)).toBeNull();
   });
 });

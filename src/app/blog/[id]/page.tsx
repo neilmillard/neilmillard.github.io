@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import {getAdjacentBlogPosts, getAllBlogPosts, getBlogPost} from "@/lib/blogs";
-import {buildMetaDescription} from "@/lib/seo";
+import {buildMetaDescription, extractFirstImage} from "@/lib/seo";
+
+const DEFAULT_OG_IMAGE = "/img/2024-03-14-DevOps_Excellence_Awards_NeilMillard_Large.jpg";
 import BlogPost, {BlogPostShort} from "@/app/components/blog/BlogPost";
 import {BlogNav} from "@/app/components/blog/BlogNav";
 import ContactForm from "@/app/components/ContactForm";
@@ -17,9 +19,18 @@ export async function generateMetadata({ params, }: {
 }): Promise<Metadata> {
   const {id} = await params;
   const blog = await getBlogPost(id);
+  const description = buildMetaDescription(blog.content);
+  const image = blog.image ?? extractFirstImage(blog.content) ?? DEFAULT_OG_IMAGE;
+
   return {
     title: `${blog.title} | Neil Millard`,
-    description: buildMetaDescription(blog.content),
+    description,
+    openGraph: {
+      title: `${blog.title} | Neil Millard`,
+      description,
+      type: "article",
+      images: [{url: image}],
+    },
   };
 }
 
