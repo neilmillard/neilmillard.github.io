@@ -1,0 +1,12 @@
+# 301 redirects for legacy Jekyll-era blog permalinks (DEL-411)
+# Format: <old path> <new path> <status>
+/2016/10/05/what-is-cloud-computing.html /blog/2016-10-05-what-is-cloud-computing/ 301
+/2017/04/29/aws-limits/ /blog/2017-04-29-aws-limits/ 301
+/2017/06/17/version-control-and-bundles.html /blog/2017-06-17-version-control-and-bundles/ 301
+/2019/01/25/four-steps-automate.html /blog/2019-01-25-four-steps-automate/ 301
+/2019/02/08/four-steps-data /blog/2019-02-08-four-steps-data/ 301
+/2022/06/12/what-is-a-devops-engineer.html /blog/2022-06-12-what-is-a-devops-engineer/ 301
+/2022/10/23/platform-engineering-is-not-devops.html /blog/2022-10-23-platform-engineering-is-not-devops/ 301
+/2024/08/14/DevOps-and-CI-CD.html /blog/2024-08-14-DevOps-and-CI-CD/ 301
+/2016/10/11/automation-puppet-code-and-schedules /blog/2016-10-11-automation-puppet-code-and-schedules/ 301
+/2022/12/04/what-fish-teach-us-about-async /blog/2022-12-04-what-fish-teach-us-about-async/ 301
