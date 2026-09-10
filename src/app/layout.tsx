@@ -5,6 +5,7 @@ import React from "react";
 import { GoogleAnalytics } from "@next/third-parties/google"
 import {NavBar} from "@/app/components/NavBar";
 import {Footer} from "@/app/components/Footer";
+import {SITE_URL} from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://www.neilmillard.com";
 const DEFAULT_OG_IMAGE = "/img/2024-03-14-DevOps_Excellence_Awards_NeilMillard_Large.jpg";
 
 export const metadata: Metadata = {
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     siteName: "Neil Millard",
     type: "website",
     images: [{url: DEFAULT_OG_IMAGE, width: 1024, height: 683}],
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 

@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | Neil Millard",
   description: "Terms of service for neilmillard.com, covering use of the site, continuous deployment consulting services, liability and intellectual property.",
+  alternates: {
+    canonical: "/terms/",
+  },
 };
 
 export default function Terms() {
