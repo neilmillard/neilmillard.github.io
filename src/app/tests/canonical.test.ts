@@ -37,7 +37,8 @@ describe("canonical tags", () => {
   });
 
   test("blog post pages declare a canonical URL matching their id", async () => {
-    const metadata = await generateBlogPostMetadata({params: Promise.resolve({id: "some-post"})});
-    expect(metadata.alternates?.canonical).toBe("/blog/some-post/");
+    const id = "2015-12-21-getting-started-with-devops";
+    const metadata = await generateBlogPostMetadata({params: Promise.resolve({id})});
+    expect(metadata.alternates?.canonical).toBe(`/blog/${id}/`);
   });
 });
