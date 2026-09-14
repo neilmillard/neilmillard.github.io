@@ -104,6 +104,7 @@ describe("_redirects", () => {
     "2017-04-08-hashicorp-nomad",
     "2021-03-24-where-do-containers-live",
     "2022-08-21-learning-devops",
+    "2023-03-26-3cs-compliance",
   ];
 
   function legacyPathForms(id: string): string[] {
