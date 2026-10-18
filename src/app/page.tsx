@@ -23,9 +23,9 @@ export default function Home() {
   ];
   const talks = [
     {
-      title: "The Psychology of the Side Hustle",
-      description: "Hear me speak at the Blakehay Theatre.",
-      link: "https://www.blakehay.org.uk/event-details/the-psychology-of-the-side-hustle",
+      title: "AI Training Workshop",
+      description: "Hands-on AI day in Weston-super-Mare. Bring one weekly job, leave with it running without you.",
+      link: "https://www.deltafamiglia.com/ai-training/",
     },
     {
       title: "Do you really need Kubernetes?",
@@ -66,13 +66,13 @@ export default function Home() {
             With over 20 years IT experience, I can help you and your tech team deliver. Here is how I was introduced at my last talk.
           </p>
           <p className="text-xl m-5 mt-4 font-medium">
-            Neil Millard is a successful entrepreneur, speaker and trainer. A recognised expert on cloud and automated
-            server infrastructures, he assists businesses to embrace new technology to move faster, become more
-            automated and respond more quickly to their customers’ wants and needs. Having spent many years in the
-            financial sector with clients such as Barclays, HMRC and AXA, he is now on a mission to help grow companies,
-            through DevOps and Platforms, helping the world. He also shares financial tips, including{" "}
-            <Link href="https://www.helpfulmoney.site/blog/how-much-save-mortgage-overpayment/" className="text-indigo-600 underline">how much you can save with mortgage overpayments</Link>{" "}
-            and <Link href="https://www.helpfulmoney.site/blog/paid-off-mortgage-what-next/" className="text-indigo-600 underline">what to do after paying off your mortgage</Link>.</p>
+            Neil Millard is a DevOps and platform engineer and founder of devops-answers.com. He specialises in
+            automated, secure cloud infrastructure on AWS, and has spent over seven years building platforms at scale for
+            clients including Barclays, HMRC and AXA. A speaker, trainer and trustee of the Blakehay Theatre, Neil now
+            helps startups and SMEs adopt the same enterprise-grade foundations so they can ship faster and respond to
+            customers in days, not months. He spoke at PlatformCon 2026 in London. He also runs a free 30-day budgeting
+            challenge,{" "}
+            <Link href="https://www.helpfulmoney.site/challenge/give-every-pound-a-job/" className="text-indigo-600 underline">Give Every Pound a Job</Link>.</p>
         </div>
       </div>
       <div className="mt-10">
