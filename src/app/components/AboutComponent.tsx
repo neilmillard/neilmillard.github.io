@@ -15,16 +15,17 @@ export default function AboutComponent() {
                     height={300}
                     className="float-right ml-4 mb-4"
                   />
-                  Neil&apos;s mission is to make life and work, FUN. Playing the game of life should be a challenge like any game, but it is when it becomes mired by the boring and monotonous, things need to change.
+                  I’m Neil Millard, a DevOps and platform engineer and the founder of devops-answers.com.
                 </p>
-                <p className="mb-4">Business too, is a team sport. This is where the wonderful diversity of life and preferences comes into it&apos;s own. You don&apos;t like the same stuff as everyone else, which means tasks can be shared with those whom like performing those tasks.</p>
-                <p className="mb-4">Neil Millard is a successful entrepreneur, speaker and trainer.
-                  A recognised expert on cloud and automated server infrastructures, he assists businesses to embrace new
-                  technology
-                  to move faster, become more automated and respond more quickly to their customers&apos; wants and needs. Having
-                  spent
-                  many years in the financial sector with clients such as Barclays, Lloyds and AXA, he is now on a mission
-                  to share his knowledge with the world.</p>
+                <p className="mb-4">For years I’ve been doing one thing: building cloud infrastructure that runs itself.
+                  That means automated, secure AWS platforms (ECS, Fargate, DevSecOps, CIS compliance) that let engineering
+                  teams ship faster without breaking things.</p>
+                <p className="mb-4">I’ve done this at scale in the financial sector for clients like Barclays, HMRC and AXA,
+                  where downtime and security failures make headlines. I also speak and train on DevOps and AI, and I’m a
+                  trustee of the Blakehay Theatre.</p>
+                <p className="mb-4">Now I’m bringing that enterprise-grade experience to startups and SMEs. My mission is to
+                  help growing companies get the platform foundations the big banks have, so they can move faster and respond
+                  to their customers in days rather than months.</p>
               </div>
             </div>
             <div className="mt-6">

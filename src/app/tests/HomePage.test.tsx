@@ -24,7 +24,8 @@ describe("HomePage", () => {
 
     // Check if the background information is rendered
     expect(screen.getByText(/With over 20 years IT experience/)).toBeInTheDocument();
-    expect(screen.getByText(/Neil Millard is a successful entrepreneur/)).toBeInTheDocument();
+    expect(screen.getByText(/Neil Millard is a DevOps and platform engineer and founder of devops-answers.com/)).toBeInTheDocument();
+    expect(screen.queryByText(/successful entrepreneur/)).not.toBeInTheDocument();
 
     cleanup();
   });

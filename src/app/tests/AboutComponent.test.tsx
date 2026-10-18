@@ -27,10 +27,15 @@ describe("AboutComponent", () => {
   test("contains biographical text", () => {
     render(<AboutComponent />);
 
-    // Check if the biographical text is present
-    expect(screen.getByText(/Neil's mission is to make life and work, FUN/i)).toBeInTheDocument();
-    expect(screen.getByText(/Business too, is a team sport/i)).toBeInTheDocument();
-    expect(screen.getByText(/Neil Millard is a successful entrepreneur, speaker and trainer/i)).toBeInTheDocument();
+    // Check the Name / Same / Fame / Game bio is present
+    expect(screen.getByText(/I’m Neil Millard, a DevOps and platform engineer/i)).toBeInTheDocument();
+    expect(screen.getByText(/building cloud infrastructure that runs itself/i)).toBeInTheDocument();
+    expect(screen.getByText(/Barclays, HMRC and AXA/i)).toBeInTheDocument();
+    expect(screen.getByText(/bringing that enterprise-grade experience to startups and SMEs/i)).toBeInTheDocument();
+
+    // The old self-claimed status lines are gone
+    expect(screen.queryByText(/successful entrepreneur/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/recognised expert/i)).not.toBeInTheDocument();
 
     cleanup();
   });
