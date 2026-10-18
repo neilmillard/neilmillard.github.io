@@ -35,4 +35,14 @@ describe("HomePage", () => {
 
     cleanup();
   });
+
+  test("talks link to the AI training workshop, not the Blakehay talk", () => {
+    render(<HomePage />);
+
+    const aiLink = screen.getByRole("link", {name: /AI Training Workshop/i});
+    expect(aiLink).toHaveAttribute("href", "https://www.deltafamiglia.com/ai-training/");
+    expect(screen.queryByText("The Psychology of the Side Hustle")).not.toBeInTheDocument();
+
+    cleanup();
+  });
 });

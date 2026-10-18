@@ -23,9 +23,9 @@ export default function Home() {
   ];
   const talks = [
     {
-      title: "The Psychology of the Side Hustle",
-      description: "Hear me speak at the Blakehay Theatre.",
-      link: "https://www.blakehay.org.uk/event-details/the-psychology-of-the-side-hustle",
+      title: "AI Training Workshop",
+      description: "Hands-on AI day in Weston-super-Mare. Bring one weekly job, leave with it running without you.",
+      link: "https://www.deltafamiglia.com/ai-training/",
     },
     {
       title: "Do you really need Kubernetes?",
