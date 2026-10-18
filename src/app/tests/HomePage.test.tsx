@@ -26,6 +26,12 @@ describe("HomePage", () => {
     expect(screen.getByText(/With over 20 years IT experience/)).toBeInTheDocument();
     expect(screen.getByText(/Neil Millard is a DevOps and platform engineer and founder of devops-answers.com/)).toBeInTheDocument();
     expect(screen.queryByText(/successful entrepreneur/)).not.toBeInTheDocument();
+    expect(screen.getByText(/spoke at PlatformCon 2026 in London/)).toBeInTheDocument();
+
+    // Helpful Money links point at the budgeting challenge, not the old mortgage posts
+    const challengeLink = screen.getByRole("link", {name: /Give Every Pound a Job/i});
+    expect(challengeLink).toHaveAttribute("href", "https://www.helpfulmoney.site/challenge/give-every-pound-a-job/");
+    expect(screen.queryByRole("link", {name: /mortgage overpayments/i})).not.toBeInTheDocument();
 
     cleanup();
   });

@@ -31,6 +31,7 @@ describe("AboutComponent", () => {
     expect(screen.getByText(/I’m Neil Millard, a DevOps and platform engineer/i)).toBeInTheDocument();
     expect(screen.getByText(/building cloud infrastructure that runs itself/i)).toBeInTheDocument();
     expect(screen.getByText(/Barclays, HMRC and AXA/i)).toBeInTheDocument();
+    expect(screen.getByText(/I spoke at PlatformCon 2026 in London/i)).toBeInTheDocument();
     expect(screen.getByText(/bringing that enterprise-grade experience to startups and SMEs/i)).toBeInTheDocument();
 
     // The old self-claimed status lines are gone

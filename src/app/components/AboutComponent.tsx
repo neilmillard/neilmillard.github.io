@@ -21,8 +21,8 @@ export default function AboutComponent() {
                   That means automated, secure AWS platforms (ECS, Fargate, DevSecOps, CIS compliance) that let engineering
                   teams ship faster without breaking things.</p>
                 <p className="mb-4">I’ve done this at scale in the financial sector for clients like Barclays, HMRC and AXA,
-                  where downtime and security failures make headlines. I also speak and train on DevOps and AI, and I’m a
-                  trustee of the Blakehay Theatre.</p>
+                  where downtime and security failures make headlines. I also speak and train on DevOps and AI (I spoke at
+                  PlatformCon 2026 in London), and I’m a trustee of the Blakehay Theatre.</p>
                 <p className="mb-4">Now I’m bringing that enterprise-grade experience to startups and SMEs. My mission is to
                   help growing companies get the platform foundations the big banks have, so they can move faster and respond
                   to their customers in days rather than months.</p>

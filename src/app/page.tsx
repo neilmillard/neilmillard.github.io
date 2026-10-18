@@ -70,9 +70,9 @@ export default function Home() {
             automated, secure cloud infrastructure on AWS, and has spent over seven years building platforms at scale for
             clients including Barclays, HMRC and AXA. A speaker, trainer and trustee of the Blakehay Theatre, Neil now
             helps startups and SMEs adopt the same enterprise-grade foundations so they can ship faster and respond to
-            customers in days, not months. He also shares financial tips, including{" "}
-            <Link href="https://www.helpfulmoney.site/blog/how-much-save-mortgage-overpayment/" className="text-indigo-600 underline">how much you can save with mortgage overpayments</Link>{" "}
-            and <Link href="https://www.helpfulmoney.site/blog/paid-off-mortgage-what-next/" className="text-indigo-600 underline">what to do after paying off your mortgage</Link>.</p>
+            customers in days, not months. He spoke at PlatformCon 2026 in London. He also runs a free 30-day budgeting
+            challenge,{" "}
+            <Link href="https://www.helpfulmoney.site/challenge/give-every-pound-a-job/" className="text-indigo-600 underline">Give Every Pound a Job</Link>.</p>
         </div>
       </div>
       <div className="mt-10">
